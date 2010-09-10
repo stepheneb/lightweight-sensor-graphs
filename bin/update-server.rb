@@ -5,7 +5,8 @@ require 'yaml'
 begin
   config = YAML.load_file(File.expand_path('../deploy.yml',  __FILE__))
   Net::SSH.start(config[:host], config[:username]) do |ssh|
-    puts ssh.exec!("cd #{config[:dir]}; git pull; git submodule update")
+    cmd = "pwd; cd #{config[:dir]}; git pull; git submodule update"
+    puts ssh.exec!(cmd)
   end
 rescue Errno::ENOENT
   msg = <<-HEREDOC
