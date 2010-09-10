@@ -1,0 +1,7 @@
+tmp/**/*
+log/*
+config.yml
+bin/deploy.yml
+.DS_Store
+*~
+public/jnlp
