@@ -7,8 +7,8 @@ require 'fileutils'
 require 'open-uri'
 
 require 'yaml'
-config = YAML.load_file('config.yml')
-SERVER = confg[:host]
+config = YAML.load_file(File.expand_path('../config.yml',  __FILE__))
+SERVER = "#{config[:host]}:#{config[:port]}"
 
 PUBLIC_DIR = 'public'
 JNLP_PATH = '/jnlp'
