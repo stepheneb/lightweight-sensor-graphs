@@ -2,6 +2,7 @@ module Rack
   class Jnlp
 
     PACK_GZ = '.pack.gz'
+    JAR_PACK_GZ = 'jar.pack.gz'
 
     def initialize app
       @app = app
@@ -9,16 +10,16 @@ module Rack
     end
 
     def jar_request(path)
-      if path =~ /^(\/.*\/)(.*?).jar/
-      	dir, name = $1, $2
+      if path =~ /^(\/.*\/)(.*?)\.(jar|jar\.pack\.gz)$/
+      	dir, name, suffix = $1, $2, $3
         jars = Dir["#{@jnlp_dir}#{dir}#{name}__*.jar"]
         if jars.empty?
-          nil
+          [nil, suffix]
         else
-          jars.sort.last[/#{@jnlp_dir}(.*)/, 1]
+          [jars.sort.last[/#{@jnlp_dir}(.*)/, 1], suffix]
         end
       else
-        nil
+        [nil, nil]
       end
     end
 
@@ -26,9 +27,10 @@ module Rack
       path = env["PATH_INFO"]
       version_id = env["QUERY_STRING"][/version-id=(.*)/, 1]
       pack200_gzip = versioned_jar_path = false
-      if snapshot_path = jar_request(path)
-        if env['HTTP_ACCEPT_ENCODING']
-          pack200_gzip = env['HTTP_ACCEPT_ENCODING'][/pack200-gzip/]
+      snapshot_path, suffix = jar_request(path)
+      if snapshot_path
+        if (env['HTTP_ACCEPT_ENCODING'] && env['HTTP_ACCEPT_ENCODING'][/pack200-gzip/]) || suffix == JAR_PACK_GZ
+          pack200_gzip = true
         end
         if version_id
           versioned_jar_path = path.gsub(/(.*?)(\.jar$)/, "\\1__V#{version_id}\\2")
