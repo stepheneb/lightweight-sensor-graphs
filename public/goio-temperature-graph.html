@@ -62,17 +62,17 @@
       <div id="back" class="back"><a href="index.html">back</a></div>
       <div class="two-column-left clearfix">
         <canvas id="chart" width="600" height="400"></canvas>
-        <applet id="sensor" code="org.concord.sensor.applet.OTSensorApplet" 
+        <applet id="sensor", codebase="/jnlp", code="org.concord.sensor.applet.OTSensorApplet" 
           width="1" height="1" MAYSCRIPT="true"
-          archive="/jnlp/org/concord/sensor/sensor-applets/sensor-applets.jar,
-                   /jnlp/org/concord/otrunk/otrunk.jar,
-                   /jnlp/org/concord/framework/framework.jar,
-                   /jnlp/org/concord/frameworkview/frameworkview.jar,
-                   /jnlp/jug/jug/jug.jar,
-                   /jnlp/jdom/jdom/jdom.jar,
-                   /jnlp/org/concord/sensor-native/sensor-native.jar,
-                   /jnlp/org/concord/sensor/sensor.jar,
-                   /jnlp/org/concord/data/data.jar"
+          archive="org/concord/sensor/sensor-applets/sensor-applets.jar,
+                   org/concord/otrunk/otrunk.jar,
+                   org/concord/framework/framework.jar,
+                   org/concord/frameworkview/frameworkview.jar,
+                   jug/jug/jug.jar,
+                   jdom/jdom/jdom.jar,
+                   org/concord/sensor-native/sensor-native.jar,
+                   org/concord/sensor/sensor.jar,
+                   org/concord/data/data.jar"
           MAYSCRIPT="true">
           <param name="url" value="otml/temperature.otml"/>
           <param name="name" value="sensor"/>
