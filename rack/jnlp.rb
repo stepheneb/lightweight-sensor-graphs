@@ -29,7 +29,8 @@ module Rack
       pack200_gzip = versioned_jar_path = false
       snapshot_path, suffix = jar_request(path)
       if snapshot_path
-        if (env['HTTP_ACCEPT_ENCODING'] && env['HTTP_ACCEPT_ENCODING'][/pack200-gzip/]) || suffix == JAR_PACK_GZ
+        accept_encoding = env['HTTP_ACCEPT_ENCODING']
+        if (accept_encoding && accept_encoding[/pack200-gzip/]) || suffix == JAR_PACK_GZ
           pack200_gzip = true
         end
         if version_id
