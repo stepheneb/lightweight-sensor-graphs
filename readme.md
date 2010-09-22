@@ -17,3 +17,9 @@ Demo
     ruby start_local_server.rb
 3. Open: http://localhost:4321/goio-temperature-graph.html/
 4. Click the *start* button.
+
+Sharing a local server on a mac with bonjour/zeroconf
+------------
+
+    dns-sd -R "GoIO Temperature Grapher" _http._tcp "" 4321
+
