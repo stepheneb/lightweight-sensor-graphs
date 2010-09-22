@@ -11,8 +11,10 @@ begin
     path = File.dirname(jar_path)
     name = File.basename(jar_path)
     Dir.chdir(path) do
-      puts "re-signing and repacking: #{name}"
+      puts "signing and repacking: #{name}"
+      `zip -d #{name} META-INF/\*`
       `pack200 --repack #{name}`
+      `jar -i #{name}`
       `jarsigner -storepass config[:password] #{name} config[:domain]`
       `pack200 #{name}.pack.gz #{name}`
     end
