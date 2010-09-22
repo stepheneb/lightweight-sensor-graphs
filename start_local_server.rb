@@ -24,6 +24,7 @@ jnlp_app = Rack::Builder.new do
   map "/" do
     use Rack::CommonLogger
     use Rack::Jnlp
+    use Rack::ConditionalGet
     run Rack::Directory.new(PUBLIC_DIR)
   end
 end

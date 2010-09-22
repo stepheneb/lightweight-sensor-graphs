@@ -12,4 +12,5 @@ PUBLIC_DIR = 'public'
 
 use Rack::CommonLogger
 use Rack::Jnlp
+use Rack::ConditionalGet
 run Rack::Directory.new(PUBLIC_DIR)
