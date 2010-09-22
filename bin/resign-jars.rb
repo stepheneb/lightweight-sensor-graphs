@@ -4,7 +4,10 @@ require 'yaml'
 
 begin
   config = YAML.load_file(File.expand_path('../sign.yml',  __FILE__))
-  Dir["../public/**/*.jar"].each do |jar_path|
+  public_dir = File.expand_path('../../public',  __FILE__)
+  jars = Dir["#{public_dir}/**/*.jar"]
+  puts "processing #{jars.length} jars ..."
+  jars.each do |jar_path|
     path = File.dirname(jar_path)
     name = File.basename(jar_path)
     Dir.chdir(path) do
