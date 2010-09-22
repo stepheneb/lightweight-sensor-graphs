@@ -8,7 +8,6 @@ Install
     git clone git://github.com/stepheneb/lightweight-sensor-graphs.git
     cd lightweight-sensor-graphs
     cp config.sample.yml config.yml
-    ruby update_jnlps.rb
 
 Demo
 ------------
