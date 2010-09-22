@@ -25,13 +25,13 @@
       }
     };
     function startSensor() {
-      sensor.startCollecting();
+      sensor_applet.startCollecting();
     }
     function stopSensor() {
-      sensor.stopCollecting();
+      sensor_applet.stopCollecting();
     }
     function clearData() {
-      sensor.stopCollecting();
+      sensor_applet.stopCollecting();
       list.innerHTML = "";
     }
       
@@ -44,7 +44,7 @@
       function createTimeline() {
         var chart = new SmoothieChart({
           grid: { strokeStyle:'rgb(100, 100, 100)', fillStyle:'rgb(10, 10, 10)',
-                  lineWidth: 1, millisPerLine: 1000, verticalSections: 8, },
+                  lineWidth: 1, millisPerLine: 1000, verticalSections: 8 },
           labels: { fillStyle:'rgb(60, 0, 0)' }
         });
         chart.addTimeSeries(temperature, { 
@@ -92,6 +92,6 @@
     </div>
   </body>
   <script type="text/javascript">
-      sensor = document.getElementById('sensor');
+      sensor_applet = document.getElementById('sensor');
   </script>
 </html>
