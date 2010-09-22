@@ -2,6 +2,7 @@ tmp/**/*
 log/*
 config.yml
 bin/deploy.yml
+bin/sign.yml
 .DS_Store
 *~
 public/jnlp
