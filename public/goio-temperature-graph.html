@@ -25,13 +25,13 @@
       }
     };
     function startSensor() {
-      sensor.startCollecting();
+      sensor_applet.startCollecting();
     }
     function stopSensor() {
-      sensor.stopCollecting();
+      sensor_applet.stopCollecting();
     }
     function clearData() {
-      sensor.stopCollecting();
+      sensor_applet.stopCollecting();
       list.innerHTML = "";
     }
       
@@ -94,8 +94,7 @@
       </div>
       <div class="clearfix"/></div>
       <script type="text/javascript">
-          list = document.getElementById('data-list');
-          sensor = document.getElementById('sensor');
+          var sensor_applet = document.getElementById('sensor');
       </script>
     </div>
   </body>
