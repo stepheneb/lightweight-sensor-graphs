@@ -15,7 +15,7 @@ begin
       `zip -d #{name} META-INF/\*`
       `pack200 --repack #{name}`
       `jar -i #{name}`
-      `jarsigner -storepass config[:password] #{name} config[:alias]`
+      `jarsigner -storepass #{config[:password]} #{name} #{config[:alias]}`
       `pack200 #{name}.pack.gz #{name}`
     end
   end
