@@ -72,14 +72,16 @@
       </div>
       <div class="two-column-right clearfix">
         <p>A lightweight JavaScript grapher rendering into an HTML5 Canvas element. The data are collected from a <a href="http://www.vernier.com/go/golink.html">Vernier GoIO</a> temperature probe using an invisible Java applet.</p>
+        <p>This example uses Oracle's <code>deployJava.js</code> script described on the <a href="http://download.oracle.com/javase/6/docs/technotes/guides/jweb/deployment_advice.html">Java Rich Internet Applications Deployment Advice</a> page instead of a plain embedded applet tag.</p>
         <p>The source code for this demo can be found on <a href="http://github.com/stepheneb/lightweight-sensor-graphs">github</a>.</p>
       </div>
       <div class="clearfix"></div>>
       <script type="text/javascript"> 
        var attributes = { 
           id:'sensor',
+          codebase:'/jnlp',
           code:'org.concord.sensor.applet.OTSensorApplet',
-          archive:"/jnlp/org/concord/sensor/sensor-applets/sensor-applets.jar, /jnlp/org/concord/otrunk/otrunk.jar, /jnlp/org/concord/framework/framework.jar, /jnlp/org/concord/frameworkview/frameworkview.jar, /jnlp/jug/jug/jug.jar, /jnlp/jdom/jdom/jdom.jar, /jnlp/org/concord/sensor-native/sensor-native.jar, /jnlp/org/concord/sensor/sensor.jar, /jnlp/org/concord/data/data.jar" ,        
+          archive:"org/concord/sensor-native/sensor-native.jar, org/concord/otrunk/otrunk.jar, org/concord/framework/framework.jar, org/concord/frameworkview/frameworkview.jar, jug/jug/jug.jar, jdom/jdom/jdom.jar, org/concord/sensor/sensor.jar, org/concord/data/data.jar, org/concord/sensor/sensor-applets/sensor-applets.jar",
           width:0, height:0,
           MAYSCRIPT:"true" };
        var parameters = {
