@@ -36,10 +36,18 @@ module Rack
         end
         if version_id
           versioned_jar_path = path.gsub(/(.*?)(\.jar$)/, "\\1__V#{version_id}\\2")
-          versioned_jar_path << Rack::Jnlp::PACK_GZ if pack200_gzip
+          if pack200_gzip && ::File.exists?(@jnlp_dir + versioned_jar_path + Rack::Jnlp::PACK_GZ)
+            versioned_jar_path << Rack::Jnlp::PACK_GZ
+          else
+            pack200_gzip = false
+          end
           env["PATH_INFO"] = versioned_jar_path
         else
-          snapshot_path << Rack::Jnlp::PACK_GZ if pack200_gzip
+          if pack200_gzip && ::File.exists?(@jnlp_dir + snapshot_path + Rack::Jnlp::PACK_GZ)
+            snapshot_path << Rack::Jnlp::PACK_GZ
+          else
+            pack200_gzip = false
+          end
           env["PATH_INFO"] = snapshot_path
         end
       end
