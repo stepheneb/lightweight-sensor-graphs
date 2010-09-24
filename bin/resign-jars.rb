@@ -2,6 +2,8 @@
 
 require 'yaml'
 
+manifest_path = File.expand_path('../manifest', __FILE__)
+
 begin
   config = YAML.load_file(File.expand_path('../sign.yml',  __FILE__))
   public_dir = File.expand_path('../../public',  __FILE__)
@@ -14,6 +16,7 @@ begin
       puts "signing and repacking: #{name}"
       `zip -d #{name} META-INF/\*`
       `pack200 --repack #{name}`
+      `jar umf #{manifest_path} #{name}`
       # `jar -i #{name}`
       `jarsigner -storepass #{config[:password]} #{name} #{config[:alias]}`
       `pack200 #{name}.pack.gz #{name}`
