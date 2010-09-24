@@ -26,10 +26,10 @@ module Rack
     def call env
       path = env["PATH_INFO"]
       version_id = env["QUERY_STRING"][/version-id=(.*)/, 1]
-      versioned_jar_path = false
-      pack200_gzip = true if env["HTTP_USER_AGENT"] =~ /java/i        # if the user agent includes 'java' always try and return pack200-gzip
+      pack200_gzip = versioned_jar_path = false
       snapshot_path, suffix = jar_request(path)
       if snapshot_path
+        pack200_gzip = true if env["HTTP_USER_AGENT"] =~ /java/i        # if jar request and the user agent includes 'java' always try and return pack200-gzip
         accept_encoding = env['HTTP_ACCEPT_ENCODING']
         if (accept_encoding && accept_encoding[/pack200-gzip/]) || suffix == JAR_PACK_GZ
           pack200_gzip = true
