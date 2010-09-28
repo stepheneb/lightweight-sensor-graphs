@@ -15,6 +15,7 @@
         // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
         if (type === 1000) {
           temperature.append(new Date().getTime(), data[0]);
+          list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
         };
       },
       dataStreamEvent: function(type,count,data) {
@@ -41,7 +42,7 @@
     }
     function clearData() {
       sensor_applet.stopCollecting();
-      // list.innerHTML = "";
+      list.innerHTML = "";
     }
       
       // // Randomly add a data point every 500ms
@@ -69,10 +70,9 @@
   <body onload="createTimeline()" style="background-color:#FFF">
     <div id="main" class="page-content">
       <h3 class="page-title namespace">Vernier GoIO Lightweight Temperature Grapher</h3>
-      <div id="back" class="back"><a href="index.html">back</a></div>
       <div class="two-column-left clearfix">
-        <canvas id="chart" width="600" height="400"></canvas>
-        <applet id="sensor", codebase="http://jnlp.dev.concord.org/jnlp", code="org.concord.sensor.applet.OTSensorApplet" 
+        <canvas id="chart" width="540" height="300"></canvas>
+        <applet id="sensor", codebase="/jnlp", code="org.concord.sensor.applet.OTSensorApplet" 
           width="1" height="1" MAYSCRIPT="true"
           archive="org/concord/sensor-native/sensor-native.jar,
                    org/concord/otrunk/otrunk.jar,
@@ -92,9 +92,14 @@
             Your browser is completely ignoring the applet tag!
         </applet>
         <div>
-          <a href="javascript:startSensor();">Start</a>
-          <a href="javascript:stopSensor()">Stop</a>
-          <a href="javascript:clearData();">Clear</a>
+          <ul class="sensorbuttons">
+            <li><a href="javascript:startSensor();" class="sensor_button">Start</a></li>
+            <li><a href="javascript:stopSensor()">Stop</a></li>
+            <li><a href="javascript:clearData();">Clear</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul id='data-list' class="datalist"/>
         </div>
       </div>
       <div class="two-column-right clearfix">
@@ -103,6 +108,7 @@
       </div>
       <div class="clearfix"></div>
       <script type="text/javascript">
+          var list = document.getElementById('data-list');
           var sensor_applet = document.getElementById('sensor');
       </script>
     </div>

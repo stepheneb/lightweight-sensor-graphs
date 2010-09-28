@@ -30,7 +30,7 @@ text-decoration: line-through;
 }
 
 .container-page-content {
-    width: 920px;
+    width: 900px;
     margin: 40px auto 0;
 }
 
@@ -274,16 +274,17 @@ display: none;
 /* PAGE CONTENT */
 
 .page-content {
-    width: 1000px;
+    width: 900px;
     margin: 30px;
     word-wrap: break-word;
 }
 
 .page-content .page-title {
-    margin-left: 40px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 15px;
     padding: 10px;
-    font-size: 27px;
+    font-size: 22px;
     letter-spacing: -1px;
     color: #444;
 }
@@ -428,9 +429,23 @@ pre {
 padding: 0;
 }
 
+.datalist {
+font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", monospace;
+font-size: 10px;
+line-height: 90%;
+}
+
 code {
 font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", monospace;
 font-size: 11px;
+}
+
+ul.sensorbuttons li {
+display: inline;
+list-style-type: none;
+font-size: 120%;
+padding 20px;
+border 1px;
 }
 
 .page-title span.type {
