@@ -35,16 +35,22 @@
       // list.innerHTML += "<li>sensors ready .../li>";
     }
     function startSensor() {
+      chart.streamTo(document.getElementById("chart"), 500);
       sensor_applet.startCollecting();
     }
     function stopSensor() {
       sensor_applet.stopCollecting();
+      chart.stop();
     }
     function clearData() {
       sensor_applet.stopCollecting();
       list.innerHTML = "";
+      temperature = new TimeSeries();
+      createTimeline();
+      chart.render(document.getElementById("chart"), 500);
     }
-      
+    
+    
       // // Randomly add a data point every 500ms
       // var random = new TimeSeries();
       // setInterval(function() {
@@ -52,7 +58,7 @@
       // }, 500);
       
       function createTimeline() {
-        var chart = new SmoothieChart({
+        chart = new SmoothieChart({
           grid: { strokeStyle:'rgb(100, 100, 100)', fillStyle:'rgb(10, 10, 10)',
                   lineWidth: 1, millisPerLine: 1000, verticalSections: 8 },
           labels: { fillStyle:'rgb(60, 0, 0)' }
@@ -62,8 +68,13 @@
           fillStyle: 'rgba(0, 255, 0, 0.2)', 
           lineWidth: 4 
         });
-        chart.streamTo(document.getElementById("chart"), 500);
+        chart.render(document.getElementById("chart"), 500);
         // chart.display(document.getElementById("chart"));
+      }
+      
+      function initPage() {
+        temperature = new TimeSeries();
+        createTimeline();
       }
     </script>
   </head>
@@ -110,6 +121,7 @@
       <script type="text/javascript">
           var list = document.getElementById('data-list');
           var sensor_applet = document.getElementById('sensor');
+          var chart;
       </script>
     </div>
   </body>

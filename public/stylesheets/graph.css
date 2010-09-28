@@ -25,6 +25,10 @@ display: block;
 height: 1%;
 }
 
+#chart {
+border: solid 1px #333;
+}
+
 a.not_working {
 text-decoration: line-through;
 }
@@ -274,13 +278,13 @@ display: none;
 /* PAGE CONTENT */
 
 .page-content {
-    width: 900px;
-    margin: 30px;
+    width: 880px;
+    margin: 20px;
     word-wrap: break-word;
 }
 
 .page-content .page-title {
-    margin-top: 40px;
+    margin-top: 25px;
     margin-left: 20px;
     margin-bottom: 15px;
     padding: 10px;

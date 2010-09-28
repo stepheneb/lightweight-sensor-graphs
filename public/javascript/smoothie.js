@@ -35,17 +35,17 @@ function TimeSeries() {
   /**
    * The maximum value ever seen in this time series.
    */
-  this.max = Number.NaN;
+  this.max = 35;
   /**
    * The minimum value ever seen in this time series.
    */
-  this.min = Number.NaN;
+  this.min = 15;
 }
 
 TimeSeries.prototype.append = function(timestamp, value) {
   this.data.push([timestamp, value]);
-  this.maxValue = !isNaN(this.maxValue) ? Math.max(this.maxValue, value) : value;
-  this.minValue = !isNaN(this.minValue) ? Math.min(this.minValue, value) : value;
+  this.maxValue = Math.max(this.maxValue, value);
+  this.minValue = Math.min(this.minValue, value);
 };
 
 function SmoothieChart(options) {
@@ -57,6 +57,7 @@ function SmoothieChart(options) {
   options.labels = options.labels || { fillStyle:'#ffffff' }
   this.options = options;
   this.seriesSet = [];
+  this.timeout = null;
 }
 
 SmoothieChart.prototype.addTimeSeries = function(timeSeries, options) {
@@ -71,6 +72,18 @@ SmoothieChart.prototype.addTimeSeries = function(timeSeries, options) {
 // };
 
 SmoothieChart.prototype.streamTo = function(canvas, delay) {
+  var self = this;
+  (function render() {
+    self.render(canvas, new Date().getTime() - (delay || 0));
+    self.timeout = setTimeout(render, 1000/self.options.fps);
+  })()
+};
+
+SmoothieChart.prototype.stop = function() {
+  clearTimeout(this.timeout);
+};
+
+SmoothieChart.prototype.stream = function(canvas, delay) {
   var self = this;
   (function render() {
     self.render(canvas, new Date().getTime() - (delay || 0));
@@ -138,8 +151,8 @@ SmoothieChart.prototype.render = function(canvas, time) {
   canvasContext.restore();
 
   // Calculate the current scale of the chart, from all time series.
-  var maxValue = Number.NaN;
-  var minValue = Number.NaN;
+  var maxValue = 35;
+  var minValue = 15;
 
   for (var d = 0; d < this.seriesSet.length; d++) {
       // TODO(ndunn): We could calculate / track these values as they stream in.
