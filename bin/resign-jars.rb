@@ -5,10 +5,13 @@ require 'yaml'
 library_manifest_path = File.expand_path('../manifest-library', __FILE__)
 jar_manifest_path = File.expand_path('../manifest-jar', __FILE__)
 
+regex = ARGV[0]
+
 begin
   config = YAML.load_file(File.expand_path('../sign.yml',  __FILE__))
   public_dir = File.expand_path('../../public',  __FILE__)
   jars = Dir["#{public_dir}/**/*.jar"]
+  jars = jars.grep(/#{regex}/) if regex
   puts "processing #{jars.length} jars ..."
   jars.each do |jar_path|
     path = File.dirname(jar_path)
