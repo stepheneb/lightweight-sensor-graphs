@@ -44,8 +44,12 @@ function TimeSeries() {
 
 TimeSeries.prototype.append = function(timestamp, value) {
   this.data.push([timestamp, value]);
-  this.maxValue = Math.max(this.maxValue, value);
-  this.minValue = Math.min(this.minValue, value);
+  if (value > this.Max) {
+    this.max = value;
+  }
+  if (value < this.min) {
+    this.min = value;
+  }
 };
 
 function SmoothieChart(options) {
@@ -135,34 +139,20 @@ SmoothieChart.prototype.render = function(canvas, time) {
     }
   }
 
-  // Horizontal (value) dividers.
-  for (var v = 1; v < options.grid.verticalSections; v++) {
-    var gy = Math.round(v * dimensions.height / options.grid.verticalSections);
-    canvasContext.beginPath();
-    canvasContext.moveTo(0, gy);
-    canvasContext.lineTo(dimensions.width, gy);
-    canvasContext.stroke();
-    canvasContext.closePath();
-  }
-  // Bounding rectangle.
-  canvasContext.beginPath();
-  canvasContext.strokeRect(0, 0, dimensions.width, dimensions.height);
-  canvasContext.closePath();
-  canvasContext.restore();
-
+  var maxValue;
+  var minValue;
+  
   // Calculate the current scale of the chart, from all time series.
-  var maxValue = 35;
-  var minValue = 15;
 
   for (var d = 0; d < this.seriesSet.length; d++) {
       // TODO(ndunn): We could calculate / track these values as they stream in.
       var timeSeries = this.seriesSet[d].timeSeries;
-      if (!isNaN(timeSeries.maxValue)) {
-          maxValue = !isNaN(maxValue) ? Math.max(maxValue, timeSeries.maxValue) : timeSeries.maxValue;
+      if (!isNaN(timeSeries.max)) {
+          maxValue = !isNaN(maxValue) ? Math.max(maxValue, timeSeries.max) : timeSeries.max;
       }
 
-      if (!isNaN(timeSeries.minValue)) {
-          minValue = !isNaN(minValue) ? Math.min(minValue, timeSeries.minValue) : timeSeries.minValue;
+      if (!isNaN(timeSeries.min)) {
+          minValue = !isNaN(minValue) ? Math.min(minValue, timeSeries.min) : timeSeries.min;
       }
   }
 
@@ -171,7 +161,45 @@ SmoothieChart.prototype.render = function(canvas, time) {
   }
 
   var valueRange = maxValue - minValue;
-  
+
+  // Horizontal (value) dividers.
+  // for (var v = 1; v < options.grid.verticalSections; v++) {
+  //   var gy = Math.round(v * dimensions.height / options.grid.verticalSections);
+  //   canvasContext.beginPath();
+  //   canvasContext.moveTo(0, gy);
+  //   canvasContext.lineTo(dimensions.width, gy);
+  //   canvasContext.stroke();
+  //   canvasContext.closePath();
+  // }
+
+
+  // Horizontal (value) dividers.
+  var minValue2 = minValue*2;
+  var maxValue2 = (maxValue-1)*2;
+  var yGrids = [];
+  for (var i = minValue2; i < maxValue2; i = i + 10) { yGrids.push(Math.ceil((i+5)/10)/2*10-minValue) }
+  var yGridsLength = yGrids.length;
+  var yScaleFactor = dimensions.height / valueRange;
+
+  var ygrid;
+
+  for (i = 0; i < yGridsLength; i++) {
+     gy = yGrids[i] * yScaleFactor;
+     canvasContext.beginPath();
+     canvasContext.moveTo(0, gy);
+     canvasContext.lineTo(dimensions.width, gy);
+     canvasContext.stroke();
+     canvasContext.closePath();    
+  }
+
+
+
+  // Bounding rectangle.
+  canvasContext.beginPath();
+  canvasContext.strokeRect(0, 0, dimensions.width, dimensions.height);
+  canvasContext.closePath();
+  canvasContext.restore();
+
   // For each data set...
   for (var d = 0; d < this.seriesSet.length; d++) {
     canvasContext.save();
@@ -244,9 +272,10 @@ SmoothieChart.prototype.render = function(canvas, time) {
   // Draw the axis values on the chart.
   if (!options.labels.disabled) {
       canvasContext.fillStyle = options.labels.fillStyle;
+      canvasContext.font = "12pt Arial";
       var maxValueString = maxValue.toFixed(2);
       var minValueString = minValue.toFixed(2);
-      canvasContext.fillText(maxValueString, dimensions.width - canvasContext.measureText(maxValueString).width - 2, 10);
+      canvasContext.fillText(maxValueString, dimensions.width - canvasContext.measureText(maxValueString).width - 2, 15);
       canvasContext.fillText(minValueString, dimensions.width - canvasContext.measureText(minValueString).width - 2, dimensions.height - 2);
   }
 
