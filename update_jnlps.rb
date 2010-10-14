@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'rubygems'
 
 gem 'jnlp', '>= 0.6.2'
