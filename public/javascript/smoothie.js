@@ -87,14 +87,6 @@ SmoothieChart.prototype.stop = function() {
   clearTimeout(this.timeout);
 };
 
-SmoothieChart.prototype.stream = function(canvas, delay) {
-  var self = this;
-  (function render() {
-    self.render(canvas, new Date().getTime() - (delay || 0));
-    setTimeout(render, 1000/self.options.fps);
-  })()
-};
-
 SmoothieChart.prototype.render = function(canvas, time) {
   var canvasContext = canvas.getContext("2d");
   var options = this.options;
@@ -191,8 +183,6 @@ SmoothieChart.prototype.render = function(canvas, time) {
      canvasContext.stroke();
      canvasContext.closePath();    
   }
-
-
 
   // Bounding rectangle.
   canvasContext.beginPath();
