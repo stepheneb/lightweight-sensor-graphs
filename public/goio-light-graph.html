@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Vernier GoIO Lightweight Light Grapher</title>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="javascript/excanvas.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="stylesheets/graph.css" type="text/css" />
+    <script type="text/javascript" src="javascript/smoothie.js"></script>
+    
+    <script type="text/javascript">
+
+      var list;
+      var light = new TimeSeries({ min:0, max:10000 });
+
+      var jsListener = {
+        dataReceived: function(type,count,data) {
+          // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          if (type === 1000) {
+            light.append(new Date().getTime(), data[0]);
+            list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          };
+        },
+        dataStreamEvent: function(type,count,data) {
+          // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          if (type === 1000) {
+            light.append(new Date().getTime(), data[0]);
+          };
+        },
+        sensorsReady: function() {
+          // list.innerHTML += "<li>sensors ready .../li>";
+        }
+      };
+    
+      var sensorState = "ready";
+    
+      function sensorsReady() {
+        // list.innerHTML += "<li>sensors ready .../li>";
+      }
+
+      function startSensor() {
+        chart.streamTo(document.getElementById("chart"), 500);
+        sensor_applet.startCollecting();
+      }
+
+      function stopSensor() {
+        sensor_applet.stopCollecting();
+        chart.stop();
+      }
+
+      function clearData() {
+        sensor_applet.stopCollecting();
+        list.innerHTML = "";
+        light = new TimeSeries({ min:0, max:10000 });
+        createTimeline();
+        chart.render(document.getElementById("chart"), 500);
+      }
+    
+      function createTimeline() {
+        chart = new SmoothieChart({
+          grid: { strokeStyle:'rgb(100, 100, 100)', fillStyle:'rgb(10, 10, 10)',
+                  lineWidth: 1, millisPerLine: 1000, verticalSections: 8 },
+          labels: { fillStyle:'rgb(255, 255, 255)' }
+        });
+        chart.addTimeSeries(light, { 
+          strokeStyle: 'rgba(0, 255, 0, 1)', 
+          fillStyle: 'rgba(0, 255, 0, 0.2)', 
+          lineWidth: 4
+        });
+        chart.render(document.getElementById("chart"), 500);
+      }
+      
+      function initPage() {
+        light = new TimeSeries({ min:0, max:10000 });
+        createTimeline();
+      }
+    </script>
+  </head>
+  <body onload="createTimeline()" style="background-color:#FFF">
+    <div id="main" class="page-content">
+      <h3 class="page-title namespace">Vernier GoIO Lightweight Light Grapher</h3>
+      <div class="two-column-left clearfix">
+        <canvas id="chart" width="540" height="300"></canvas>
+        <applet id="sensor", codebase="/jnlp", code="org.concord.sensor.applet.OTSensorApplet" 
+          width="1" height="1" MAYSCRIPT="true"
+          archive="org/concord/sensor-native/sensor-native.jar,
+                   org/concord/otrunk/otrunk.jar,
+                   org/concord/framework/framework.jar,
+                   org/concord/frameworkview/frameworkview.jar,
+                   jug/jug/jug.jar,
+                   jdom/jdom/jdom.jar,
+                   org/concord/sensor/sensor.jar,
+                   org/concord/data/data.jar,
+                   org/concord/sensor/sensor-applets/sensor-applets.jar"
+          MAYSCRIPT="true">
+          <param name="resource" value="/light.otml"/>
+          <param name="name" value="sensor"/>
+          <param name="listenerPath" value="jsListener"/>
+          <!-- <param name="sensorStatePath" value="sensorState"/> -->
+          <param name="MAYSCRIPT" value="true"/>
+            Your browser is completely ignoring the applet tag!
+        </applet>
+        <div>
+          <ul class="sensorbuttons">
+            <li><a href="javascript:startSensor();" class="sensor_button">Start</a></li>
+            <li><a href="javascript:stopSensor()">Stop</a></li>
+            <li><a href="javascript:clearData();">Clear</a></li>
+          </ul>
+        </div>
+        <div style="display:none">
+          <ul id='data-list' class="datalist"/>
+        </div>
+      </div>
+      <div class="two-column-right clearfix">
+        <p>A lightweight JavaScript grapher rendering into an HTML5 Canvas element. The data are collected from a <a href="http://www.vernier.com/go/golink.html">Vernier GoIO</a> light probe using an invisible Java applet.</p>
+        <p>The source code for this demo can be found on <a href="http://github.com/stepheneb/lightweight-sensor-graphs">github</a>.</p>
+      </div>
+      <div class="clearfix"></div>
+      <script type="text/javascript">
+          var list = document.getElementById('data-list');
+          var sensor_applet = document.getElementById('sensor');
+          var chart;
+      </script>
+    </div>
+  </body>
+</html>
