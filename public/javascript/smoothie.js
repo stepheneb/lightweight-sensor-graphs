@@ -157,6 +157,9 @@ SmoothieChart.prototype.render = function(canvas, time) {
   }
 
   var valueRange = maxValue - minValue;
+  var valueGridIncrement = Math.pow(10, (Math.round(Math.log(valueRange)/(1/Math.LOG10E))-1))*2;
+  var valueGridIncrement2 = valueGridIncrement/2;
+  
 
   // Horizontal (value) dividers.
   // for (var v = 1; v < options.grid.verticalSections; v++) {
@@ -173,7 +176,7 @@ SmoothieChart.prototype.render = function(canvas, time) {
   var minValue2 = minValue*2;
   var maxValue2 = (maxValue-1)*2;
   var yGrids = [];
-  for (var i = minValue2; i < maxValue2; i = i + 10) { yGrids.push(Math.ceil((i+5)/10)/2*10-minValue) }
+  for (var i = minValue2; i < maxValue2; i = i + valueGridIncrement) { yGrids.push(Math.ceil((i+valueGridIncrement2)/valueGridIncrement)/2*valueGridIncrement-minValue) }
   var yGridsLength = yGrids.length;
   var yScaleFactor = dimensions.height / valueRange;
 
