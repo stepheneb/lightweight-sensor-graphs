@@ -30,16 +30,20 @@
  * v1.3: Fix for divide by zero, by Paul Nikitochkin
  */
 
-function TimeSeries() {
+function TimeSeries(options) {
+  options = options || {};
+  options.min = options.min || 0;
+  options.max = options.max || 40
+  this.options = options
   this.data = [];
   /**
    * The maximum value ever seen in this time series.
    */
-  this.max = 35;
+  this.max = this.options.max;
   /**
    * The minimum value ever seen in this time series.
    */
-  this.min = 15;
+  this.min = this.options.min;
 }
 
 TimeSeries.prototype.append = function(timestamp, value) {

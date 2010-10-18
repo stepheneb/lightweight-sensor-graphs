@@ -10,56 +10,49 @@
     
     <script type="text/javascript">
 
-    var list;
-    var temperature = new TimeSeries();
+      var list;
+      var temperature = new TimeSeries({ min:15, max:35 });
 
-    var jsListener = {
-      dataReceived: function(type,count,data) {
-        // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
-        if (type === 1000) {
-          temperature.append(new Date().getTime(), data[0]);
-          list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
-        };
-      },
-      dataStreamEvent: function(type,count,data) {
-        // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
-        if (type === 1000) {
-          temperature.append(new Date().getTime(), data[0]);
-        };
-      },
-      sensorsReady: function() {
+      var jsListener = {
+        dataReceived: function(type,count,data) {
+          // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          if (type === 1000) {
+            temperature.append(new Date().getTime(), data[0]);
+            list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          };
+        },
+        dataStreamEvent: function(type,count,data) {
+          // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          if (type === 1000) {
+            temperature.append(new Date().getTime(), data[0]);
+          };
+        },
+        sensorsReady: function() {
+          // list.innerHTML += "<li>sensors ready .../li>";
+        }
+      };
+    
+      var sensorState = "ready";
+    
+      function sensorsReady() {
         // list.innerHTML += "<li>sensors ready .../li>";
       }
-    };
-    
-    var sensorState = "ready";
-    
-    function sensorsReady() {
-      // list.innerHTML += "<li>sensors ready .../li>";
-    }
-    function startSensor() {
-      chart.streamTo(document.getElementById("chart"), 500);
-      sensor_applet.startCollecting();
-    }
-    function stopSensor() {
-      sensor_applet.stopCollecting();
-      chart.stop();
-    }
-    function clearData() {
-      sensor_applet.stopCollecting();
-      list.innerHTML = "";
-      temperature = new TimeSeries();
-      createTimeline();
-      chart.render(document.getElementById("chart"), 500);
-    }
-    
-    
-      // // Randomly add a data point every 500ms
-      // var random = new TimeSeries();
-      // setInterval(function() {
-      //   random.append(new Date().getTime(), Math.random() * 10000);
-      // }, 500);
-      
+      function startSensor() {
+        chart.streamTo(document.getElementById("chart"), 500);
+        sensor_applet.startCollecting();
+      }
+      function stopSensor() {
+        sensor_applet.stopCollecting();
+        chart.stop();
+      }
+      function clearData() {
+        sensor_applet.stopCollecting();
+        list.innerHTML = "";
+        temperature = new TimeSeries({ min:15, max:35 });
+        createTimeline();
+        chart.render(document.getElementById("chart"), 500);
+      }
+
       function createTimeline() {
         chart = new SmoothieChart({
           grid: { strokeStyle:'rgb(100, 100, 100)', fillStyle:'rgb(10, 10, 10)',
@@ -76,7 +69,7 @@
       }
       
       function initPage() {
-        temperature = new TimeSeries();
+        temperature = new TimeSeries({ min:15, max:35 });
         createTimeline();
       }
     </script>
