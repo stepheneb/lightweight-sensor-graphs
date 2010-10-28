@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Energy2D Grapher</title>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="javascript/excanvas.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="stylesheets/graph.css" type="text/css" />
+    <script type="text/javascript" src="javascript/smoothie.js"></script>
+    
+    <script type="text/javascript">
+
+      var list;
+      var temperature = new TimeSeries({ min:10, max:50 });
+
+      var jsListener = {
+        dataReceived: function(type,count,data) {
+          // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          if (type === 1000) {
+            temperature.append(new Date().getTime(), data[0]);
+            list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          };
+        },
+        dataStreamEvent: function(type,count,data) {
+          // list.innerHTML += "<li>" + type + ", " + count + ", " + data + "</li>";
+          if (type === 1000) {
+            temperature.append(new Date().getTime(), data[0]);
+          };
+        },
+        sensorsReady: function() {
+          // list.innerHTML += "<li>sensors ready .../li>";
+        }
+      };
+  
+      var sensorState = "ready";
+      
+      var applet;
+
+      function getApplet(id) {
+        applet = document.getElementById(id);
+      }
+
+      function jsReset(id) {
+        getApplet(id);
+        applet.reset();
+      }
+
+      function run(id) {
+        getApplet(id);
+        applet.run();
+      }  
+
+      function stop(id) {
+        getApplet(id);
+        applet.stop();
+      }
+
+      function runScript(id, script) {
+          getApplet(id);
+          if (script.type === "textarea") {
+            script = script.value
+          }
+          applet.runNativeScript(new String(script));
+      }
+      
+      function getDefaultScript(id) {
+          getApplet(id);
+          return new String(applet.children['script'].value);
+      }
+
+      var sensorState = "ready";
+    
+      function sensorsReady() {
+        // list.innerHTML += "<li>sensors ready .../li>";
+      }
+
+      function startSensor() {
+        chart.streamTo(document.getElementById("chart"), 500);
+        sensor_applet.startCollecting();
+      }
+
+      function stopSensor() {
+        sensor_applet.stopCollecting();
+        chart.stop();
+      }
+
+      function clearData() {
+        sensor_applet.stopCollecting();
+        list.innerHTML = "";
+        temperature = new TimeSeries({ min:10, max:50 });
+        createTimeline();
+        chart.render(document.getElementById("chart"), 500);
+      }
+    
+      function createTimeline() {
+        chart = new SmoothieChart({
+          grid: { strokeStyle:'rgb(100, 100, 100)', fillStyle:'rgb(10, 10, 10)',
+                  lineWidth: 1, millisPerLine: 1000, verticalSections: 8 },
+          labels: { fillStyle:'rgb(255, 255, 255)' }
+        });
+        chart.addTimeSeries(temperature, { 
+          strokeStyle: 'rgba(0, 255, 0, 1)', 
+          fillStyle: 'rgba(0, 255, 0, 0.2)', 
+          lineWidth: 4
+        });
+        chart.render(document.getElementById("chart"), 500);
+      }
+      
+      function initPage() {
+        // temperature = new TimeSeries({ min:10, max:50 });
+        // createTimeline();
+        document.getElementById('script').defaultValue = getDefaultScript('demo1');
+      }
+    </script>
+  </head>
+  <body onload="initPage()" style="background-color:#FFF">
+    <div id="main" class="page-content">
+      <h3 class="page-title namespace">Energy2D Grapher</h3>
+      <div class="two-column-left clearfix">
+        
+        <div>
+          <ul class="sensorbuttons">
+            <li><a href="javascript:run('demo1');"     class="sensor_button">Start</a></li>
+            <li><a href="javascript:stop('demo1')"     class="sensor_button">Stop</a></li>
+            <li><a href="javascript:jsReset('demo1');" class="sensor_button">Reset</a></li>
+          </ul>
+        </div>
+        <applet id="demo1" codebase="/jnlp" code="org.concord.energy2d.system.System2D" 
+          width="400" height="300"
+          archive="org/concord/energy2d/energy2d.jar"
+          MAYSCRIPT="true">
+          
+        <param 
+          name="script" 
+          value="set timestep 100; 
+set convective false;
+set ray_speed 0.001;
+set emission_interval 5;
+set sunny true;
+set sun_angle 150;
+set solar_power 20000;
+set isotherm true;
+set ruler true;
+set background_conductivity .1;
+
+part rectangle(2, 6, 0.5, 6);
+set part[0].conductivity 0.001;
+
+part rectangle(-0.1, 2, 10.2, 2);
+set part[1].conductivity 0.001;
+set part[1].color #333333;
+
+part rectangle(8.5, 6, 0.5, 4);
+set part[2].conductivity 0.001;
+
+part rectangle(2.5, 6, 6, 0.2);
+set part[3].conductivity 0.001;
+set part[3].color #ffffff;
+set part[3].transmission 1;
+set part[3].absorption 0;
+
+thermometer (5, 4);
+thermometer (9.5, 4);
+
+boundary temperature(0, 0, 0, 0);"/> 
+        </applet>
+        
+        <div style="display:none">
+          <canvas id="chart" width="540" height="300"></canvas>
+        </div>
+        <div style="display:none">
+          <ul id='data-list' class="datalist"></ul>
+        </div>
+        <div>
+          <ul class="sensorbuttons">
+            <li><a href="javascript:runScript('demo1', document.getElementById('script'));" class="sensor_button">Run Script</a></li>
+            <li><a href="javascript:document.getElementById('script').defaultValue = getDefaultScript('demo1');" class="sensor_button">Restore Default</a></li>
+          </ul>
+          <textarea id='script' name="script" cols=80 rows=12></textarea>
+        </div>
+      </div>
+      <div class="two-column-right clearfix">
+        <p>A lightweight JavaScript grapher rendering into an HTML5 Canvas element.</p>
+        <p>The source code for this demo can be found on <a href="http://github.com/stepheneb/lightweight-sensor-graphs">github</a>.</p>
+      </div>
+      <div class="clearfix"></div>
+      <script type="text/javascript">
+          var list = document.getElementById('data-list');
+          // var sensor_applet = document.getElementById('sensor');
+          var chart;
+      </script>
+    </div>
+  </body>
+</html>
