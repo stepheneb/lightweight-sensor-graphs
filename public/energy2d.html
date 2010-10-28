@@ -178,7 +178,7 @@ boundary temperature(0, 0, 0, 0);"/>
             <li><a href="javascript:runScript('demo1', document.getElementById('script'));" class="sensor_button">Load Script</a></li>
             <li><a href="javascript:document.getElementById('script').defaultValue = getDefaultScript('demo1');" class="sensor_button">Restore Default</a></li>
           </ul>
-          <textarea id='script' name="script" cols=80 rows=16></textarea>
+          <textarea id='script' name="script" cols=70 rows=16></textarea>
         </div>
       </div>
       <div class="two-column-right clearfix">
@@ -186,6 +186,242 @@ boundary temperature(0, 0, 0, 0);"/>
         <br />
         <p>A demonstration of a very simple web-based authoring interface for the <a href="http://energy.concord.org/energy2d.html">Energy2d</a> applet.</p>
         <p>The source code for this demo can be found <a href="http://github.com/stepheneb/lightweight-sensor-graphs">here on github</a> while the code for the Energy2D applet itself is located in Concord Consortium's <a href="http://svn.concord.org/svn/projects/trunk/common/java/simulations/Energy2D">Subversion repository</a>.</p>
+        <br/>
+        <h5>Preliminary Energy2D scripting documentation</h5>
+        <p>
+          <dl>
+            <dt>start the model:</dt>
+            <dd>run;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>stop the model:</dt>
+            <dd>stop;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>clear the model:</dt>
+            <dd>remove all;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>reset to initial conditions:</dt>
+            <dd>reset;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>pause the model n seconds;</dt>
+            <dd>delay <seconds>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>initialize the model</dt>
+            <dd>init;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>run the model n steps</dt>
+            <dd>runsteps <n>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>comments in the script:</dt>
+            <dd>//</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>add resources:</dt>
+            <dd>add text (<xpos>, <ypos>) <text>;</dd>
+            <dd>add image (<xpos>, <ypos>) <path_to_image_in_jar>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>thermometer</dt>
+            <dd>thermometer (<xpos>, <ypos>);</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>boundary conditions:</dt>
+            <dd>boundary &lt;boundary_type> (&lt;top_value>, &lt;right_value>, &lt;bottom_value>, &lt;left_value>)</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>boundary_types</dt>
+            <dd>temperature</dd>
+            <dd>flux</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>part creation<br/>
+              <i>parts can be referred to later with a numeric index matching 
+              the sequence position of the order in which they were created</i>
+            </dt>
+            <dd>part rectangle (&lt;xpos>, &lt;ypos>, &lt;width>, &lt;height>);</dd>
+            <dd>part ellipse (&lt;xpos>, &lt;ypos>, &lt;a>, &lt;b>);</dd>
+            <dd>part ring (&lt;xcenter>, &lt;ycenter>, &lt;inner>, &lt;outer>);</dd>
+            <dd>part polygon (&lt;xpos>, &lt;ypos> [,&lt;xpos>, &lt;ypos>, ...]);</dd>
+          </dl>
+          
+        </p>
+
+
+        <p>
+          <dl>
+            <dt>set part attributes (general):</dt>
+            <dd>set part[n] &lt;attribute> &lt;value>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>part attribute types:</dt>
+            <dd>conductivity</dd>
+            <dd>thermal_conductivity</dd>
+            <dd>capacity</dd>
+            <dd>specific_heat</dd>
+            <dd>density</dd>
+            <dd>power</dd>
+            <dd>wind_speed</dd>
+            <dd>wind_angle</dd>
+            <dd>temperature</dd>
+            <dd>color</dd>
+            <dd>filled</dd>
+            <dd>draggable</dd>
+            <dd>transmission</dd>
+            <dd>absorption</dd>
+            <dd>reflection</dd>
+            <dd>emissivity</dd>
+            <dd>constant_temperature</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>set part attributes (position and size):</dt>
+            <dd>set part[n].&lt;shape_attribute> &lt;value>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>shape attributes for rectangle and ellipse parts</dt>
+            <dd>x</dd>
+            <dd>y</dd>
+            <dd>width</dd>
+            <dd>height</dd>
+          </dl>
+          
+        </p>
+
+        <p>
+          <dl>
+            <dt>set image attributes:</dt>
+            <dd>???</dd>
+          </dl>
+        </p>
+
+
+        <p>
+          <dl>
+            <dt>set text attributes:</dt>
+            <dd>???</dd>
+          </dl>
+        </p>
+
+
+        <p>
+          <dl>
+            <dt>set global model attributes:</dt>
+            <dd>set &lt;global_attribute> &lt;value>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>global model attributes</dt>
+            <dd>background_capacity</dd>
+            <dd>background_conductivity</dd>
+            <dd>background_density</dd>
+            <dd>background_specific_heat</dd>
+            <dd>background_temperature</dd>
+            <dd>background_viscosity</dd>
+            <dd>bgcolor</dd>
+            <dd>buoyancy_approximation</dd>
+            <dd>clock</dd>
+            <dd>convective</dd>
+            <dd>emission_interval</dd>
+            <dd>graph</dd>
+            <dd>graph_xlabel</dd>
+            <dd>graph_ylabel</dd>
+            <dd>grid</dd>
+            <dd>height</dd>
+            <dd>isotherm</dd>
+            <dd>isotherm_resolution</dd>
+            <dd>maximum_temperature</dd>
+            <dd>measurement_interval</dd>
+            <dd>minimum_temperature</dd>
+            <dd>outline</dd>
+            <dd>rainbow</dd>
+            <dd>rainbow_rectangle</dd>
+            <dd>ray_count</dd>
+            <dd>ray_speed</dd>
+            <dd>ruler</dd>
+            <dd>solar_power</dd>
+            <dd>streamline</dd>
+            <dd>streamline_resolution</dd>
+            <dd>sunny</dd>
+            <dd>sun_angle</dd>
+            <dd>thermal_buoyancy</dd>
+            <dd>timestep</dd>
+            <dd>velocity</dd>
+            <dd>viewupdate</dd>
+            <dd>viscosity</dd>
+            <dd>width</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>set action_mode types:</dt>
+            <dd>set action <action_mode>;</dd>
+          </dl>
+        </p>
+
+        <p>
+          <dl>
+            <dt>action modes</dt>
+            <dd>selection</dd>
+            <dd>rectangle</dd>
+            <dd>ellipse</dd>
+            <dd>polygon</dd>
+            <dd>thermometer</dd>
+          </dl>
+        </p>
+
       </div>
       <div class="clearfix"></div>
       <script type="text/javascript">
