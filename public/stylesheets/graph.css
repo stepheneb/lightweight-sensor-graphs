@@ -238,9 +238,8 @@ background: url(../images/icon-rails.png) no-repeat;
 
 
 .banner {
-height: 152px;
+height: 24px;
 padding: 1px 0;
-background: url(../images/header-stripe.png) repeat-x;
 }
 
 .banner-content {
@@ -532,4 +531,8 @@ color: #aaa;
 text-decoration: none;
 border: 0;
 font-size: 14px;
+}
+
+textarea {
+padding: 5px 0px 5px 5px;
 }

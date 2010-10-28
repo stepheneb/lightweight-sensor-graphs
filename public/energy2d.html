@@ -115,7 +115,7 @@
   </head>
   <body onload="initPage()" style="background-color:#FFF">
     <div id="main" class="page-content">
-      <h3 class="page-title namespace">Energy2D Grapher</h3>
+      <h3 class="page-title namespace banner">Energy2D Grapher</h3>
       <div class="two-column-left clearfix">
         
         <div>
@@ -171,17 +171,21 @@ boundary temperature(0, 0, 0, 0);"/>
         <div style="display:none">
           <ul id='data-list' class="datalist"></ul>
         </div>
+        <br />
+        <br />
         <div>
           <ul class="sensorbuttons">
-            <li><a href="javascript:runScript('demo1', document.getElementById('script'));" class="sensor_button">Run Script</a></li>
+            <li><a href="javascript:runScript('demo1', document.getElementById('script'));" class="sensor_button">Load Script</a></li>
             <li><a href="javascript:document.getElementById('script').defaultValue = getDefaultScript('demo1');" class="sensor_button">Restore Default</a></li>
           </ul>
-          <textarea id='script' name="script" cols=80 rows=12></textarea>
+          <textarea id='script' name="script" cols=80 rows=16></textarea>
         </div>
       </div>
       <div class="two-column-right clearfix">
-        <p>A lightweight JavaScript grapher rendering into an HTML5 Canvas element.</p>
-        <p>The source code for this demo can be found on <a href="http://github.com/stepheneb/lightweight-sensor-graphs">github</a>.</p>
+        <br />
+        <br />
+        <p>A demonstration of a very simple web-based authoring interface for the <a href="http://energy.concord.org/energy2d.html">Energy2d</a> applet.</p>
+        <p>The source code for this demo can be found <a href="http://github.com/stepheneb/lightweight-sensor-graphs">here on github</a> while the code for the Energy2D applet itself is located in Concord Consortium's <a href="http://svn.concord.org/svn/projects/trunk/common/java/simulations/Energy2D">Subversion repository</a>.</p>
       </div>
       <div class="clearfix"></div>
       <script type="text/javascript">
