@@ -277,8 +277,8 @@ display: none;
 /* PAGE CONTENT */
 
 .page-content {
-    width: 1000px;
-    margin: 20px;
+    width: 1024px;
+    margin: 10px;
     word-wrap: break-word;
 }
 
@@ -377,7 +377,7 @@ margin: 0 0 1em;
 }
 
 .page-content .two-column-left  {
-    width: 440px;
+    width: 500;
     float: left;
 }
 
@@ -385,7 +385,7 @@ margin: 0 0 1em;
     margin-left: 10px;
     margin-right: 10px;
     float: right;
-    width: 500px;
+    width: 460px;
 }
 
 .page-content .two-column .section {
@@ -535,8 +535,9 @@ font-size: 14px;
 
 textarea {
 padding: 5px 0px 5px 5px;
-font-size: 70%;
+font-size: 75%;
 font-family: "Andale Mono", "Courier New", Courier, Arial, Helvetica, monospace;
+width:98%;
 }
 
 dl {
@@ -551,7 +552,7 @@ font-family: "Andale Mono", "Courier New", Courier, Arial, Helvetica, monospace;
 }
 
 ul.code-list li {
-font-size: 80%;
+font-size: 75%;
 margin-top: 2px;
 margin-bottom: 2px;
 margin-left: 10px;

@@ -126,7 +126,7 @@
           </ul>
         </div>
         <applet id="demo1" codebase="/jnlp" code="org.concord.energy2d.system.System2D" 
-          width="400" height="300"
+          width="500" height="300"
           archive="org/concord/energy2d/energy2d.jar"
           MAYSCRIPT="true">
           
@@ -178,7 +178,7 @@ boundary temperature(0, 0, 0, 0);"/>
             <li><a href="javascript:runScript('demo1', document.getElementById('script'));" class="sensor_button">Load Script</a></li>
             <li><a href="javascript:document.getElementById('script').defaultValue = getDefaultScript('demo1');" class="sensor_button">Restore Default</a></li>
           </ul>
-          <textarea id='script' name="script" cols=70 rows=24></textarea>
+          <textarea id='script' name="script" style="width: -moz-available" rows=24></textarea>
         </div>
       </div>
       <div class="two-column-right clearfix">
