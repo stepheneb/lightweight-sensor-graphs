@@ -1,4 +1,4 @@
-Vernier GoIO Lightweight Temperature Grapher
+Vernier GoIO Lightweight Grapher
 ============================================
 
 Prerequisites
@@ -113,7 +113,7 @@ To resign and recreate new pack.gz copies of the jar and native library resource
 
 To resign and recreate new pack.gz archives for a subset of jars or native library resource add an argument consisting of a regex.
 
-For example this will resign and poack all the jars with 'sensor' in their name:
+For example this will resign and pack all the jars with 'sensor' in their name:
 
     bin/resign_jars.rb sensor
 
@@ -130,7 +130,7 @@ Then edit lines 19-20 in update_jnlps.rb to specify the url to the maven_jnlp se
     19 maven_jnlps_url = "http://jnlp.concord.org/dev/org/concord/maven-jnlp"
     20 families = %w{all-otrunk-snapshot}
     
-In addition if you are downloading a jnlpwith manmy jars this script will run much faster in JRuby. If you have installed rvm you can install and use Jruby for running this script as follows:
+In addition if you are downloading a jnlp with many jars this script will run much faster in JRuby. If you have installed rvm you can install and use Jruby for running this script as follows:
 
     rvm install jruby
     rvm use jruby
