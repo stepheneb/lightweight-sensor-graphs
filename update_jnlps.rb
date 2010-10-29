@@ -17,7 +17,7 @@ JNLP_DIR = PUBLIC_DIR + JNLP_PATH
 JNLP_CODEBASE = SERVER + JNLP_PATH
 
 maven_jnlps_url = "http://jnlp.concord.org/dev/org/concord/maven-jnlp"
-families = %w{sensor-applets}
+families = %w{all-otrunk-snapshot}
 
 jnlps = []
 new_hrefs = []
