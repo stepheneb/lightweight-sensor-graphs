@@ -117,7 +117,7 @@ For example this will resign and poack all the jars with 'sensor' in their name:
 
     bin/resign_jars.rb sensor
 
-Re-signing and generating pack-gzip versions of the jars.
+Loading jnlps and the jars they reference from a remote maven-jnlp server.
 ------------
 The Ruby script: update_jnlps.rb can be used if you would like to add additional collections of jars that are referenced from a jnlp served from a maven-jnlp server.
 
