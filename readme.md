@@ -46,6 +46,44 @@ File: bin/deploy_sample.yml
     :dir: /path/on/server
     :host: server.com
 
+Apache and Passenger configuration for remote server
+------------
+See the install and serving rack application sections in the [Phusion Passenger users guide](http://www.modrails.com/documentation/Users%20guide%20Apache.html).
+
+Apache http.conf Passenger configuration example:
+
+    LoadModule passenger_module /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.15/ext/apache2/mod_passenger.so
+    PassengerRoot /usr/local/lib/ruby/gems/1.8/gems/passenger-2.2.15
+    PassengerRuby /usr/local/bin/ruby
+    
+Apache vhost example:
+
+    <VirtualHost *:80>
+        ServerName jnlp.dev.concord.org
+        DocumentRoot /web/jnlp.dev.concord.org/public
+        <Directory /web/jnlp.dev.concord.org/public>
+            Allow from all
+            Options -MultiViews
+        </Directory>
+    </VirtualHost>
+
+Example of file system permissions on remote server:
+
+    [jnlp.dev.concord.org (master)]$ ls -l
+    total 44
+    drwxrwsr-x 2 apache    users 4096 Oct 14 00:45 bin
+    -rw-r--r-- 1 sbannasch users  273 Sep 22 14:10 config.ru
+    -rw-r--r-- 1 sbannasch users   35 Sep 10 01:31 config.sample.yml
+    -rw-rw-r-- 1 apache    users   35 Sep 10 01:14 config.yml
+    -rw-rw-r-- 1 apache    users   39 Sep 10 00:53 config.yml~
+    drwxrwsr-x 7 apache    users 4096 Oct 28 12:20 public
+    drwxrwsr-x 2 apache    users 4096 Sep 24 11:05 rack
+    -rw-r--r-- 1 sbannasch users  635 Sep 22 22:22 readme.md
+    -rwxr-xr-x 1 sbannasch users 1256 Oct 14 00:45 start_local_server.rb
+    drwxrwsr-x 2 sbannasch users 4096 Sep 10 01:28 tmp
+    -rw-r--r-- 1 sbannasch users 1090 Oct 14 00:45 update_jnlps.rb
+    
+
 Sharing a local server on a mac with bonjour/zeroconf
 ------------
 
