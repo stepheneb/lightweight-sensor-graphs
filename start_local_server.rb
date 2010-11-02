@@ -5,8 +5,6 @@ require 'yaml'
 
 gem 'rack', '>= 1.1.0'
 require 'rack'
-gem 'jnlp', '>= 0.6.3'
-require 'jnlp'
 
 require File.expand_path('../rack/jnlp',  __FILE__)
 
