@@ -14,10 +14,12 @@ I've also tested this code under JRuby 1.5.2 and Ruby 1.8.7.
 Install
 ------------
 
-    gem install rack
+    gem install rack thin
     git clone git://github.com/stepheneb/lightweight-sensor-graphs.git
     cd lightweight-sensor-graphs
     cp config.sample.yml config.yml
+
+If you are running this in JRuby the RubyGem *thin* is not needed (and doesn't work with JRuby).
 
 Demo
 ------------

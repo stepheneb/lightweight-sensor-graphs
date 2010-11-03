@@ -9,7 +9,11 @@ require 'rack'
 require File.expand_path('../rack/jnlp',  __FILE__)
 
 JRUBY = (defined? RUBY_ENGINE and RUBY_ENGINE == 'java')
-require 'thin' unless JRUBY
+
+unless JRUBY
+  gem 'thin', '>= 1.2.7'
+  require 'thin'
+end
 
 SERVER_ROOT = File.expand_path('..',  __FILE__)
 config = YAML.load_file(File.join(SERVER_ROOT, '/config.yml'))
