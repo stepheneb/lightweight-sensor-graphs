@@ -6,6 +6,7 @@ Prerequisites
 
 * git
 * ruby 1.8.7 or 1.9.2 or JRuby 1.5.3+
+* the RubyGem: bundler
 
 If you are using Mac OS X or Linux I recommend using rvm to install ruby 1.9.2: http://rvm.beginrescueend.com/.
 
@@ -14,17 +15,39 @@ I've also tested this code under JRuby 1.5.2 and Ruby 1.8.7.
 Install
 ------------
 
-    gem install rack thin
     git clone git://github.com/stepheneb/lightweight-sensor-graphs.git
     cd lightweight-sensor-graphs
+    bundle install
     cp config/config.sample.yml config/config.yml
 
-If you are running this in JRuby the RubyGem *thin* is not needed (and doesn't work with JRuby).
+Create an executable jnlp.war
+------------
+
+You need to use JRuby:
+
+    $ rvm jruby
+
+    $ ruby -v
+    jruby 1.5.3 (ruby 1.8.7 patchlevel 249) (2010-09-28 7ca06d7) (Java HotSpot(TM) 64-Bit Server VM 1.6.0_22) [x86_64-java]
+
+Use warble to create jnlp.war:
+
+    $ warble
+    rm -f jnlp.war
+    Creating jnlp.war
+    $ ls -lh jnlp.war 
+    -rw-r--r--  1 stephen  staff    16M Nov  4 01:01 jnlp.war
+
+The jnlp.war can be deployed to a servlet container or be executed directly:
+
+    $ java -jar jnlp.war 
+
+At this point you can open http://localhost:8080 to start using the sensor-applet system.
 
 Demo
 ------------
 
-1. Plugin a Vernier GoLink with an attached temperature or light probe.
+1. Plugin a Vernier GoLink with an attached temperature, light probe, or motion probe.
 2. Start local server.
     ruby start_local_server.rb
 3. Open: http://localhost:4321/
