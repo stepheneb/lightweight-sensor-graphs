@@ -1,7 +1,8 @@
 tmp/**/*
 log/*
-config.yml
+config/config.yml
 bin/deploy.yml
 bin/sign.yml
+jnlp.war
 .DS_Store
 *~

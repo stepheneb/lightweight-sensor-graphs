@@ -17,7 +17,7 @@ Install
     gem install rack thin
     git clone git://github.com/stepheneb/lightweight-sensor-graphs.git
     cd lightweight-sensor-graphs
-    cp config.sample.yml config.yml
+    cp config/config.sample.yml config/config.yml
 
 If you are running this in JRuby the RubyGem *thin* is not needed (and doesn't work with JRuby).
 
@@ -74,17 +74,14 @@ Example of file system permissions on remote server:
     [jnlp.dev.concord.org (master)]$ ls -l
     total 44
     drwxrwsr-x 2 apache    users 4096 Oct 14 00:45 bin
+    drwxrwsr-x 2 apache    users 4096 Oct 14 00:45 config
     -rw-r--r-- 1 sbannasch users  273 Sep 22 14:10 config.ru
-    -rw-r--r-- 1 sbannasch users   35 Sep 10 01:31 config.sample.yml
-    -rw-rw-r-- 1 apache    users   35 Sep 10 01:14 config.yml
-    -rw-rw-r-- 1 apache    users   39 Sep 10 00:53 config.yml~
     drwxrwsr-x 7 apache    users 4096 Oct 28 12:20 public
     drwxrwsr-x 2 apache    users 4096 Sep 24 11:05 rack
     -rw-r--r-- 1 sbannasch users  635 Sep 22 22:22 readme.md
     -rwxr-xr-x 1 sbannasch users 1256 Oct 14 00:45 start_local_server.rb
     drwxrwsr-x 2 sbannasch users 4096 Sep 10 01:28 tmp
     -rw-r--r-- 1 sbannasch users 1090 Oct 14 00:45 update_jnlps.rb
-    
 
 Sharing a local server on a mac with bonjour/zeroconf
 ------------

@@ -8,7 +8,7 @@ require 'fileutils'
 require 'open-uri'
 
 require 'yaml'
-config = YAML.load_file(File.expand_path('../config.yml',  __FILE__))
+config = YAML.load_file(File.expand_path('../config/config.yml',  __FILE__))
 SERVER = "#{config[:host]}:#{config[:port]}"
 
 PUBLIC_DIR = 'public'
