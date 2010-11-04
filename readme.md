@@ -5,7 +5,7 @@ Prerequisites
 ------------
 
 * git
-* ruby
+* ruby 1.8.7 or 1.9.2 or JRuby 1.5.3+
 
 If you are using Mac OS X or Linux I recommend using rvm to install ruby 1.9.2: http://rvm.beginrescueend.com/.
 
