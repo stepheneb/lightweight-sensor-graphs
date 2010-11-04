@@ -5,6 +5,7 @@ GEM
     eventmachine (0.12.10)
     jruby-jars (1.5.3)
     jruby-rack (1.0.3)
+    net-ssh (2.0.23)
     rack (1.2.1)
     rake (0.8.7)
     rubyzip (0.9.4)
@@ -23,6 +24,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  net-ssh
   rack (>= 1.1.0)
   thin (>= 1.2.7)
   warbler
