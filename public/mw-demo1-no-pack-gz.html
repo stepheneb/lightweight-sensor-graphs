@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <title>Molecular Workbench Applet</title>
+    <title>Molecular Workbench Applet (no jar compression)</title>
     <!--[if lt IE 9]>
       <script type="text/javascript" src="javascript/excanvas.js"></script>
     <![endif]-->
@@ -53,12 +53,12 @@
   </head>
   <body onload="initPage()" style="background-color:#FFF">
     <div id="main" class="page-content">
-      <h3 class="page-title namespace banner">Molecular Workbench Applet</h3>
+      <h3 class="page-title namespace banner">Molecular Workbench Applet (no jar compression)</h3>
       <div class="two-column-left clearfix">
 
         <applet id="mw-applet", codebase="/jnlp" code="org.concord.modeler.MwApplet"
           width="100%" height="480"
-          archive="org/concord/modeler/mw.jar"
+          archive="org/concord/modeler/mw.jar.no.pack.gz"
           >
           <param name="script" value="page:0:import /models/test.cml"/> 
         </applet>
