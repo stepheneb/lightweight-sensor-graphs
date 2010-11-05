@@ -3,6 +3,8 @@ module Rack
 
     PACK_GZ = '.pack.gz'
     JAR_PACK_GZ = 'jar.pack.gz'
+    NO_JAR_PACK_GZ = 'jar.no.pack.gz'
+    
 
     def initialize app
       @app = app
@@ -10,7 +12,7 @@ module Rack
     end
 
     def jar_request(path)
-      if path =~ /^(\/.*\/)(.*?)\.(jar|jar\.pack\.gz)$/
+      if path =~ /^(\/.*\/)(.*?)\.(jar|jar\.pack\.gz|jar\.no\.pack\.gz)$/
       	dir, name, suffix = $1, $2, $3
         jars = Dir["#{@jnlp_dir}#{dir}#{name}__*.jar"]
         if jars.empty?
@@ -34,6 +36,7 @@ module Rack
         if (accept_encoding && accept_encoding[/pack200-gzip/]) || suffix == JAR_PACK_GZ
           pack200_gzip = true
         end
+        pack200_gzip = false if suffix == NO_JAR_PACK_GZ
         if version_id
           versioned_jar_path = path.gsub(/(.*?)(\.jar$)/, "\\1__V#{version_id}\\2")
           if pack200_gzip && ::File.exists?(@jnlp_dir + versioned_jar_path + Rack::Jnlp::PACK_GZ)
