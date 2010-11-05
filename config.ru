@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'yaml'
 
 gem 'rack', '>= 1.1.0'
 require 'rack'
