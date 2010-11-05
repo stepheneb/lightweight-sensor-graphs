@@ -3,16 +3,6 @@
   "http://java.sun.com/dtd/web-app_2_3.dtd">
 <web-app>
 
-  <!-- <servlet>
-    <servlet-name>jnlp</servlet-name>
-    <servlet-class>org.jruby.rack.RackServlet</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>jnlp</servlet-name>
-    <url-pattern>/jnlp</url-pattern>
-  </servlet-mapping> -->
-
   <context-param>
     <param-name>public.root</param-name>
     <param-value></param-value>
