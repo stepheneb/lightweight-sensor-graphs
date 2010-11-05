@@ -38,11 +38,27 @@ Use warble to create jnlp.war:
     $ ls -lh jnlp.war 
     -rw-r--r--  1 stephen  staff    16M Nov  4 01:01 jnlp.war
 
-The jnlp.war can be deployed to a servlet container or be executed directly:
+The resulting jnlp.war archive can be deployed to a servlet container or be executed directly
+using the embedded [Winstone Servlet Engine v0.9.10](http://winstone.sourceforge.net/):
 
     $ java -jar jnlp.war 
 
 At this point you can open http://localhost:8080 to start using the sensor-applet system.
+
+The default configuration uses the ./public dir as the root of content being served.
+
+If you only want to deliver content from the ./public/jnlp directory change the :root element in `config/config.yml`
+to indicate the root path:
+
+    :root: public
+
+If you do this and deploy the war jnlp.war to a servlet container a request to:
+
+    http://host/jnlp/org/concord/otrunk/otrunk.jar
+
+will return the jar at this file system path:
+
+    ./public/jnlp/org/concord/otrunk/otrunk.jar
 
 Demo
 ------------

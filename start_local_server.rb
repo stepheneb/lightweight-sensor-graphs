@@ -18,7 +18,7 @@ SERVER_ROOT = File.expand_path('..',  __FILE__)
 config = YAML.load_file(File.join(SERVER_ROOT, '/config/config.yml'))
 SERVER_URL = "#{config[:host]}:#{config[:port]}"
 
-PUBLIC_DIR = File.join(SERVER_ROOT, '/public')
+PUBLIC_DIR = File.join(SERVER_ROOT, config[:root])
 
 jnlps = Dir["#{PUBLIC_DIR}/**/*.jnlp"].collect { |p| p.gsub(/^#{PUBLIC_DIR}/, SERVER_URL)}
 puts "\nServing jnlps locally at:\n  #{jnlps.join("\n  ")}"

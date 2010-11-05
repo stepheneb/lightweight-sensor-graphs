@@ -5,7 +5,10 @@ require 'rack'
 
 require File.expand_path('../rack/jnlp',  __FILE__)
 
-PUBLIC_DIR = 'public'
+SERVER_ROOT = File.expand_path('..',  __FILE__)
+config = YAML.load_file(File.join(SERVER_ROOT, 'config', 'config.yml'))
+
+PUBLIC_DIR = config[:root]
 
 use Rack::CommonLogger
 use Rack::Jnlp
