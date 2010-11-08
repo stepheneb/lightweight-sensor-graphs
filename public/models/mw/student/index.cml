@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<language>UTF-8</language>
+<page_title>Library of Models</page_title>
+<bg_image>sidebar1b.gif</bg_image>
+<text>  
+Search the Library
+ 
+(You must be online in order to use the above search functionality.)
+
+The following categories contain hundreds of &quot;raw&quot; models we have designed primarily to demonstrate the capacity of the simulation engines and the authoring system. You may want to derive your own models from these demos, or add more materials to make it more useful, or just use them as they are.
+
+ 
+To get all the above models for offline use, open the &quot;Option&quot; menu, choose the first item from the &quot;Prefetch to Cache&quot; submenu, and wait until the installation process is complete. Repeat this procedure for the second item.
+
+
+</text>
+<section start="0" end="623">
+<paragraph start="0" end="3">
+<LeftIndent>160.0</LeftIndent>
+<Alignment>1</Alignment>
+<content start="0" end="1">
+</content>
+
+<content start="1" end="2">
+<icon>lom.gif</icon></content>
+
+<content start="2" end="3">
+<size>11</size></content>
+
+</paragraph>
+<paragraph start="3" end="22">
+<LeftIndent>160.0</LeftIndent>
+<Alignment>1</Alignment>
+<content start="3" end="21">
+<bold>true</bold><family>Trebuchet MS</family></content>
+
+<content start="21" end="22">
+<size>11</size></content>
+
+</paragraph>
+<paragraph start="22" end="24">
+<LeftIndent>160.0</LeftIndent>
+<Alignment>1</Alignment>
+<content start="22" end="23">
+<component><class>org.concord.modeler.SearchTextField</class>
+<type>3</type>
+</component></content>
+
+<content start="23" end="24">
+</content>
+
+</paragraph>
+<paragraph start="24" end="93">
+<LeftIndent>160.0</LeftIndent>
+<Alignment>1</Alignment>
+<content start="24" end="29">
+<italic>true</italic><family>Trebuchet MS</family></content>
+
+<content start="29" end="34">
+<bold>true</bold><italic>true</italic><family>Trebuchet MS</family></content>
+
+<content start="34" end="92">
+<italic>true</italic><family>Trebuchet MS</family></content>
+
+<content start="92" end="93">
+<size>11</size></content>
+
+</paragraph>
+<paragraph start="93" end="94">
+<LeftIndent>160.0</LeftIndent>
+<content start="93" end="94">
+<size>11</size></content>
+
+</paragraph>
+<paragraph start="94" end="392">
+<LeftIndent>160.0</LeftIndent>
+<content start="94" end="127">
+<family>Trebuchet MS</family></content>
+
+<content start="127" end="135">
+<italic>true</italic><family>Trebuchet MS</family></content>
+
+<content start="135" end="391">
+<family>Trebuchet MS</family></content>
+
+<content start="391" end="392">
+<size>11</size></content>
+
+</paragraph>
+<paragraph start="392" end="393">
+<LeftIndent>160.0</LeftIndent>
+<content start="392" end="393">
+<size>11</size></content>
+
+</paragraph>
+<paragraph start="393" end="395">
+<LeftIndent>160.0</LeftIndent>
+<content start="393" end="394">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>0.8</width>
+<height>340.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body face=&quot;Trebuchet MS&quot;&gt;
+    &lt;table width=&quot;100%&quot;&gt;
+      &lt;tr&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+          &lt;b&gt;&lt;font size=&quot;4&quot;&gt;Physics: &lt;/font&gt;&lt;/b&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;classic/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Classical mechanics&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;quantum/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Quantum mechanics&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;classic/motion/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Mechanisms&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;wave/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Waves&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;fluid/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Fluids&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;electrostatics/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Electromagnetism&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;gaslaws/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Gas laws&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;heattransfer/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Heat transfer&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;light/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Light and radiation&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+          &lt;b&gt;&lt;font size=&quot;4&quot;&gt;Chemistry: &lt;/font&gt;&lt;/b&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;motionandforce/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Interactions 
+              and motion&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;organic/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Organic molecules&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;stateofmatter/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;States of matter&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;solution/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Water molecules and 
+              solution&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;chemicalreaction/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Chemical 
+              reaction kinetics&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;electrochem/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Electrochemistry&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;quantumchemistry/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Quantum 
+              chemistry&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+          &lt;b&gt;&lt;font size=&quot;4&quot;&gt;Biology: &lt;/font&gt;&lt;/b&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;biomodels/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Molecular biology 
+              models&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;proteinfolding/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Protein and 
+              DNA code&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+          &lt;b&gt;&lt;font size=&quot;3&quot;&gt;Nanotechnology: &lt;/font&gt;&lt;/b&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;nano/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Nano fabrication and 
+              machinery &lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;materials/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Materials science&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+          &lt;b&gt;&lt;font size=&quot;3&quot;&gt;Miscellaneous: &lt;/font&gt;&lt;/b&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;../molecules/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Seeing molecules 
+              with Jmol&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;lab/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Lab techniques&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+        &lt;td valign=&quot;top&quot;&gt;
+          &lt;b&gt;&lt;font size=&quot;3&quot;&gt;Technology-enhanced: &lt;/font&gt;&lt;/b&gt;
+
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;fly/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Molecular Rover&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;game/index.cml&quot;&gt;&lt;font size=&quot;3&quot;&gt;Games&lt;/font&gt;&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="394" end="395">
+</content>
+
+</paragraph>
+
+</section>
+</document>
