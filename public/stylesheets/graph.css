@@ -238,7 +238,7 @@ background: url(../images/icon-rails.png) no-repeat;
 
 
 .banner {
-height: 24px;
+height: 20px;
 padding: 1px 0;
 }
 
@@ -283,11 +283,11 @@ display: none;
 }
 
 .page-content .page-title {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: 20px;
-    margin-bottom: 15px;
-    padding: 10px;
-    font-size: 22px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 20px;
     letter-spacing: -1px;
     color: #444;
 }
