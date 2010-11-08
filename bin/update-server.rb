@@ -1,20 +1,25 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-require 'net/ssh'
 require 'yaml'
+
+require 'net/ssh'
+
+APP_ROOT = File.expand_path('../..',  __FILE__)
+CONFIG_PATH = File.join(APP_ROOT, 'config')
+
 begin
-  config = YAML.load_file(File.expand_path('../deploy.yml',  __FILE__))
-  Net::SSH.start(config[:host], config[:username]) do |ssh|
-    cmd = "pwd; cd #{config[:dir]}; git pull; git submodule update && touch tmp/restart.txt"
+  CONFIG = YAML.load_file(File.join(CONFIG_PATH, 'deploy.yml'))
+  Net::SSH.start(CONFIG[:host], CONFIG[:username]) do |ssh|
+    cmd = "pwd; cd #{CONFIG[:dir]}; git pull; git submodule update && touch tmp/restart.txt"
     puts ssh.exec!(cmd)
   end
 rescue Errno::ENOENT
   msg = <<-HEREDOC
 
 
-*** missing bin/config.yml
+*** missing config/deploy.yml
 
-  cp bin/config_sample.yml bin/config.yml
+  cp config/deploy_sample.yml config/deploy.yml
 
   and edit ...
   
@@ -24,9 +29,9 @@ rescue Net::SSH::AuthenticationFailed
   msg = <<-HEREDOC
 
 
-*** SSH authentication failed connecting to: #{config[:host]}"
+*** SSH authentication failed connecting to: #{CONFIG[:host]}"
 
-  check the configuration: bin/config.yml
+  check the configuration: config/deploy.yml
 
   HEREDOC
   raise msg
@@ -34,7 +39,7 @@ rescue SocketError
   msg = <<-HEREDOC
 
 
-*** unable to connect to: #{config[:host]}"
+*** unable to connect to: #{CONFIG[:host]}"
 
   Are you connected to the network?
 
