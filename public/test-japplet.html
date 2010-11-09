@@ -27,7 +27,32 @@
  WINDOW IS: null
     </pre>
     <p>
-      <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=606737">See Mozilla bug Bug 606737: Java Applet: JSObject.getWindow(this) returns null</a>
+      Here's the Java code for the applet:
+    </p>
+    <pre>
+  package org.concord.applet;
+
+  import javax.swing.*;
+  import netscape.javascript.JSObject;
+  import netscape.javascript.*;
+
+  public class TestJApplet extends JApplet {
+      public void init() {
+          JSObject win = JSObject.getWindow(this);
+          System.out.println("WINDOW IS: " + win);
+      }
+  }
+    </pre>
+    <p>
+      See: <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=606737">Mozilla Bug 606737: Java Applet: JSObject.getWindow(this) returns null</a>
+    </p>
+    <p>Looking at the changesets in the source as FiresFox progressed from 3.6.10 to 3.6.11 this one by Steven Michaud on Sep 24, 2010 
+       stands out: <a href="http://hg.mozilla.org/releases/mozilla-1.9.2/rev/06dbab839a94">Bug 598453 - r=josh a1.9.2.11=clegnitto</a>. 
+       The commit log message is obscure but the commit bumps these two artifacts from the <a href="http://javaplugin.sourceforge.net/Readme.html">
+       Java Plugin Project</a>: Java Embedding Plugin and the MRJ Plugin 1.0-JEP from version 0.9.7.3 to 0.9.7.4. Unfortunately the latest commit 
+       to the sourceforge CVS repository is from Mar 09 2010 and is for the v0.9.7.3 release. In addition the content on the page with 
+       <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=598453">Mozilla Bug 598453</a> is not visible to <i>unauthorized</i> developers. 
+       This makes me wonder if the update was a security fix.
     </p>
   </body>
 </html>
