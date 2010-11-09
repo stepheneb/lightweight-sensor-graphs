@@ -1,31 +1,40 @@
 <html>
-  <head><title>Test JApplet</title></head>
-  <body>
-    <applet id="testjapplet", codebase="/jnlp", code="org.concord.applet.TestJApplet" 
+  <head>
+    <title>Test JApplet2</title>
+    
+    <script type="text/javascript">
+
+      var jsListener = {
+        displayJSObject: function(str) {
+          displayjsobject.innerHTML = str;
+        }
+      };
+
+    </script>
+    
+  </head>
+  <body onload="testjapplet2.setupJSObject()">
+    
+    <applet id="testjapplet2", codebase="/jnlp", code="org.concord.applet.TestJApplet2" 
       width="1" height="1" MAYSCRIPT="true"
       archive="org/concord/applet/test-applets.jar">
+      <param name="listenerPath" value="jsListener"/>
     </applet>
 
     <p>
       This page loads a simple applet which tests the following Java code 
-      which tries to get access to the browsers window object
-    <p>
-    <pre>
-  JSObject win = JSObject.getWindow(this);
-  System.out.println("WINDOW IS: " + win)
-    </pre>
-    <p>
-      If successful the Java console will display something like:
+      which tries to get access to the browsers window object -- however in 
+      this test this code isn't run until JavaScript in the browser specifically 
+      calls the setupJSObject method in the applet after it is initialized.
     </p>
-    <pre>
- WINDOW IS: [object DOMWindow]
-    </pre>
     <p>
-      On FireFox 3.6.11-12 on Mac OS X <code>JSObject.getWindow</code> returns null.
+      This is a workaround for <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=606737">
+      Bug 606737 - Java Applet: JSObject.getWindow(this) returns null</a>.
     </p>
-    <pre>
- WINDOW IS: null
-    </pre>
+    <p>
+      If successful the Java console will display something like: <code>WINDOW IS: [object DOMWindow] or [object Window]</code> 
+      and the result should be displayed here in green text: <span id='display-jsobject' style="color: green; font-weight: bold"></span>
+    </p>
     <p>
       Here's the Java code for the applet:
     </p>
@@ -33,13 +42,20 @@
   package org.concord.applet;
 
   import javax.swing.*;
-  import netscape.javascript.JSObject;
   import netscape.javascript.*;
 
-  public class TestJApplet extends JApplet {
+  public class TestJApplet2 extends JApplet {
       public void init() {
+       }
+
+      public void setupJSObject() {
           JSObject win = JSObject.getWindow(this);
           System.out.println("WINDOW IS: " + win);
+          if (getParameter("listenerPath") != null) {
+          	String cmd = getParameter("listenerPath") + ".displayJSObject('" + win + "');";
+          	System.out.println("calling: " + cmd);
+          	win.eval(cmd);
+          }
       }
   }
     </pre>
@@ -57,5 +73,11 @@
       Steven is working on a patch for another (currently private) security issue and hopes both the Java-to-Javascript and a related 
       bug caused by the 0.9.7.4 update that prevents applets from opening popup windows will be fixed.
     </p>
+    <script type="text/javascript">
+    
+      var displayjsobject = document.getElementById('display-jsobject');
+      var testjapplet2 = document.getElementById('testjapplet2');
+
+    </script>
   </body>
 </html>
