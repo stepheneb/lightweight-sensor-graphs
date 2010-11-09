@@ -69,12 +69,14 @@
       }
       
       function initPage() {
-        temperature = new TimeSeries({ min:15, max:35 });
+        var temperature = new TimeSeries({ min:15, max:35 });
         createTimeline();
+        var sensor_applet = document.getElementById('sensor');
+        sensor_applet.initSensorInterface();
       }
     </script>
   </head>
-  <body onload="createTimeline()" style="background-color:#FFF">
+  <body onload="initPage()" style="background-color:#FFF">
     <div id="main" class="page-content">
       <h3 class="page-title namespace">Vernier GoIO Lightweight Temperature Grapher</h3>
       <div class="two-column-left clearfix">

@@ -71,12 +71,15 @@
       }
       
       function initPage() {
-        light = new TimeSeries({ min:0, max:10000 });
+        var light = new TimeSeries({ min:0, max:10000 });
         createTimeline();
+        var sensor_applet = document.getElementById('sensor');
+        sensor_applet.initSensorInterface();
       }
+      
     </script>
   </head>
-  <body onload="createTimeline()" style="background-color:#FFF">
+  <body onload="initPage()" style="background-color:#FFF">
     <div id="main" class="page-content">
       <h3 class="page-title namespace">Vernier GoIO Lightweight Light Grapher</h3>
       <div class="two-column-left clearfix">
