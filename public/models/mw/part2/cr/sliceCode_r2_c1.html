@@ -1,0 +1,18 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <map name="m_fullCycleSlices_r2_c1">
+      <area shape="poly" href="script:textbox:6:load 03-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 03-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 972 235 -7 21.57} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {4.18115 13.704199 0.16689998} 5.546461 /* navigation center, translation, depth */ {0.0 0.0 0.0} -41.51103 102.03958 50.0;set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=11; label citrate; define ~violet ({11 20}); define ~green  not ~violet;
+nativescript:plugin:2:load 03-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 965 240 -104 23.77} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {4.18115 13.704199 -0.15155} 5.470439 /* navigation center, translation, depth */ {0.0 0.0 0.0} -47.261642 101.4387 50.0;set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=11; label d-isocitrate; define ~violet ({14 20}); define ~green  not ~violet;" alt="" coords="469,39,446,48,471,80,491,90,528,98,547,98,561,89,549,70,509,49,469,39"></area>
+      <area shape="poly" href="script:textbox:6:load 02-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 02-krebs-reactants.mol2;frank off; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select c22; label acetyl-CoA; select O22; label oxalate; set labeloffset 0 -2 {selected}; select O23; label water; set labeloffset 0 -2 {selected}; define ~green  molecule=1; define ~orange molecule=2; define ~violet molecule=3;
+nativescript:plugin:2:load 02-krebs-products.mol2;frank off; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=95; label citrate; select atomno=45; label CoA-SH; set labeloffset 1 1 {selected}; define ~violet ({89 101 82}); define ~green (molecule=1 or ({95 88 87 99 100}));  define ~orange not (~violet or ~green);" alt="" coords="103,40,163,101,194,107,234,95,271,77,298,61,315,39,303,0,136,0,103,40"></area>
+    </map>
+    <p style="margin-top: 0">
+      <img alt="" id="fullCycleSlices_r2_c1" border="0" height="112" width="750" name="fullCycleSlices_r2_c1" usemap="#m_fullCycleSlices_r2_c1" src="fullCycleSlices_r2_c1.png">
+    </p>
+  </body>
+</html>

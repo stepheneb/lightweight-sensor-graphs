@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<language>UTF-8</language>
+<page_title>Cellular Respiration: Creating the ATP with ATP Synthase</page_title>
+<bg_color><Red>244</Red><Green>245</Green><Blue>239</Blue></bg_color>
+<text>
+
+ 
+ 
+
+ 
+
+ 
+     
+ 
+
+
+</text>
+<section start="0" end="23">
+<paragraph start="0" end="1">
+<Alignment>1</Alignment>
+<content start="0" end="1">
+</content>
+
+</paragraph>
+<paragraph start="1" end="2">
+<Alignment>1</Alignment>
+<content start="1" end="2">
+</content>
+
+</paragraph>
+<paragraph start="2" end="4">
+<Alignment>1</Alignment>
+<content start="2" end="3">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>30</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>5</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link type=&quot;text/css&quot; href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;pagetitle&quot;&gt;
+      &lt;strong&gt;Cellular Respiration:&lt;/strong&gt; Creating the ATP with ATP Synthase
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-c588a1</bgcolor></icon></content>
+
+<content start="3" end="4">
+</content>
+
+</paragraph>
+<paragraph start="4" end="6">
+<Alignment>1</Alignment>
+<content start="4" end="5">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>26.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginwidth=&quot;0&quot; marginheight=&quot;0&quot; background=&quot;topNavBarLeftMargin.jpg&quot;&gt;
+    &lt;table id=&quot;Table_01&quot; border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;14&quot; src=&quot;topNavBarLeftMargin.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;60&quot; src=&quot;prev.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;59&quot; src=&quot;next.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img width=&quot;54&quot; src=&quot;page.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;46&quot; src=&quot;index.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page1.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page2.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page3.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;29&quot; src=&quot;page4.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page5.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page6.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page7.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;29&quot; src=&quot;page8Selected.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page9.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img width=&quot;7&quot; src=&quot;topNavBarRightMargin.jpg&quot; height=&quot;26&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="5" end="6">
+</content>
+
+</paragraph>
+<paragraph start="6" end="7">
+<Alignment>1</Alignment>
+<content start="6" end="7">
+</content>
+
+</paragraph>
+<paragraph start="7" end="9">
+<Alignment>1</Alignment>
+<content start="7" end="8">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>85</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>15</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link type=&quot;text/css&quot; href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;mainIdea&quot;&gt;
+    &lt;table cellpadding=&quot;0&quot; border=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;98&quot; src=&quot;motionMainIdea.png&quot; height=&quot;58&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;mainIdea&quot;&gt;
+            How does the difference in concentration of protons between the 
+            intermembrane space and the matrix produce ATP?
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="8" end="9">
+</content>
+
+</paragraph>
+<paragraph start="9" end="10">
+<Alignment>1</Alignment>
+<content start="9" end="10">
+</content>
+
+</paragraph>
+<paragraph start="10" end="12">
+<Alignment>1</Alignment>
+<SpaceBelow>10.0</SpaceBelow>
+<content start="10" end="11">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>520.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style4 { font-size: 10px }
+        .style3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold }
+        .style2 { font-weight: bold; color: #990000 }
+        .style1 { font-family: Verdana, Arial, Helvetica, sans-serif }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table cellpadding=&quot;0&quot; border=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;style1&quot;&gt;
+          &lt;div style=&quot;margin-right: 10px&quot;&gt;
+            &lt;p&gt;
+              Energy is needed to concentrate the protons on one side of the 
+              membrane.&lt;br&gt;&lt;br&gt;Most of the energy from molecules generated in 
+              glycolysis and the Krebs cycle was then used to pump protons 
+              (hydrogen ions) from the matrix side of the membrane to the 
+              intermembrane space.&lt;br&gt;&lt;br&gt;Now that a large concentration of 
+              protons has been put on one side of the membrane, that energy 
+              can now be used to create chemical energy in the form of ATP.&lt;br&gt;&lt;br&gt;The 
+              large purple object is a complex collection of proteins called 
+              ATP Synthase that acts like a motor powered by protons. As the 
+              protons enter the ATP Synthase complex from the intermembrane 
+              space they cause part of the molecule to rotate, which causes 
+              another part of the molecule to change shape. If ADP and 
+              phosphate are in the part that is changing shape, then they are 
+              pushed together and a bond is formed, making ATP. Click on the 
+              links below to see an animation of this process:
+            &lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;http://www.fivth.com/fiVthSite/web-content/NewFiles/GrahamJcom/web-content/NewFiles/gjPortfComp/gjCBanim/4ATPsynthaseGrahamGarland.mov&quot;&gt;see 
+                an overview&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a href=&quot;http://multimedia.mcb.harvard.edu/anim_ATPase3_flv.html&quot;&gt;see 
+                a more detailed explanation&lt;/a&gt; &lt;span class=&quot;style4&quot;&gt;(Note: 
+                the orientation of this movie is upside down compared to this 
+                illustration.)&lt;/span&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;style1&quot; valign=&quot;top&quot;&gt;
+          &lt;img width=&quot;333&quot; src=&quot;atpSynthase.png&quot; height=&quot;520&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="11" end="12">
+</content>
+
+</paragraph>
+<paragraph start="12" end="18">
+<Alignment>1</Alignment>
+<SpaceBelow>8.0</SpaceBelow>
+<content start="12" end="13">
+<component><class>org.concord.modeler.PageTextArea</class>
+<width>371</width>
+<height>220</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link type=&quot;text/css&quot; href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      The Electron Transport Chain creates potential energy by pushing protons 
+      to one side of the membrane, increasing the concentration on that side. 
+      What eventually happens to that energy? Explain in detail.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="13" end="15">
+</content>
+
+<content start="15" end="16">
+<component><class>org.concord.modeler.PageTextArea</class>
+<width>371</width>
+<height>220</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link type=&quot;text/css&quot; href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      One kind of poison not discussed on the previous page is a molecule that 
+      allows protons to diffuse through the membrane. Why is that a bad thing?
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="16" end="18">
+</content>
+
+</paragraph>
+<paragraph start="18" end="20">
+<Alignment>1</Alignment>
+<content start="18" end="19">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>32.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginwidth=&quot;0&quot; marginheight=&quot;0&quot; background=&quot;navBarBottomBackground.jpg&quot;&gt;
+    &lt;table id=&quot;Table_01&quot; border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot;&gt;
+          &lt;img width=&quot;14&quot; src=&quot;navBarBottomColorBar.gif&quot; height=&quot;6&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;8&quot; src=&quot;navBarBottomLeftMargin.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;60&quot; src=&quot;prev.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;59&quot; src=&quot;next.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img width=&quot;54&quot; src=&quot;page.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;46&quot; src=&quot;index.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page1.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page2.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page3.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;29&quot; src=&quot;page4.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page5.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page6.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page7.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;29&quot; src=&quot;page8Selected.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img border=&quot;0&quot; width=&quot;28&quot; src=&quot;page9.jpg&quot; height=&quot;26&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img width=&quot;7&quot; src=&quot;navBarBottomRightMargin.jpg&quot; height=&quot;26&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="19" end="20">
+</content>
+
+</paragraph>
+<paragraph start="20" end="21">
+<Alignment>1</Alignment>
+<content start="20" end="21">
+</content>
+
+</paragraph>
+<paragraph start="21" end="22">
+<content start="21" end="22">
+<size>10</size></content>
+
+</paragraph>
+<paragraph start="22" end="23">
+</paragraph>
+</section>
+</document>

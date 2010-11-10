@@ -1,0 +1,23 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <map name="m_fullCycleSlices_r6_c1">
+      <area shape="poly" href="script:textbox:6:load 07-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 07-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 187 -778 -600 141.62} /* zoom, translation */  100.0 0.75 9.32  /* center, rotationRadius */ {4.7310004 1.4511497 -4.8617506} 12.436742 /* navigation center, translation, depth */ {0.0 0.0 0.0} 0.1757228 -13.867397 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=3; label succinate; select atomno=27; label FAD; define ~green molecule=1; define ~violet molecule=2;
+
+nativescript:plugin:2:load 07-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 265 -797 -543 145.82} /* zoom, translation */  92.24 0.25 7.63  /* center, rotationRadius */ {4.7310004 1.4511497 -4.4973} 12.272311 /* navigation center, translation, depth */ {0.0 0.0 0.0} 0.9520232 -12.736291 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=88; label fumerate; set echo ~highEnergy {atomno=42}; script setFADH2Echo.spt;  define ~green molecule=2 or ({98:99});
+define ~violet not ~green;" alt="" coords="194,13,226,9,265,18,288,33,301,58,291,87,275,101,226,99,184,94,181,46,183,20,194,13"></area>
+      <area shape="poly" href="script:textbox:6:load 06-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 06-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 51 -987 153 170.06} /* zoom, translation */  114.59 0.25 0.0  /* center, rotationRadius */ {1.5989499 -7.0917506 3.3689497} 18.237768 /* navigation center, translation, depth */ {0.0 0.0 0.0} 4.3961067 -24.73229 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=47; label succinyl-CoA; select atomno=137; label P<sub>i</sub>; set labeloffset 0 -2 {selected}; select atomno=111; label GDP; set labeloffset 12 0; define ~green molecule=1; define ~orange molecule=3; define ~violet molecule=2;
+
+nativescript:plugin:2:load 06-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 24 -964 265 167.38} /* zoom, translation */  100.0 3.48 0.0  /* center, rotationRadius */ {2.7848501 -7.68965 4.10285} 16.603674 /* navigation center, translation, depth */ {0.0 0.0 0.0} 12.722908 -25.667393 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=45; label CoA; select atomno=139; label succinate; set labeloffset 0 -5 {selected}; set echo ~highEnergy {atomno=124}; script setGTPEcho.spt;  define ~orange ({81 107:110 132 140}); define ~green (molecule=1 and not atomno=82) or (molecule=3 and not (atomno=133 or atomno=141)); define ~violet not (~green or ~orange);" alt="" coords="466,31,498,23,525,17,549,10,559,16,568,20,581,19,587,42,591,57,604,75,585,97,569,101,461,100,452,63,466,31"></area>
+    </map>
+    <p style="margin-top: 0">
+      <img alt="" id="fullCycleSlices_r6_c1" border="0" height="101" width="750" name="fullCycleSlices_r6_c1" usemap="#m_fullCycleSlices_r6_c1" src="fullCycleSlices_r6_c1.png">
+    </p>
+  </body>
+</html>

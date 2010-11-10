@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>Molecular Workbench Applet: Cellular Respiration</title>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="javascript/excanvas.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="stylesheets/graph.css" type="text/css" />
+    <script type="text/javascript" src="javascript/smoothie.js"></script>
+    
+    <script type="text/javascript">
+
+      var applet;
+
+      function getApplet(id) {
+        applet = document.getElementById(id);
+      }
+
+      function jsReset(id) {
+        getApplet(id);
+        applet.reset();
+      }
+
+      function run(id) {
+        getApplet(id);
+        applet.run();
+      }  
+
+      function stop(id) {
+        getApplet(id);
+        applet.stop();
+      }
+
+      function runScript(id, script) {
+          getApplet(id);
+          if (script.type === "textarea") {
+            script = script.value
+          }
+          applet.runNativeScript(new String(script));
+      }
+      
+      function getDefaultScript(id) {
+          getApplet(id);
+          return new String(applet.children['script'].value);
+      }
+
+      function initPage() {
+        // temperature = new TimeSeries({ min:10, max:50 });
+        // createTimeline();
+        // document.getElementById('script').defaultValue = getDefaultScript('demo1');
+      }
+    </script>
+  </head>
+  <body onload="initPage()" style="background-color:#FFF">
+    <div id="main" class="page-content">
+      <h3 class="page-title namespace banner">Molecular Workbench Applet: Cellular Respiration</h3>
+      <div class="page-content clearfix">
+        <p>
+           This page embeds an applet version of Molecular Workbench and displays an index page in MW that references a library of MW models.
+           The resources the library page reference are <b>NOT</b> yet available here. This page is here to demonstrate a bug on Safari and 
+           Chrome browser on Mac OS X when this page is reloaded. The bug is not present in FireFox 3.6.12.
+        </p>
+        <applet id="mw-applet", codebase="/" code="org.concord.modeler.MwApplet"
+          width="100%" height="720"
+          archive="jnlp/org/concord/modeler/mw.jar">
+          <param name="script" value="page:0:import /models/mw/part2/cr/page3.cml"/> 
+        </applet>
+      </div>
+      <p>
+         The source code for this demo can be found <a href="http://github.com/stepheneb/lightweight-sensor-graphs">here on github</a>.
+      </p>
+  </body>
+</html>

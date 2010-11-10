@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<language>UTF-8</language>
+<page_title>Cellular Respiration: Introduction to the ATP molecule</page_title>
+<bg_color><Red>244</Red><Green>245</Green><Blue>239</Blue></bg_color>
+<text>
+
+ 
+ 
+
+ 
+
+
+ 
+  
+    
+ 
+
+
+</text>
+<section start="0" end="26">
+<paragraph start="0" end="1">
+<Alignment>1</Alignment>
+<content start="0" end="1">
+</content>
+
+</paragraph>
+<paragraph start="1" end="2">
+<Alignment>1</Alignment>
+<content start="1" end="2">
+</content>
+
+</paragraph>
+<paragraph start="2" end="4">
+<Alignment>1</Alignment>
+<content start="2" end="3">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>30</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>5</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;pagetitle&quot;&gt;
+      &lt;strong&gt;Cellular Respiration:&lt;/strong&gt; Introduction to the ATP molecule
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-c588a1</bgcolor></icon></content>
+
+<content start="3" end="4">
+</content>
+
+</paragraph>
+<paragraph start="4" end="6">
+<Alignment>1</Alignment>
+<content start="4" end="5">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>26.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginheight=&quot;0&quot; marginwidth=&quot;0&quot; background=&quot;topNavBarLeftMargin.jpg&quot;&gt;
+    &lt;table border=&quot;0&quot; width=&quot;100%&quot; id=&quot;Table_01&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img src=&quot;topNavBarLeftMargin.jpg&quot; height=&quot;26&quot; width=&quot;14&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img src=&quot;prev.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;60&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img src=&quot;next.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;59&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img src=&quot;page.jpg&quot; height=&quot;26&quot; width=&quot;54&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img src=&quot;index.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;46&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;img src=&quot;page1Selected.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img src=&quot;page2.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img src=&quot;page3.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img src=&quot;page4.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img src=&quot;page5.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img src=&quot;page6.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img src=&quot;page7.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img src=&quot;page8.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img src=&quot;page9.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img src=&quot;topNavBarRightMargin.jpg&quot; height=&quot;26&quot; width=&quot;7&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="5" end="6">
+</content>
+
+</paragraph>
+<paragraph start="6" end="7">
+<Alignment>1</Alignment>
+<content start="6" end="7">
+</content>
+
+</paragraph>
+<paragraph start="7" end="9">
+<Alignment>1</Alignment>
+<content start="7" end="8">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>85</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>15</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;mainIdea&quot;&gt;
+    &lt;table cellspacing=&quot;0&quot; border=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img height=&quot;58&quot; width=&quot;98&quot; src=&quot;motionMainIdea.png&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;mainIdea&quot;&gt;
+            What is ATP and why is it important?
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="8" end="9">
+</content>
+
+</paragraph>
+<paragraph start="9" end="10">
+<Alignment>1</Alignment>
+<content start="9" end="10">
+</content>
+
+</paragraph>
+<paragraph start="10" end="11">
+<Alignment>1</Alignment>
+<content start="10" end="11">
+</content>
+
+</paragraph>
+<paragraph start="11" end="13">
+<Alignment>1</Alignment>
+<content start="11" end="12">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>230.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table cellspacing=&quot;0&quot; border=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;firstp&quot;&gt;
+            Have you ever wondered how we can get energy from so many 
+            different kinds of food? We can eat apples, chocolate bars, 
+            carrots and beef, among many other things, and get energy from all 
+            of them. How can that be?
+          &lt;/p&gt;
+          &lt;p&gt;
+            It turns out that almost everything we eat is made from 
+            carbohydrates, fats, and/or proteins, so most food can be broken 
+            down into these three kinds of substances. However, it would be 
+            even more efficient if all the different chemical reactions in our 
+            body could use one common fuel. They do! It&amp;#8217;s called adenosine 
+            triphosphate (ATP).&lt;br&gt;&lt;br&gt;The energy stored in the carbohydrates, 
+            fats, and proteins is eventually used to create ATP, a high energy 
+            molecule that is made in almost every cell and is the the fuel 
+            needed by most biological processes.
+          &lt;/p&gt;
+        &lt;/td&gt;
+        &lt;td valign=&quot;middle&quot;&gt;
+          &lt;img height=&quot;157&quot; width=&quot;139&quot; src=&quot;sage.jpg&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="12" end="13">
+</content>
+
+</paragraph>
+<paragraph start="13" end="16">
+<SpaceBelow>5.0</SpaceBelow>
+<Alignment>1</Alignment>
+<content start="13" end="14">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>300.0</width>
+<height>300.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style1 { color: #990000; font-size: 10px }
+      --&gt;
+    &lt;/style&gt;
+    &lt;link href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;firstp&quot;&gt;
+      Click on each of the buttons below to learn more about the ATP molecule:
+    &lt;/p&gt;
+    &lt;p class=&quot;firstp&quot;&gt;
+      &amp;#160;
+    &lt;/p&gt;
+    &lt;table cellspacing=&quot;0&quot; border=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          1.
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input value=&quot;Similar to Nucleotide&quot; type=&quot;submit&quot; name=&quot;button&quot; script=&quot;script:jmol:1: select all; wireframe 0.15;  connect (atomno=42) (atomno=45) single; color bond none; color atoms cpk; color atoms opaque; labels off; select oxygen and ~diss; label -; moveto 1.0 { -984 131 -121 17.3} 129.9 0.0 0.0 {0.0 0.0 0.0} 9.6;   define ~nonATP atomno=1 or atomno=2 or atomno=23 or atomno=24 or (atomno&gt;=39 and atomno&lt;=47); select ~nonATP; color atoms translucent dimgray; set echo top center; color echo lightgreen; echo The DNA nucleotide dAMP (or A) is very similar|to ATP in structure. Atoms not dimmed make up|the dAMP molecule.&quot; id=&quot;button&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          2.
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input value=&quot;Phosphate Groups&quot; type=&quot;submit&quot; name=&quot;button2&quot; script=&quot;script:jmol:1:select all;  wireframe 0.15;  connect (atomno=42) (atomno=45) single; color bond none; moveto 1.0 { -424 272 864 47.6} 411.1 0.0 0.0 {-4.3256664 0.5006666 -0.35766667} 13.5; color atoms cpk; color atoms opaque; labels off; select oxygen and ~diss; label -; select _P; center selected; set labelOffset 0 0; color labels white; font label 18 sansserif bold; define ~p1 (atomno &gt;=34 and atomno&lt;= 38) or atomno=3; define ~p2 (atomno &gt;=38 and atomno&lt;= 42) or atomno=2; define ~p3 (atomno &gt;=42 and atomno&lt;= 47) or atomno=1; select atomno=37; color echo lightgreen; echo Three negative phosphate groups are part|of the ATP molecule.;  label 1; select ~p1; selectionhalos on; delay 2; selectionhalos off; select atomno=41; label 2; select ~p2; selectionhalos on; delay 2; selectionhalos off; select atomno=45; label 3; select ~p3; selectionhalos on; delay 2; selectionhalos off;&quot; id=&quot;button2&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          3.
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input value=&quot;Weak Bond = High Energy&quot; type=&quot;submit&quot; name=&quot;button4&quot; script=&quot;script:jmol:1: select all; wireframe 0.15;   connect (atomno=42) (atomno=45) single; color bond none; select all;  color atoms cpk; color atoms opaque; labels off; select oxygen and ~diss; label -; color echo white; echo ATP; moveto 1.0 { -984 131 -121 17.3} 129.9 0.0 0.0 {0.0 0.0 0.0} 9.6; select atomno=45 or atomno=42; color bond yellow; wireframe 0.3; delay 0.5; color bond none; wireframe 0.15; delay 0.5; color bond yellow; wireframe 0.3; delay 0.5; color bond none; wireframe 0.15; delay 0.5; color bond yellow; wireframe 0.3; delay 0.5; color bond none; wireframe 0.15; delay 0.5; color bond yellow; wireframe 0.3; delay 0.5; color bond none; wireframe 0.15; delay 0.5; color bond yellow; wireframe 0.15; connect (selected) (selected) hbond; select (oxygen and connected(_P) and connected(_H));  select hydrogen and connected(selected) or selected; define ~diss selected; select hydrogen and ~diss; hide selected; select oxygen and ~diss; label -;moveto 1.0 { 455 -214 864 49.6} 413.9 0.0 0.0 {-5.538 1.8934999 -0.9095} 14.9; color echo lightgreen; echo The bond connecting the last phosphate|is particularly weak, in part due|to the repulsion of the negative charges|from the rest of the molecule.|Weak bond = high chemical energy.&quot; id=&quot;button4&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &amp;#160;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &amp;#160;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot; align=&quot;center&quot;&gt;
+          &lt;input value=&quot;reset&quot; type=&quot;submit&quot; name=&quot;button5&quot; script=&quot;script:jmol:1: select all; wireframe 0.15; connect (atomno=42) (atomno=45) single; color bond none;  select all;  color atoms cpk; color atoms opaque; labels off; select oxygen and ~diss; label -; color echo white; echo ATP; moveto 1.0 { -984 131 -121 17.3} 129.9 0.0 0.0 {0.0 0.0 0.0} 9.6;&quot; id=&quot;button5&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;p class=&quot;style1&quot;&gt;
+      Drag your mouse over the molecule to rotate it, or shift-drag to zoom in 
+      an out.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="14" end="15">
+<component><class>org.concord.modeler.PageMolecularViewer</class>
+<script>set echo top center; echo ATP; color echo white; select (oxygen and connected(_P) and connected(_H));  select hydrogen and connected(selected) or selected; define ~diss selected; select hydrogen and ~diss; hide selected; select oxygen and ~diss; label -;</script><menubar>false</menubar><toolbar>false</toolbar><statusbar>false</statusbar><resource>ATP.mol</resource><state>page1$0.jms</state><width>450.0</width>
+<height>300.0</height>
+<border>Lowered Bevel</border>
+</component></content>
+
+<content start="15" end="16">
+</content>
+
+</paragraph>
+<paragraph start="16" end="21">
+<SpaceBelow>8.0</SpaceBelow>
+<Alignment>1</Alignment>
+<content start="16" end="17">
+<component><class>org.concord.modeler.PageMultipleChoice</class>
+<single>true</single>
+<row>4</row>
+<width>271</width>
+<height>180</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      How many phosphate groups are part of an ATP molecule?
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<submit>true</submit>
+<choice>one</choice>
+<choice>two</choice>
+<choice>three</choice>
+<choice>none</choice>
+<answer>2</answer>
+<bgcolor>-373738</bgcolor>
+<border>Line</border>
+<script>script:page:0:message noThree.html -choiceseparator- script:page:0:message noThree.html -choiceseparator- script:page:0:message yesThree.html -choiceseparator- script:page:0:message noThree.html</script>
+</component></content>
+
+<content start="17" end="19">
+</content>
+
+<content start="19" end="20">
+<component><class>org.concord.modeler.PageMultipleChoice</class>
+<single>true</single>
+<row>4</row>
+<width>471</width>
+<height>180</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link href=&quot;bioStyles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      Why does the ATP molecule have a lot of chemical energy?
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<submit>true</submit>
+<choice>It is made from phosphates which normally have lots of energy.</choice>
+<choice>The third phosphate has a weak bond to the molecule.</choice>
+<choice>It is very similar to the &quot;A&quot; nucleotide in DNA.</choice>
+<choice>It naturally has more vibrational energy than other molecules.</choice>
+<answer>1</answer>
+<bgcolor>-373738</bgcolor>
+<border>Line</border>
+<script>script:page:0:message noPhosphateEnergy.html -choiceseparator- script:page:0:message yesWeakBond.html -choiceseparator- script:page:0:message noASimilar.html -choiceseparator- script:page:0:message noNaturalEnergy.html</script>
+</component></content>
+
+<content start="20" end="21">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="21" end="23">
+<Alignment>1</Alignment>
+<content start="21" end="22">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>32.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginheight=&quot;0&quot; marginwidth=&quot;0&quot; background=&quot;navBarBottomBackground.jpg&quot;&gt;
+    &lt;table border=&quot;0&quot; width=&quot;100%&quot; id=&quot;Table_01&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot;&gt;
+          &lt;img src=&quot;navBarBottomColorBar.gif&quot; height=&quot;6&quot; width=&quot;14&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img src=&quot;navBarBottomLeftMargin.jpg&quot; height=&quot;26&quot; width=&quot;8&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img src=&quot;prev.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;60&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img src=&quot;next.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;59&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img src=&quot;page.jpg&quot; height=&quot;26&quot; width=&quot;54&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img src=&quot;index.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;46&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;img src=&quot;page1Selected.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img src=&quot;page2.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img src=&quot;page3.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img src=&quot;page4.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img src=&quot;page5.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img src=&quot;page6.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img src=&quot;page7.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img src=&quot;page8.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img src=&quot;page9.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img src=&quot;navBarBottomRightMargin.jpg&quot; height=&quot;26&quot; width=&quot;7&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component><size>8</size></content>
+
+<content start="22" end="23">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="23" end="24">
+<Alignment>1</Alignment>
+<content start="23" end="24">
+</content>
+
+</paragraph>
+<paragraph start="24" end="25">
+<content start="24" end="25">
+<size>10</size></content>
+
+</paragraph>
+<paragraph start="25" end="26">
+</paragraph>
+</section>
+</document>

@@ -1,0 +1,55 @@
+<html>
+<style type="text/css">
+<!--
+.style1 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.style3 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+-->
+</style>
+<body>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="6" align="center"><span class="style3">reactants and products</span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><input name="RadioGroup1" type="radio" id="RadioGroup1_0" value="radio" checked
+    		script="
+            	nativescript:plugin:1:select all; color atoms cpk; set testFlag3 false;
+                nativescript:plugin:2:select all; color atoms cpk; if (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~lig1))) or (*.CA or sidechain) and (within(group,within(4.0,~lig2)))) and not (~lig1 or ~lig2); color atoms chain; endif; set testFlag3 false;
+                nativescript:plugin:3:select all; color atoms cpk; set testFlag3 false;"></td>
+    <td><span class="style1">color by element</span></td>
+    <td><span class="style1">&nbsp;&nbsp;</span></td>
+    <td><input name="RadioGroup2" type="radio" id="RadioGroup2_0" value="radio"
+    		script="
+            	nativescript:plugin:1:select all; spacefill 100%; set testFlag2 true;
+                nativescript:plugin:2:If (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet))) or ~green or ~violet); else; select all; endif; spacefill 100%; set testFlag2 true;
+                nativescript:plugin:3:select all; spacefill 100%; set testFlag2 true;"></td>
+    <td><span class="style1">spacefill</span></td>
+    <td><span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+    <td rowspan="2"><input type="submit" name="reset" id="reset" value="re-center molecules"
+    	script="
+        	nativescript:plugin:1:zoomto 1 {visible} 100%;
+            nativescript:plugin:2:zoomto 1 {visible} 100%;
+            nativescript:plugin:3:zoomto 1 {visible} 100%;
+            "
+            selfscript="selectcomponent 6 false"></td>
+  </tr>
+  <tr>
+    <td><input name="RadioGroup1" type="radio" id="RadioGroup1_1" value="radio" 
+    	script="
+        	nativescript:plugin:1: select ~violet; color atoms violet; select ~green; color atoms green; select ~orange; color atoms orange; set testFlag3 true;
+            nativescript:plugin:2: select protein; color atoms chain; select ~green; color atoms green; select ~violet; color atoms violet; select ~orange; color atoms orange; set testFlag3 true;
+            nativescript:plugin:3: select ~violet; color atoms violet; select ~green; color atoms green; select ~orange; color atoms orange; set testFlag3 true;"></td>
+    <td><span class="style1">highlight changes</span></td>
+    <td><span class="style1">&nbsp;&nbsp;</span></td>
+    <td><input name="RadioGroup2" type="radio" id="RadioGroup2_1" value="radio" checked
+    		script="
+            	nativescript:plugin:1:select all; spacefill 20%; wireframe 0.15; set testFlag2 false;
+                nativescript:plugin:2:If (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet))) or ~green or ~violet); else; select all; endif; spacefill 20%; wireframe 0.15; set testFlag2 false;
+                nativescript:plugin:3:select all; spacefill 20%; wireframe 0.15; set testFlag2 false;"></td>
+    <td><span class="style1">ball &amp; stick</span></td>
+    <td><span class="style1">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+  </tr>
+</table>
+</body>
+</html>

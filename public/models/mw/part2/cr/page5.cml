@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<language>UTF-8</language>
+<page_title>Cellular Respiration: The Krebs cycle and the Electron Transport Chain</page_title>
+<bg_color><Red>244</Red><Green>245</Green><Blue>239</Blue></bg_color>
+<text>
+
+ 
+ 
+
+ 
+
+
+  
+ 
+   
+    
+   
+ 
+
+       
+ 
+   
+ 
+ 
+
+
+</text>
+<section start="0" end="53">
+<paragraph start="0" end="1">
+<Alignment>1</Alignment>
+<content start="0" end="1">
+</content>
+
+</paragraph>
+<paragraph start="1" end="2">
+<Alignment>1</Alignment>
+<content start="1" end="2">
+</content>
+
+</paragraph>
+<paragraph start="2" end="4">
+<Alignment>1</Alignment>
+<content start="2" end="3">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>30</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>5</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;pagetitle&quot;&gt;
+      &lt;strong&gt;Cellular Respiration:&lt;/strong&gt; The Krebs cycle and the Electron 
+      Transport Chain
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-c588a1</bgcolor></icon></content>
+
+<content start="3" end="4">
+</content>
+
+</paragraph>
+<paragraph start="4" end="6">
+<Alignment>1</Alignment>
+<content start="4" end="5">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>26.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginheight=&quot;0&quot; marginwidth=&quot;0&quot; background=&quot;topNavBarLeftMargin.jpg&quot;&gt;
+    &lt;table cellpadding=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; id=&quot;Table_01&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;14&quot; height=&quot;26&quot; src=&quot;topNavBarLeftMargin.jpg&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img width=&quot;60&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;prev.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img width=&quot;59&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;next.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img width=&quot;54&quot; height=&quot;26&quot; src=&quot;page.jpg&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img width=&quot;46&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;index.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page1.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page2.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page3.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img width=&quot;29&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page4.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page5Selected.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page6.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page7.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img width=&quot;29&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page8.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page9.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img width=&quot;7&quot; height=&quot;26&quot; src=&quot;topNavBarRightMargin.jpg&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="5" end="6">
+</content>
+
+</paragraph>
+<paragraph start="6" end="7">
+<Alignment>1</Alignment>
+<content start="6" end="7">
+</content>
+
+</paragraph>
+<paragraph start="7" end="9">
+<Alignment>1</Alignment>
+<content start="7" end="8">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>85</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>15</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;mainIdea&quot;&gt;
+    &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;98&quot; height=&quot;58&quot; src=&quot;motionMainIdea.png&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;mainIdea&quot;&gt;
+            Which high energy molecules become part of the Electron Transport 
+            Chain?
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="8" end="9">
+</content>
+
+</paragraph>
+<paragraph start="9" end="10">
+<Alignment>1</Alignment>
+<content start="9" end="10">
+</content>
+
+</paragraph>
+<paragraph start="10" end="11">
+<Alignment>1</Alignment>
+<content start="10" end="11">
+</content>
+
+</paragraph>
+<paragraph start="11" end="14">
+<Alignment>1</Alignment>
+<content start="11" end="12">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>239.0</width>
+<height>246.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r1_c1&quot;&gt;
+      &lt;area coords=&quot;52,75,119,76,148,79,180,80,182,181,142,184,124,166,88,167,37,163,52,75&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 01-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 01-krebs-reactants.mol2;frank off; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=1; set labeloffset 0 -3 {atomno=1}; label pyruvate; select atomno=129; label CoA-SH; select atomno=74; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 5 0 {selected}; define ~green  molecule=1; define ~violet molecule=2; define ~orange molecule=3;
+nativescript:plugin:2:load 01-krebs-products.mol2;frank off; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=160; label CO&lt;sub&gt;2&lt;/sub&gt;; set labeloffset 0 2 {selected}; select atomno=159; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 0 -2 {selected}; set echo ~highEnergy {atomno=152}; script setNADHEcho.spt; select atomno=47; label acetyl-CoA;  define ~green atomno=163 or atomno=165 or atomno=164 or atomno=85 or atomno=84 or atomno=83 or molecule=4 or molecule=3; define ~orange (molecule=1 and not ~green) or atomno=133; define ~violet molecule=2 and not ~orange; &quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;239&quot; height=&quot;246&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r1_c1&quot; src=&quot;fullCycleSlices_r1_c1.png&quot; usemap=&quot;#m_fullCycleSlices_r1_c1&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r1_c1&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="12" end="13">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>511.0</width>
+<height>246.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold }
+        .style1 { font-family: Verdana, Arial, Helvetica, sans-serif }
+      --&gt;
+    &lt;/style&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body style=&quot;margin-left: 15px&quot;&gt;
+    &lt;p class=&quot;firstp&quot;&gt;
+      Several high energy molecules are created during the Krebs cycle. &lt;strong&gt;Use 
+      the &amp;quot;products&amp;quot; and &amp;quot;reactants&amp;quot; buttons as appropriate to take snapshots 
+      of where you see high energy molecules produced. &lt;/strong&gt;These high 
+      energy molecules will be passed on to the Electron Transport Chain (ETC) 
+      shown on the next page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      The reaction where succinate is converted into fumerate (passing on high 
+      energy electrons to FADH&lt;sub&gt;2&lt;/sub&gt;) actually happens as part of the 
+      Electron Transport Chain. FAD is embedded in one of the ETC 
+      proteins/enzymes. &lt;strong&gt;Take a picture of succinate&lt;/strong&gt;, so you 
+      know what to expect when you see it in the ETC model.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="13" end="14">
+</content>
+
+</paragraph>
+<paragraph start="14" end="16">
+<Alignment>1</Alignment>
+<content start="14" end="15">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>112.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r2_c1&quot;&gt;
+      &lt;area coords=&quot;469,39,446,48,471,80,491,90,528,98,547,98,561,89,549,70,509,49,469,39&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 03-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 03-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 972 235 -7 21.57} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {4.18115 13.704199 0.16689998} 5.546461 /* navigation center, translation, depth */ {0.0 0.0 0.0} -41.51103 102.03958 50.0;set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=11; label citrate; define ~violet ({11 20}); define ~green  not ~violet;
+nativescript:plugin:2:load 03-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 965 240 -104 23.77} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {4.18115 13.704199 -0.15155} 5.470439 /* navigation center, translation, depth */ {0.0 0.0 0.0} -47.261642 101.4387 50.0;set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=11; label d-isocitrate; define ~violet ({14 20}); define ~green  not ~violet;&quot;&gt;&lt;/area&gt;
+      &lt;area coords=&quot;103,40,163,101,194,107,234,95,271,77,298,61,315,39,303,0,136,0,103,40&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 02-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 02-krebs-reactants.mol2;frank off; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select c22; label acetyl-CoA; select O22; label oxalate; set labeloffset 0 -2 {selected}; select O23; label water; set labeloffset 0 -2 {selected}; define ~green  molecule=1; define ~orange molecule=2; define ~violet molecule=3;
+nativescript:plugin:2:load 02-krebs-products.mol2;frank off; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=95; label citrate; select atomno=45; label CoA-SH; set labeloffset 1 1 {selected}; define ~violet ({89 101 82}); define ~green (molecule=1 or ({95 88 87 99 100}));  define ~orange not (~violet or ~green);&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;750&quot; height=&quot;112&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r2_c1&quot; src=&quot;fullCycleSlices_r2_c1.png&quot; usemap=&quot;#m_fullCycleSlices_r2_c1&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r2_c1&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="15" end="16">
+</content>
+
+</paragraph>
+<paragraph start="16" end="20">
+<Alignment>1</Alignment>
+<content start="16" end="17">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>239.0</width>
+<height>60.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r3_c1&quot;&gt;
+      &lt;area coords=&quot;96,169,63,182,55,166,51,142,33,130,7,125,8,42,47,42,75,52,93,37,109,28,125,42,131,66,96,169&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;javascript:;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;map name=&quot;fullCycleSlices_r3_c1Map&quot;&gt;
+      &lt;area coords=&quot;9,59,12,38,48,44,69,42,110,22,124,46,129,58&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 09-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 09-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 698 -628 -345 151.01} /* zoom, translation */  90.39 1.74 5.08  /* center, rotationRadius */ {4.12295 1.8249004 -0.40860033} 12.745109 /* navigation center, translation, depth */ {0.0 0.0 0.0} 4.466073 -10.057003 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=13; label malate; set labeloffset 0 2; select atomno=81; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 9 -1; define ~green molecule=1; define ~violet molecule=2;
+
+nativescript:plugin:2:load 09-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -797 222 -562 114.89} /* zoom, translation */  92.24 -2.24 0.0  /* center, rotationRadius */ {2.4563003 0.83180034 -3.0073504} 13.438308 /* navigation center, translation, depth */ {0.0 0.0 0.0} 1.9722213 -12.910019 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=81; label oxaloacetate; set labeloffset 0 2 {selected}; select atomno=74; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 0 -2 {selected}; set echo ~highEnergy {atomno=68}; script setNADHEcho.spt; define ~green molecule=3 or molecule=2 or atomno=48; define ~violet not ~green;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;239&quot; height=&quot;60&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r3_c1&quot; src=&quot;fullCycleSlices_r3_c1.png&quot; usemap=&quot;#fullCycleSlices_r3_c1Map&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r3_c1&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="17" end="18">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>275.0</width>
+<height>60.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style2 { font-size: 7px }
+        .style1 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body style=&quot;margin-top: 5; margin-left: 5&quot;&gt;
+    &lt;div class=&quot;style1&quot;&gt;
+      Click on a reaction arrow to explore those molecules. A description of 
+      the reaction will appear here.
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<bgcolor>-111112</bgcolor>
+<border>Line</border>
+</component></content>
+
+<content start="18" end="19">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>236.0</width>
+<height>60.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r3_c5&quot;&gt;
+      &lt;area coords=&quot;134,70,108,67,114,98,122,139,126,163,136,176,158,178,174,177,183,150,198,145,214,149,225,118,210,78,201,47,134,70&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 04-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 04-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 889 -58 454 147.83} /* zoom, translation */  94.01 0.25 0.0  /* center, rotationRadius */ {-2.43505 4.3183002 1.5039499} 12.696225 /* navigation center, translation, depth */ {0.0 0.0 0.0} 8.135872 -17.65394 50.0;set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=4; label d-isocitrate; select atomno=87; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 1 -1 {selected}; define ~green molecule=1; define ~violet molecule=2;
+nativescript:plugin:2:load 04-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -701 322 -637 89.64} /* zoom, translation */  90.17 0.25 0.0  /* center, rotationRadius */ {2.4563003 0.83180034 -3.0073504} 13.438308 /* navigation center, translation, depth */ {0.0 0.0 0.0} 2.9607935 -11.893382 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=92; label CO&lt;sub&gt;2&lt;/sub&gt;;set labeloffset 1 0 {selected}; select atomno=8; label oxalosuccinate; select atomno=90; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 1 0 {selected}; set echo ~highEnergy {atomno=40}; script setNADHEcho.spt; define ~green molecule=1 or molecule=3 or molecule=4 or  atomno=64; define ~violet not ~green;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;236&quot; height=&quot;60&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r3_c5&quot; src=&quot;fullCycleSlices_r3_c5.png&quot; usemap=&quot;#m_fullCycleSlices_r3_c5&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r3_c5&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="19" end="20">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="20" end="25">
+<Alignment>1</Alignment>
+<content start="20" end="21">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>160.0</width>
+<height>240.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r4_c1&quot;&gt;
+      &lt;area coords=&quot;66,240,56,175,85,173,108,239&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 08-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 08-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -42 -8 999 93.79} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {1.3317997 -1.3919 -0.12640001} 5.6531954 /* navigation center, translation, depth */ {0.0 0.0 0.0} -13.5065565 12.449051 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=13; label H&lt;sub&gt;2&lt;/sub&gt;O; set labeloffset 0 -2; select atomno=11; label fumerate; set labeloffset 0 -5; define ~green molecule=1; define ~violet molecule=2;
+
+nativescript:plugin:2:load 08-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -641 423 641 174.42} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {-0.80009997 -0.5226002 -0.018450022} 4.6698174 /* navigation center, translation, depth */ {0.0 0.0 0.0} -5.7874117 7.385448 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=9; set labeloffset 1 -5; label malate;  define ~violet ({14 8 12}); define ~green not ~violet;&quot;&gt;&lt;/area&gt;
+      &lt;area coords=&quot;125,1,117,38,101,77,88,108,63,123,53,101,40,77,7,68,1,36,19,1&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 09-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 09-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 698 -628 -345 151.01} /* zoom, translation */  90.39 1.74 5.08  /* center, rotationRadius */ {4.12295 1.8249004 -0.40860033} 12.745109 /* navigation center, translation, depth */ {0.0 0.0 0.0} 4.466073 -10.057003 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=13; label malate; set labeloffset 0 2; select atomno=81; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 9 -1; define ~green molecule=1; define ~violet molecule=2;
+
+nativescript:plugin:2:load 09-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -797 222 -562 114.89} /* zoom, translation */  92.24 -2.24 0.0  /* center, rotationRadius */ {2.4563003 0.83180034 -3.0073504} 13.438308 /* navigation center, translation, depth */ {0.0 0.0 0.0} 1.9722213 -12.910019 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=81; label oxaloacetate; set labeloffset 0 2 {selected}; select atomno=74; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 0 -2 {selected}; set echo ~highEnergy {atomno=68}; script setNADHEcho.spt; define ~green molecule=3 or molecule=2 or atomno=48; define ~violet not ~green;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;160&quot; height=&quot;240&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r4_c1&quot; src=&quot;fullCycleSlices_r4_c1.png&quot; usemap=&quot;#m_fullCycleSlices_r4_c1&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r4_c1&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="21" end="22">
+<component><class>org.concord.modeler.PageJContainer</class>
+<appletjar>JmolApplet.jar</appletjar>
+<appletjar>netscape.jar</appletjar>
+<appletclass>org.jmol.applet.MwPlugin</appletclass>
+<resource>page5$plugin$0.aps</resource><parameter>{name=&quot;nostatepersistence&quot; value=&quot;true&quot;}
+{name=&quot;script&quot; value=&quot;frank off&quot;}
+</parameter>
+<width>205</width><height>240</height>
+<border>Lowered Bevel</border><codebase>http://mw2.concord.org/public/plugin/</codebase><cachefile>01-krebs-reactants.mol2,
+02-krebs-reactants.mol2,
+03-krebs-reactants.mol2,
+04-krebs-reactants.mol2,
+05-krebs-reactants.mol2,
+06-krebs-reactants.mol2,
+07-krebs-reactants.mol2,
+08-krebs-reactants.mol2,
+09-krebs-reactants.mol2</cachefile></component></content>
+
+<content start="22" end="23">
+<component><class>org.concord.modeler.PageJContainer</class>
+<appletjar>JmolApplet.jar</appletjar>
+<appletjar>netscape.jar</appletjar>
+<appletclass>org.jmol.applet.MwPlugin</appletclass>
+<resource>page5$plugin$1.aps</resource><parameter>{name=&quot;nostatepersistence&quot; value=&quot;true&quot;}
+{name=&quot;script&quot; value=&quot;frank off&quot;}
+</parameter>
+<width>205</width><height>240</height>
+<border>Lowered Bevel</border><codebase>http://mw2.concord.org/public/plugin/</codebase><cachefile>01-krebs-products.mol2,
+02-krebs-products.mol2,
+03-krebs-products.mol2,
+04-krebs-products.mol2,
+05-krebs-products.mol2,
+06-krebs-products.mol2,
+07-krebs-products.mol2,
+08-krebs-products.mol2,
+09-krebs-products.mol2,
+setNADHEcho.spt,
+setFADH2Echo.spt,
+setGTPEcho.spt,
+nadhEcho.gif,
+gtpEcho.gif,
+fadh2Echo.gif,
+atpEcho.gif
+</cachefile></component></content>
+
+<content start="23" end="24">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>180.0</width>
+<height>240.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r4_c7&quot;&gt;
+      &lt;area coords=&quot;67,175,109,173,116,187,135,195,170,202,169,228,170,296,136,299,106,298,87,295,68,308,51,309,27,278,67,175&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 05-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 05-krebs-reactants.mol2;frank off; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=166; label oxalo-|succinate; set labeloffset 1 -2 {selected}; select atomno=116; label CoA; select atomno=67; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 14 0 {selected}; define ~violet molecule=1; define ~orange molecule=2; define ~green molecule=3;
+
+nativescript:plugin:2:load 05-krebs-products.mol2;frank off; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=121; label succinyl-CoA; select atomno=75; label CO&lt;sub&gt;2&lt;/sub&gt;; set labeloffset 0 2 {selected}; select atomno=74; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 0 -2; set echo ~highEnergy {atomno=67}; script setNADHEcho.spt;  define ~green ({73:76 158:162 164:170}); define ~orange (molecule=4 and not ~green) or atomno=48; define ~violet molecule=1 and not ~green;&quot;&gt;&lt;/area&gt;
+      &lt;area coords=&quot;78,10,52,7,58,38,66,79,70,103,80,116,102,118,118,117,127,90,142,85,158,89,169,58,154,18,145,-13,78,10&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 04-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+nativescript:plugin:1:load 04-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 889 -58 454 147.83} /* zoom, translation */  94.01 0.25 0.0  /* center, rotationRadius */ {-2.43505 4.3183002 1.5039499} 12.696225 /* navigation center, translation, depth */ {0.0 0.0 0.0} 8.135872 -17.65394 50.0;set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=4; label d-isocitrate; select atomno=87; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 1 -1 {selected}; define ~green molecule=1; define ~violet molecule=2;
+nativescript:plugin:2:load 04-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -701 322 -637 89.64} /* zoom, translation */  90.17 0.25 0.0  /* center, rotationRadius */ {2.4563003 0.83180034 -3.0073504} 13.438308 /* navigation center, translation, depth */ {0.0 0.0 0.0} 2.9607935 -11.893382 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=92; label CO&lt;sub&gt;2&lt;/sub&gt;;set labeloffset 1 0 {selected}; select atomno=8; label oxalosuccinate; select atomno=90; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 1 0 {selected}; set echo ~highEnergy {atomno=40}; script setNADHEcho.spt; define ~green molecule=1 or molecule=3 or molecule=4 or  atomno=64; define ~violet not ~green;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;180&quot; height=&quot;240&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r4_c7&quot; src=&quot;fullCycleSlices_r4_c7.png&quot; usemap=&quot;#m_fullCycleSlices_r4_c7&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r4_c7&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="24" end="25">
+</content>
+
+</paragraph>
+<paragraph start="25" end="29">
+<Alignment>1</Alignment>
+<content start="25" end="26">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>218.0</width>
+<height>80.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r5_c1&quot;&gt;
+      &lt;area coords=&quot;30,1,27,38,51,50,77,37,109,29,117,0&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 08-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 08-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -42 -8 999 93.79} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {1.3317997 -1.3919 -0.12640001} 5.6531954 /* navigation center, translation, depth */ {0.0 0.0 0.0} -13.5065565 12.449051 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=13; label H&lt;sub&gt;2&lt;/sub&gt;O; set labeloffset 0 -2; select atomno=11; label fumerate; set labeloffset 0 -5; define ~green molecule=1; define ~violet molecule=2;
+
+nativescript:plugin:2:load 08-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { -641 423 641 174.42} /* zoom, translation */  100.0 0.25 0.0  /* center, rotationRadius */ {-0.80009997 -0.5226002 -0.018450022} 4.6698174 /* navigation center, translation, depth */ {0.0 0.0 0.0} -5.7874117 7.385448 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=9; set labeloffset 1 -5; label malate;  define ~violet ({14 8 12}); define ~green not ~violet;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;218&quot; height=&quot;80&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r5_c1&quot; src=&quot;fullCycleSlices_r5_c1.png&quot; usemap=&quot;#m_fullCycleSlices_r5_c1&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r5_c1&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="26" end="27">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>320.0</width>
+<height>80.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style3 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold }
+        .style1 { font-family: Verdana, Arial, Helvetica, sans-serif }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; align=&quot;center&quot; border=&quot;0&quot; style=&quot;width: 320&quot;&gt;
+      &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;input value=&quot;radio&quot; checked=&quot;checked&quot; script=&quot;
+            	nativescript:plugin:1:select all; color atoms cpk; set testFlag3 false;
+                nativescript:plugin:2:select all; color atoms cpk; if (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~lig1))) or (*.CA or sidechain) and (within(group,within(4.0,~lig2)))) and not (~lig1 or ~lig2); color atoms chain; endif; set testFlag3 false;
+                nativescript:plugin:3:select all; color atoms cpk; set testFlag3 false;&quot; id=&quot;RadioGroup1_0&quot; type=&quot;radio&quot; name=&quot;RadioGroup1&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;color by element&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;&amp;#160;&amp;#160;&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;input value=&quot;radio&quot; script=&quot;
+            	nativescript:plugin:1:select all; spacefill 100%; set testFlag2 true;
+                nativescript:plugin:2:If (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet))) or ~green or ~violet); else; select all; endif; spacefill 100%; set testFlag2 true;
+                nativescript:plugin:3:select all; spacefill 100%; set testFlag2 true;&quot; id=&quot;RadioGroup2_0&quot; type=&quot;radio&quot; name=&quot;RadioGroup2&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;spacefill&lt;/span&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;input value=&quot;radio&quot; script=&quot;
+        	nativescript:plugin:1: select ~violet; color atoms violet; select ~green; color atoms green; select ~orange; color atoms orange; set testFlag3 true;
+            nativescript:plugin:2: select protein; color atoms chain; select ~green; color atoms green; select ~violet; color atoms violet; select ~orange; color atoms orange; set testFlag3 true;
+            nativescript:plugin:3: select ~violet; color atoms violet; select ~green; color atoms green; select ~orange; color atoms orange; set testFlag3 true;&quot; id=&quot;RadioGroup1_1&quot; type=&quot;radio&quot; name=&quot;RadioGroup1&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;highlight changes&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;&amp;#160;&amp;#160;&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;input value=&quot;radio&quot; checked=&quot;checked&quot; script=&quot;
+            	nativescript:plugin:1:select all; spacefill 20%; wireframe 0.15; set testFlag2 false;
+                nativescript:plugin:2:If (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet))) or ~green or ~violet); else; select all; endif; spacefill 20%; wireframe 0.15; set testFlag2 false;
+                nativescript:plugin:3:select all; spacefill 20%; wireframe 0.15; set testFlag2 false;&quot; id=&quot;RadioGroup2_1&quot; type=&quot;radio&quot; name=&quot;RadioGroup2&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;ball &amp;amp; stick&lt;/span&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;5&quot; align=&quot;center&quot;&gt;
+          &lt;input selfscript=&quot;selectcomponent 6 false&quot; value=&quot;re-center&quot; script=&quot;
+        	nativescript:plugin:1:zoomto 1 {visible} 100%;
+            nativescript:plugin:2:zoomto 1 {visible} 100%;
+            nativescript:plugin:3:zoomto 1 {visible} 100%;
+            &quot; id=&quot;reset&quot; type=&quot;submit&quot; name=&quot;reset&quot;&gt;
+          &lt;input value=&quot;Rectants&quot; script=&quot;script:plugin:1:snapshot&quot; id=&quot;button&quot; type=&quot;submit&quot; name=&quot;button&quot;&gt;
+          &lt;input value=&quot;Products&quot; script=&quot;script:plugin:2:snapshot&quot; id=&quot;button2&quot; type=&quot;submit&quot; name=&quot;button2&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="27" end="28">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>212.0</width>
+<height>80.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r5_c6&quot;&gt;
+      &lt;area coords=&quot;80,0,70,14,62,38,78,62,95,66,119,48,144,55,188,55,201,51,198,31,188,12,184,3&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 05-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 05-krebs-reactants.mol2;frank off; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=166; label oxalo-|succinate; set labeloffset 1 -2 {selected}; select atomno=116; label CoA; select atomno=67; label NAD&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 14 0 {selected}; define ~violet molecule=1; define ~orange molecule=2; define ~green molecule=3;
+
+nativescript:plugin:2:load 05-krebs-products.mol2;frank off; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=121; label succinyl-CoA; select atomno=75; label CO&lt;sub&gt;2&lt;/sub&gt;; set labeloffset 0 2 {selected}; select atomno=74; label H&lt;sup&gt;+&lt;/sup&gt;; set labeloffset 0 -2; set echo ~highEnergy {atomno=67}; script setNADHEcho.spt;  define ~green ({73:76 158:162 164:170}); define ~orange (molecule=4 and not ~green) or atomno=48; define ~violet molecule=1 and not ~green;&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;212&quot; height=&quot;80&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r5_c6&quot; src=&quot;fullCycleSlices_r5_c6.png&quot; usemap=&quot;#m_fullCycleSlices_r5_c6&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r5_c6&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="28" end="29">
+</content>
+
+</paragraph>
+<paragraph start="29" end="31">
+<Alignment>1</Alignment>
+<content start="29" end="30">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>101.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;map name=&quot;m_fullCycleSlices_r6_c1&quot;&gt;
+      &lt;area coords=&quot;194,13,226,9,265,18,288,33,301,58,291,87,275,101,226,99,184,94,181,46,183,20,194,13&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 07-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 07-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 187 -778 -600 141.62} /* zoom, translation */  100.0 0.75 9.32  /* center, rotationRadius */ {4.7310004 1.4511497 -4.8617506} 12.436742 /* navigation center, translation, depth */ {0.0 0.0 0.0} 0.1757228 -13.867397 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=3; label succinate; select atomno=27; label FAD; define ~green molecule=1; define ~violet molecule=2;
+
+nativescript:plugin:2:load 07-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 265 -797 -543 145.82} /* zoom, translation */  92.24 0.25 7.63  /* center, rotationRadius */ {4.7310004 1.4511497 -4.4973} 12.272311 /* navigation center, translation, depth */ {0.0 0.0 0.0} 0.9520232 -12.736291 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=88; label fumerate; set echo ~highEnergy {atomno=42}; script setFADH2Echo.spt;  define ~green molecule=2 or ({98:99});
+define ~violet not ~green;&quot;&gt;&lt;/area&gt;
+      &lt;area coords=&quot;466,31,498,23,525,17,549,10,559,16,568,20,581,19,587,42,591,57,604,75,585,97,569,101,461,100,452,63,466,31&quot; alt=&quot;&quot; shape=&quot;poly&quot; href=&quot;script:textbox:6:load 06-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 06-krebs-reactants.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 51 -987 153 170.06} /* zoom, translation */  114.59 0.25 0.0  /* center, rotationRadius */ {1.5989499 -7.0917506 3.3689497} 18.237768 /* navigation center, translation, depth */ {0.0 0.0 0.0} 4.3961067 -24.73229 50.0; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=47; label succinyl-CoA; select atomno=137; label P&lt;sub&gt;i&lt;/sub&gt;; set labeloffset 0 -2 {selected}; select atomno=111; label GDP; set labeloffset 12 0; define ~green molecule=1; define ~orange molecule=3; define ~violet molecule=2;
+
+nativescript:plugin:2:load 06-krebs-products.mol2;frank off; moveto /* time, axisAngle */ 0.0 { 24 -964 265 167.38} /* zoom, translation */  100.0 3.48 0.0  /* center, rotationRadius */ {2.7848501 -7.68965 4.10285} 16.603674 /* navigation center, translation, depth */ {0.0 0.0 0.0} 12.722908 -25.667393 50.0; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=45; label CoA; select atomno=139; label succinate; set labeloffset 0 -5 {selected}; set echo ~highEnergy {atomno=124}; script setGTPEcho.spt;  define ~orange ({81 107:110 132 140}); define ~green (molecule=1 and not atomno=82) or (molecule=3 and not (atomno=133 or atomno=141)); define ~violet not (~green or ~orange);&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;p style=&quot;margin-top: 0&quot;&gt;
+      &lt;img width=&quot;750&quot; height=&quot;101&quot; border=&quot;0&quot; id=&quot;fullCycleSlices_r6_c1&quot; src=&quot;fullCycleSlices_r6_c1.png&quot; usemap=&quot;#m_fullCycleSlices_r6_c1&quot; alt=&quot;&quot; name=&quot;fullCycleSlices_r6_c1&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="30" end="31">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="31" end="32">
+<Alignment>1</Alignment>
+<content start="31" end="32">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="32" end="40">
+<SpaceBelow>8.0</SpaceBelow>
+<Alignment>1</Alignment>
+<content start="32" end="33">
+<size>8</size><component><class>org.concord.modeler.ImageQuestion</class><width>244</width><height>300</height><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      Place an image of NADH here:
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="33" end="35">
+<size>8</size></content>
+
+<content start="35" end="36">
+<size>8</size><component><class>org.concord.modeler.ImageQuestion</class><width>244</width><height>300</height><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      Place an image of FAD here:
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="36" end="38">
+<size>8</size></content>
+
+<content start="38" end="39">
+<size>8</size><component><class>org.concord.modeler.ImageQuestion</class><width>244</width><height>300</height><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      Place an image of succinate here:
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="39" end="40">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="40" end="42">
+<Alignment>1</Alignment>
+<content start="40" end="41">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>20</height><arcwidth>5</arcwidth><archeight>5</archeight><cornerarc>5</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="41" end="42">
+</content>
+
+</paragraph>
+<paragraph start="42" end="46">
+<Alignment>1</Alignment>
+<content start="42" end="43">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>494.0</width><height>44</height><arcwidth>5</arcwidth><archeight>5</archeight><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;bioStyles.css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p align=&quot;center&quot; class=&quot;firstp&quot;&gt;
+      &lt;strong&gt;You have reached the end of Part 1.&lt;br&gt;&lt;a href=&quot;script:page:0:message endPartOne.html&quot;&gt;CLICK 
+      HERE BEFORE REPORTING.&lt;/a&gt;&lt;/strong&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="43" end="44">
+<component><class>org.concord.modeler.ActivityButton</class>
+<title>Create a report of my work.</title>
+<description>Cellular Respiration: Day One</description>
+<group>page1.cml,page2.cml,page3.cml,page4.cml,page5.cml,page6.cml,page7.cml,page8.cml,page9.cml</group>
+<width>206</width><height>40</height>
+<opaque>false</opaque>
+<action>Create a report for a page group in a new window</action></component></content>
+
+<content start="44" end="45">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>50.0</width><height>44</height><arcwidth>5</arcwidth><archeight>5</archeight><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="45" end="46">
+</content>
+
+</paragraph>
+<paragraph start="46" end="48">
+<SpaceBelow>8.0</SpaceBelow>
+<Alignment>1</Alignment>
+<content start="46" end="47">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>20</height><arcwidth>5</arcwidth><archeight>5</archeight><cornerarc>10</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="47" end="48">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="48" end="50">
+<Alignment>1</Alignment>
+<content start="48" end="49">
+<size>8</size><component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>32.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginheight=&quot;0&quot; marginwidth=&quot;0&quot; background=&quot;navBarBottomBackground.jpg&quot;&gt;
+    &lt;table cellpadding=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; id=&quot;Table_01&quot;&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot;&gt;
+          &lt;img width=&quot;14&quot; height=&quot;6&quot; src=&quot;navBarBottomColorBar.gif&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;8&quot; height=&quot;26&quot; src=&quot;navBarBottomLeftMargin.jpg&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img width=&quot;60&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;prev.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img width=&quot;59&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;next.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img width=&quot;54&quot; height=&quot;26&quot; src=&quot;page.jpg&quot;&gt;
+          &lt;font&gt;&lt;a href=&quot;index.cml&quot;&gt;&lt;img width=&quot;46&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;index.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page1.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page2.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page3.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img width=&quot;29&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page4.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page5Selected.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page6.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page7.jpg&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img width=&quot;29&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page8.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;font&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img width=&quot;28&quot; height=&quot;26&quot; border=&quot;0&quot; src=&quot;page9.jpg&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img width=&quot;7&quot; height=&quot;26&quot; src=&quot;navBarBottomRightMargin.jpg&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="49" end="50">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="50" end="51">
+<content start="50" end="51">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="51" end="52">
+<content start="51" end="52">
+<size>10</size></content>
+
+</paragraph>
+<paragraph start="52" end="53">
+</paragraph>
+</section>
+</document>

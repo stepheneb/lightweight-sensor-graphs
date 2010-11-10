@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<language>UTF-8</language>
+<page_title>Cellular Respiration: The role of enzymes</page_title>
+<bg_color><Red>244</Red><Green>245</Green><Blue>239</Blue></bg_color>
+<text>
+
+ 
+ 
+
+ 
+
+ 
+ 
+   
+ 
+   
+       
+ 
+ 
+    
+ 
+
+
+</text>
+<section start="0" end="46">
+<paragraph start="0" end="1">
+<Alignment>1</Alignment>
+<content start="0" end="1">
+</content>
+
+</paragraph>
+<paragraph start="1" end="2">
+<Alignment>1</Alignment>
+<content start="1" end="2">
+</content>
+
+</paragraph>
+<paragraph start="2" end="4">
+<Alignment>1</Alignment>
+<content start="2" end="3">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>30</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>5</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bioStyles.css&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;pagetitle&quot;&gt;
+      &lt;strong&gt;Cellular Respiration:&lt;/strong&gt; The role of enzymes
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-c588a1</bgcolor></icon></content>
+
+<content start="3" end="4">
+</content>
+
+</paragraph>
+<paragraph start="4" end="6">
+<Alignment>1</Alignment>
+<content start="4" end="5">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>26.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginwidth=&quot;0&quot; marginheight=&quot;0&quot; background=&quot;topNavBarLeftMargin.jpg&quot;&gt;
+    &lt;table cellspacing=&quot;0&quot; id=&quot;Table_01&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; border=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img src=&quot;topNavBarLeftMargin.jpg&quot; width=&quot;14&quot; height=&quot;26&quot;&gt;
+          &lt;a href=&quot;page2.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;prev.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;60&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;font&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img src=&quot;next.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;59&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img src=&quot;page.jpg&quot; width=&quot;54&quot; height=&quot;26&quot;&gt;
+          &lt;a href=&quot;index.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;index.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;46&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;page1.jpg&quot; width=&quot;28&quot; border=&quot;0&quot; height=&quot;26&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;page2.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;font&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img src=&quot;page3Selected.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img src=&quot;page4.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img src=&quot;page5.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img src=&quot;page6.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img src=&quot;page7.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img src=&quot;page8.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img src=&quot;page9.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img src=&quot;topNavBarRightMargin.jpg&quot; width=&quot;7&quot; height=&quot;26&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="5" end="6">
+</content>
+
+</paragraph>
+<paragraph start="6" end="7">
+<Alignment>1</Alignment>
+<content start="6" end="7">
+</content>
+
+</paragraph>
+<paragraph start="7" end="9">
+<Alignment>1</Alignment>
+<content start="7" end="8">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>85</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>15</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bioStyles.css&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;mainIdea&quot;&gt;
+    &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img width=&quot;98&quot; src=&quot;motionMainIdea.png&quot; height=&quot;58&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;p class=&quot;mainIdea&quot;&gt;
+            What role do enzymes play in glycolysis?
+          &lt;/p&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-231326</bgcolor></icon></content>
+
+<content start="8" end="9">
+</content>
+
+</paragraph>
+<paragraph start="9" end="10">
+<Alignment>1</Alignment>
+<content start="9" end="10">
+</content>
+
+</paragraph>
+<paragraph start="10" end="12">
+<Alignment>1</Alignment>
+<SpaceBelow>15.0</SpaceBelow>
+<content start="10" end="11">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>200.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style1 { color: #CC0000 }
+      --&gt;
+    &lt;/style&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bioStyles.css&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class=&quot;firstp&quot;&gt;
+      In purple letters, below each reaction arrow, is the name of the enzyme 
+      necessary for that reaction to occur. Almost every chemical reaction in 
+      your body is made possible, because enzymes lower the energy needed to 
+      make the reaction happen. Without enzymes the reactions happen too 
+      slowly.
+    &lt;/p&gt;
+    &lt;p&gt;
+      The enzymes shown here are frozen in time, and either have a reactant 
+      sitting in their &lt;a href=&quot;script:page:1:message activeSite.html&quot;&gt;active 
+      site&lt;/a&gt; or a product. Through the course of the chemical reaction, the 
+      enzyme first binds to the reactants, then facilitates a reaction, and 
+      then releases the products.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Clicking on a reaction arrow will now show you the enzyme for each step. &lt;strong&gt;See 
+      if you can find an enzyme that has a reactant in the active site, take a 
+      snapshot, and add a note pointing out the reactant you see.&lt;/strong&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="11" end="12">
+</content>
+
+</paragraph>
+<paragraph start="12" end="14">
+<Alignment>1</Alignment>
+<content start="12" end="13">
+<size>8</size><icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>30</height><arcwidth>10</arcwidth><archeight>10</archeight><cornerarc>5</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bioStyles.css&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body style=&quot;margin-top: 5&quot;&gt;
+    &lt;p class=&quot;firstp&quot; align=&quot;center&quot;&gt;
+      &lt;font color=&quot;white&quot;&gt;&lt;strong&gt;Scroll through the 10 steps of glycolysis.&lt;/strong&gt;&lt;/font&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-926584</bgcolor></icon></content>
+
+<content start="13" end="14">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="14" end="18">
+<Alignment>1</Alignment>
+<content start="14" end="15">
+<size>8</size><icon><class>org.concord.modeler.text.LineIcon</class><width>15.0</width><height>281</height><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-926584</bgcolor></icon></content>
+
+<content start="15" end="16">
+<size>8</size><component><class>org.concord.modeler.PageTextBox</class>
+<width>720.0</width>
+<height>281.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginwidth=&quot;10&quot; marginheight=&quot;10&quot; bgcolor=&quot;#E8E8E8&quot;&gt;
+    &lt;map name=&quot;Map&quot;&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 03-reactants.mol2; frank off; set picking center;moveto /* time, axisAngle */ 0.0 { -314 -910 -271 133.06} /* zoom, translation */  86.78 0.0 0.0  /* center, rotationRadius */ {-2.3134 -1.7724502 -4.928401} 9.906773 /* navigation center, translation, depth */ {0.0 0.0 0.0} -14.407219 -21.954744 50.0; color label yellow; select atomno=1; label F6P;  set echo ~highEnergy {atomno=50}; script setATPEcho.spt; define ~green molecule=1; define ~violet not ~green; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 03-enzyme.pdb.gz; frank off; model all; set picking center; color label yellow; define ~violet ADP; select [ADP]*.O2&apos;; label ADP; set labelpointer on ADP; define ~green F6P; select [F6P]*.O5; label F6P; set labelpointer on F6P; color echo yellow; font echo 14 sansserif; set echo bottom center; echo phosphofructokinase; define ~lig1 1.1 and F6P; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 03-products.mol2; frank off; set picking center; color label yellow; select atomno=40; label F1,6BP; select atomno=23; label ADP; define ~violet molecule=1 or (atomno&gt;= 56 and atomno&lt;=59); define ~green not ~violet; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;725,0,876,173&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 01-reactants.mol2; frank off; set picking center; color label yellow; select atomno=49; label Glc; set echo ~highEnergy {atomno=28}; script setATPEcho.spt; center {0.38050008 3.4712503 0.0}; rotate z 5.0; zoom 86.71; define ~violet molecule=1; define ~green not ~violet; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 01-enzyme.pdb.gz; frank off; set picking center; color label yellow; select atomno=3363; label Glc; set labelpointer on Glc; color echo yellow; font echo 14 sansserif; set echo bottom center; echo hexokinase; center {30.717499 25.009 64.3665}; rotate z 170.1; rotate y 119.99; rotate z 121.78; define ~lig1 Glc; define ~green Glc; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 01-products.mol2; frank off; set picking center; color label yellow; select atomno=45; label G6P; select atomno=23; label ADP; center {1.3180001 4.2096004 0.0}; define ~violet molecule=1 or (atomno &gt;= 52 and atomno &lt;= 55); define ~green not ~violet; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;117,1,255,167&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 02-reactants.mol2; frank off; set picking center; color label yellow; select atomno=6; label G6P; define ~green molecule=1; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 02-enzyme.pdb.gz; frank off; set picking center; color label yellow; select atomno=8802; label F6P; select atomno=8818; label F6P; set labelpointer on F6P; color echo yellow; font echo 14 sansserif; set echo bottom center; echo phosphoglucose|isomerase; define ~lig1 molecule=3; define ~green F6P; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 02-products.mol2; frank off; set picking center; color label yellow;select atomno=1; label F6P; moveto /* time, axisAngle */ 0.0 { -430 -866 -254 128.28} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-0.86654997 1.03735 -1.5417502} 6.1596003 /* navigation center, translation, depth */ {0.0 0.0 0.0} -19.71646 -6.443261 50.0; define ~green molecule=1; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;404,3,547,186&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 04-reactants.mol2; frank off; set picking center;moveto /* time, axisAngle */ 0.0 { -408 -880 -243 129.78} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-0.8960999 1.6633499 -1.6118503} 6.553933 /* navigation center, translation, depth */ {0.0 0.0 0.0} -23.98576 -2.8738813 50.0; color label yellow; select atomno=1; label F1,6BP; define ~green atomno=3 or atomno=28 or (atomno&gt;=10 and atomno&lt;=16) or atomno=22 or atomno=30 or atomno=2 or atomno=21 or atomno=29; define ~violet not ~violet; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 04-enzyme.pdb.gz; frank off; moveto /* time, axisAngle */ 0.0 { 997 -81 22 84.81} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {27.09293 10.696651 28.839367} 60.778477 /* navigation center, translation, depth */ {0.0 0.0 0.0} -19.039469 -26.37086 50.0;  set picking center; color label yellow;  select [13p]*.O1; label GADP; set labelpointer on selected; color echo yellow; font echo 14 sansserif; set echo bottom center; echo fructose biphosphate|aldolase; define ~green [13P]; define ~lig1 [13P]A; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 04-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -561 -828 22 148.67} /* zoom, translation */  86.81 0.0 0.0  /* center, rotationRadius */ {-2.8695998 1.5536499 -1.4345499} 8.547038 /* navigation center, translation, depth */ {0.0 0.0 0.0} -18.11432 -11.294602 50.0;set picking center; color label yellow; select atomno=17; label GADP; select atomno=13; label DHAP; define ~green molecule=2; define ~violet not ~violet; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;1075,3,1225,177&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 05-reactants.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -561 -828 22 148.67} /* zoom, translation */  86.81 0.0 0.0  /* center, rotationRadius */ {-2.8695998 1.5536499 -1.4345499} 8.547038 /* navigation center, translation, depth */ {0.0 0.0 0.0} -18.11432 -11.294602 50.0;set picking center; color label yellow; select atomno=17; label GADP; select atomno=13; label DHAP; define ~violet molecule=2; define ~green not ~violet; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 05-enzyme.pdb.gz; frank off; set picking center; color label yellow;  select [PGA]*.C2; label DHAP; set labelpointer on selected; color echo yellow; font echo 14 sansserif; set echo bottom center; echo triosephospate|isomerase; define ~green [PGA]; define ~lig1 [PGA]A; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 05-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -551 -834 -28 152.22} /* zoom, translation */  65.43 0.0 0.0  /* center, rotationRadius */ {-2.2465672 -2.6789734 -0.61482} 5.4677563 /* navigation center, translation, depth */ {0.0 0.0 0.0} 11.013869 -19.202564 50.0; set picking center; color label yellow; select atomno=2; label GADP; define ~violet molecule=1; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;1491,0,1643,184&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 06-reactants.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -591 -795 139 123.76} /* zoom, translation */  78.47 0.0 0.0  /* center, rotationRadius */ {-6.4375 -4.7107 -2.7444003} 12.962373 /* navigation center, translation, depth */ {0.0 0.0 0.0} 2.521984 -24.785826 50.0; set picking center; color label yellow; select atomno=10; label GADP; select atomno=89; label Pi; select atomno=36; label NAD+; define ~green molecule=1; define ~violet molecule=2; define ~orange  molecule=3; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 06-enzyme.pdb.gz; frank off; moveto /* time, axisAngle */ 0.0 { -628 -709 321 133.34} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-12.167002 61.5965 74.948} 60.304634 /* navigation center, translation, depth */ {0.0 0.0 0.0} 33.794044 4.0892262 50.0; set picking center; color label yellow;  select [G3H]*.O2P; label GADP; set labelpointer on selected; select [NAD]*.O1A; label NAD+; set labelpointer on selected; color echo yellow; font echo 14 sansserif; set echo bottom center; echo glyceraldehyde phosphate|dehydrogenase; define ~green [G3H]; define ~violet [NAD]; define ~lig1 molecule=10; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 06-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -396 -660 639 84.31} /* zoom, translation */  81.71 0.0 0.0  /* center, rotationRadius */ {-5.4853 -4.1842 -4.7579} 12.593561 /* navigation center, translation, depth */ {0.0 0.0 0.0} -19.346107 -22.488386 50.0; set picking center; color label yellow; select atomno=13; label 1,3BPG; select atomno=93; label H+; set echo ~highEnergy {atomno=39}; script setNADHEcho.spt;  define ~orange  molecule=3 or atomno=8 or atomno=9 or atomno=10 or atomno=1 or atomno=2; define ~green (molecule=1 and not ~orange) or atomno=67; define ~violet molecule=2 and not ~green; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;1831,-1,2002,193&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 07-reactants.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -590 -420 689 94.16} /* zoom, translation */  110.23 0.0 0.0  /* center, rotationRadius */ {-4.6340003 -3.9979 -4.8616} 11.605483 /* navigation center, translation, depth */ {0.0 0.0 0.0} -26.679825 -28.790382 50.0; set picking center; color label yellow; select atomno=5; label 1,3PBG; select atomno=42; label ADP; define ~green molecule=1; define ~violet molecule=2; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 07-enzyme.pdb.gz; frank off; moveto /* time, axisAngle */ 0.0 { 96 -877 470 129.72} /* zoom, translation */  101.49 0.0 0.0  /* center, rotationRadius */ {31.436499 18.7095 22.655} 41.14358 /* navigation center, translation, depth */ {0.0 0.0 0.0} 51.076233 2.3163605 50.0; set picking center; color label yellow;  select atomno=3068; label 3PG; set labelpointer on selected;  color echo yellow; font echo 14 sansserif; set echo bottom center; echo phosphocycerate|kinase; define ~green [3PG]; define ~lig1 [3PG]; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 07-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -566 -536 627 101.07} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-4.49145 -3.5202003 -2.74275} 10.291719 /* navigation center, translation, depth */ {0.0 0.0 0.0} -16.098038 -24.995667 50.0; set picking center; color label yellow; select atomno=13; label 3PG; set echo ~highEnergy {atomno=39}; script setATPEcho.spt; define ~green molecule=1 or (atomno&gt;=56 and atomno&lt;=59); define ~violet not ~green; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;2186,1,2343,180&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 08-reactants.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -546 -836 62 135.08} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-0.7092999 -0.38044995 -1.29775} 5.3023357 /* navigation center, translation, depth */ {0.0 0.0 0.0} -8.37204 -10.595721 50.0; set picking center; color label yellow; select atomno=5; label 3PG; define ~violet atomno&gt;=8 and atomno&lt;=11; define ~green not ~violet; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 08-enzyme.pdb.gz; frank off; moveto /* time, axisAngle */ 0.0 { -724 19 690 81.53} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {10.709498 75.765 5.9965} 43.254208 /* navigation center, translation, depth */ {0.0 0.0 0.0} 68.24902 36.760452 50.0; set picking center; color label yellow; select atomno=4003; label 2PG; set labelpointer on F6P; color echo yellow; font echo 14 sansserif; set echo bottom center; echo phosphoglycerate|mutase; define ~lig1 [2PG]; define ~green [2PG]; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 08-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -271 922 -275 63.84} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-0.19204998 -0.63105 -0.84714997} 4.7821264 /* navigation center, translation, depth */ {0.0 0.0 0.0} 12.106948 -6.1193323 50.0; set picking center; color label yellow;select atomno=5; label 2PG; define ~violet atomno&gt;=8 and atomno&lt;=11; define ~green not ~violet; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;2522,4,2673,184&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 09-reactants.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -283 874 -396 67.97} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-0.19204998 -0.63105 -0.84714997} 4.7821264 /* navigation center, translation, depth */ {0.0 0.0 0.0} 12.949242 -4.9344664 50.0; set picking center; color label yellow; select atomno=5; label 2PG; define ~violet atomno=5 or atomno=16 or atomno=13; define ~green not ~violet; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 09-enzyme.pdb.gz; frank off; moveto /* time, axisAngle */ 0.0 { 809 542 228 143.36} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {-1.342001 64.44299 -1.1285} 46.105434 /* navigation center, translation, depth */ {0.0 0.0 0.0} -38.539383 -20.149103 50.0; set picking center; color label yellow; select atomno=6598; label 2PG; set labelpointer on selected; select atomno=6607; label PEP; set labelpointer on selected; color echo yellow; font echo 14 sansserif; set echo bottom center; echo enolase; define ~lig1 [PEP]; define ~green [PEP] or [2PG]; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 09-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -951 164 -263 134.84} /* zoom, translation */  103.33 0.0 0.0  /* center, rotationRadius */ {1.4307188 0.032849997 1.6624373} 6.343151 /* navigation center, translation, depth */ {0.0 0.0 0.0} -22.312275 2.7069972 50.0; set picking center; color label yellow; select atomno=15; label PEP;  select atomno=2; label water; define ~violet molecule=1; define ~green not ~violet; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;2855,1,3015,170&quot;&gt;&lt;/area&gt;
+      &lt;area href=&quot;
+	script:textbox:6:load glycolysisHeader.html; 
+    script:textbox:8:load 02-controls.html;
+    nativescript:plugin:1:load 10-reactants.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -809 -359 -466 135.14} /* zoom, translation */  86.6 0.0 0.0  /* center, rotationRadius */ {3.4451501 1.1532502 -4.1089997} 9.23037 /* navigation center, translation, depth */ {0.0 0.0 0.0} -4.334507 -15.449759 50.0; set picking center; color label yellow; select atomno=51; label PEP; select atomno=23; label ADP; define ~green molecule=2; define ~violet molecule=1; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:2:load 10-enzyme.pdb.gz; frank off; moveto /* time, axisAngle */ 0.0 { -622 -698 -355 87.52} /* zoom, translation */  100.0 0.0 0.0  /* center, rotationRadius */ {14.652999 -15.026499 20.456497} 59.873077 /* navigation center, translation, depth */ {0.0 0.0 0.0} 12.169978 9.812416 50.0; set picking center; color label yellow;  select [PGA]*.C2; label PEP; set labelpointer on selected;  color echo yellow; font echo 14 sansserif; set echo bottom center; echo pyruvate|kinase; define ~green [PGA]; define ~violet [FPB]; define ~lig1 molecule=8; set testFlag1 false; set testFlag2 false; set testFlag3 false;
+    nativescript:plugin:3:load 10-products.mol2; frank off; moveto /* time, axisAngle */ 0.0 { -595 -348 -725 80.33} /* zoom, translation */  86.74 0.0 0.0  /* center, rotationRadius */ {3.5660996 -2.2980504 -3.0459} 9.817012 /* navigation center, translation, depth */ {0.0 0.0 0.0} 2.438797 -21.400698 50.0; set picking center; color label yellow; select atomno=53; label Pyr; set echo ~highEnergy {atomno=23}; script setATPEcho.spt; define ~green molecule=2 or (atomno&gt;=40 and atomno&lt;=43); define ~violet not ~green; color echo yellow; font echo 14 sansserif; set echo bottom right; echo x2; set testFlag1 false; set testFlag2 false; set testFlag3 false;&quot; shape=&quot;rect&quot; coords=&quot;3199,2,3350,181&quot;&gt;&lt;/area&gt;
+    &lt;/map&gt;
+    &lt;img usemap=&quot;#Map&quot; src=&quot;fullSequence.png&quot; width=&quot;3662&quot; height=&quot;241&quot; border=&quot;0&quot;&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="16" end="17">
+<size>8</size><icon><class>org.concord.modeler.text.LineIcon</class><width>15.0</width><height>281</height><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-926584</bgcolor></icon></content>
+
+<content start="17" end="18">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="18" end="20">
+<Alignment>1</Alignment>
+<content start="18" end="19">
+<size>8</size><component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>16.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<bgcolor>-926584</bgcolor>
+</component></content>
+
+<content start="19" end="20">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="20" end="24">
+<Alignment>1</Alignment>
+<content start="20" end="21">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>15.0</width>
+<height>16.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<bgcolor>-926584</bgcolor>
+</component></content>
+
+<content start="21" end="22">
+<size>8</size><component><class>org.concord.modeler.PageTextBox</class>
+<width>720.0</width>
+<height>16.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body bgcolor=&quot;#000000&quot;&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<bgcolor>-1000000</bgcolor>
+</component></content>
+
+<content start="22" end="23">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>15.0</width>
+<height>16.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<bgcolor>-926584</bgcolor>
+</component></content>
+
+<content start="23" end="24">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="24" end="32">
+<Alignment>1</Alignment>
+<content start="24" end="25">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>15.0</width><height>260</height><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-926584</bgcolor></icon></content>
+
+<content start="25" end="26">
+<component><class>org.concord.modeler.PageJContainer</class>
+<appletjar>JmolApplet.jar</appletjar>
+<appletjar>netscape.jar</appletjar>
+<appletclass>org.jmol.applet.MwPlugin</appletclass>
+<resource>page3$plugin$0.aps</resource><parameter>{name=&quot;nostatepersistence&quot; value=&quot;true&quot;}
+{name=&quot;script&quot; value=&quot;frank off&quot;}
+</parameter>
+<width>200</width><height>260</height>
+<border>None</border><codebase>http://mw2.concord.org/public/plugin/</codebase><cachefile>01-reactants.mol2,
+02-reactants.mol2,
+03-reactants.mol2,
+04-reactants.mol2,
+05-reactants.mol2,
+06-reactants.mol2,
+07-reactants.mol2,
+08-reactants.mol2,
+09-reactants.mol2,
+10-reactants.mol2,
+setATPEcho.spt,
+setNADHEcho.spt,
+atpEcho.gif</cachefile></component></content>
+
+<content start="26" end="27">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>10.0</width><height>260</height><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-1000000</bgcolor></icon></content>
+
+<content start="27" end="28">
+<component><class>org.concord.modeler.PageJContainer</class>
+<appletjar>JmolApplet.jar</appletjar>
+<appletjar>netscape.jar</appletjar>
+<appletclass>org.jmol.applet.MwPlugin</appletclass>
+<resource>page3$plugin$1.aps</resource><parameter>{name=&quot;nostatepersistence&quot; value=&quot;true&quot;}
+{name=&quot;script&quot; value=&quot;frank off; set echo ~echo1 50% 50%; color echo yellow; set echo ~echo1 center; set echo ~echo1; echo Click on a reaction arrow|or step description above|to explore the reaction in 3D.; set echo ~echo2 50% 0%; set echo ~echo2; set echo ~echo2 center; color echo red; font echo 12 sansserif; echo Note: There is some delay| beteween clicking on the image| above and seeing the molecules| appear here. Please be patient.&quot;}
+</parameter>
+<width>300</width><height>260</height>
+<border>None</border><codebase>http://mw2.concord.org/public/plugin/</codebase><cachefile>01-enzyme.pdb.gz,
+02-enzyme.pdb.gz,
+03-enzyme.pdb.gz,
+04-enzyme.pdb.gz,
+05-enzyme.pdb.gz,
+06-enzyme.pdb.gz,
+07-enzyme.pdb.gz,
+08-enzyme.pdb.gz,
+09-enzyme.pdb.gz,
+10-enzyme.pdb.gz</cachefile></component></content>
+
+<content start="28" end="29">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>10.0</width><height>260</height><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-1000000</bgcolor></icon></content>
+
+<content start="29" end="30">
+<component><class>org.concord.modeler.PageJContainer</class>
+<appletjar>JmolApplet.jar</appletjar>
+<appletjar>netscape.jar</appletjar>
+<appletclass>org.jmol.applet.MwPlugin</appletclass>
+<resource>page3$plugin$2.aps</resource><parameter>{name=&quot;nostatepersistence&quot; value=&quot;true&quot;}
+{name=&quot;script&quot; value=&quot;frank off&quot;}
+</parameter>
+<width>200</width><height>260</height>
+<border>None</border><codebase>http://mw2.concord.org/public/plugin/</codebase><cachefile>01-products.mol2,
+02-products.mol2,
+03-products.mol2,
+04-products.mol2,
+05-products.mol2,
+06-products.mol2,
+07-products.mol2,
+08-products.mol2,
+09-products.mol2,
+10-products.mol2,
+setATPEcho.spt,
+setNADHEcho.spt,
+atpEcho.gif,
+nadhEcho.gif</cachefile></component></content>
+
+<content start="30" end="31">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>15.0</width><height>260</height><title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-926584</bgcolor></icon></content>
+
+<content start="31" end="32">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="32" end="34">
+<Alignment>1</Alignment>
+<content start="32" end="33">
+<size>8</size><component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>85.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style3 { font-weight: bold; font-family: Verdana, Arial, Helvetica, sans-serif }
+        .style1 { font-family: Verdana, Arial, Helvetica, sans-serif }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;6&quot; align=&quot;center&quot;&gt;
+          &lt;span class=&quot;style3&quot;&gt;all molecules&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td colspan=&quot;2&quot; align=&quot;center&quot;&gt;
+          &lt;span class=&quot;style3&quot;&gt;enzyme only&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &amp;#160;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;input checked=&quot;checked&quot; id=&quot;RadioGroup1_0&quot; script=&quot;
+            	nativescript:plugin:1:select all; color atoms cpk; set testFlag3 false;
+                nativescript:plugin:2:select all; color atoms cpk; if (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~lig1))) or (*.CA or sidechain) and (within(group,within(4.0,~lig2)))) and not (~lig1 or ~lig2); color atoms chain; endif; set testFlag3 false;
+                nativescript:plugin:3:select all; color atoms cpk; set testFlag3 false;&quot; value=&quot;radio&quot; type=&quot;radio&quot; name=&quot;RadioGroup1&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;color by element&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;&amp;#160;&amp;#160;&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input id=&quot;RadioGroup2_0&quot; script=&quot;
+            	nativescript:plugin:1:select all; spacefill 100%; set testFlag2 true;
+                nativescript:plugin:2:If (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet))) or ~green or ~violet); else; select all; endif; spacefill 100%; set testFlag2 true;
+                nativescript:plugin:3:select all; spacefill 100%; set testFlag2 true;&quot; value=&quot;radio&quot; type=&quot;radio&quot; name=&quot;RadioGroup2&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;spacefill&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input id=&quot;cartoon&quot; script_selected=&quot;
+        	nativescript:plugin:1:set testFlag1 true;
+            nativescript:plugin:2:select all; cartoons on; color cartoons chain; select protein; spacefill off; wireframe off;  select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet)))) and not (~violet or ~green); color atoms chain; if (testFlag2); spacefill 100%; wireframe off; else; spacefill 20%; wireframe 0.15; endif; set testFlag1 true;
+            nativescript:plugin:3:set testFlag1 true;&quot; script_deselected=&quot;
+        	nativescript:plugin:1:set testFlag1 false;
+            nativescript:plugin:2:select all; cartoons off; select protein; if (testFlag2); spacefill on; else; spacefill 20%; wireframe 0.15; endif;  select protein; if (not testFlag3); color atoms cpk; endif; set testFlag1 false;
+            nativescript:plugin:1:set testFlag1 false;&quot; type=&quot;checkbox&quot; name=&quot;cartoon&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;cartoon&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;center&quot;&gt;
+          &lt;input id=&quot;reset&quot; selfscript=&quot;selectcomponent 6 false&quot; script=&quot;
+        	nativescript:plugin:1:zoomto 1 {visible} 100%;
+            nativescript:plugin:2:zoomto 1 {visible} 100%;
+            nativescript:plugin:3:zoomto 1 {visible} 100%;
+            &quot; value=&quot;re-center molecules&quot; type=&quot;submit&quot; name=&quot;reset&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;input id=&quot;RadioGroup1_1&quot; script=&quot;
+        	nativescript:plugin:1: select ~violet; color atoms violet; select ~green; color atoms green; select ~orange; color atoms orange; set testFlag3 true;
+            nativescript:plugin:2: select protein; color atoms chain; select ~green; color atoms green; select ~violet; color atoms violet; select ~orange; color atoms orange; set testFlag3 true;
+            nativescript:plugin:3: select ~violet; color atoms violet; select ~green; color atoms green; select ~orange; color atoms orange; set testFlag3 true;&quot; value=&quot;radio&quot; type=&quot;radio&quot; name=&quot;RadioGroup1&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;highlight changes&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;&amp;#160;&amp;#160;&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input checked=&quot;checked&quot; id=&quot;RadioGroup2_1&quot; script=&quot;
+            	nativescript:plugin:1:select all; spacefill 20%; wireframe 0.15; set testFlag2 false;
+                nativescript:plugin:2:If (testFlag1); select ((*.CA or sidechain) and (within(group,within(4.0,~green))) or (*.CA or sidechain) and (within(group,within(4.0,~violet))) or ~green or ~violet); else; select all; endif; spacefill 20%; wireframe 0.15; set testFlag2 false;
+                nativescript:plugin:3:select all; spacefill 20%; wireframe 0.15; set testFlag2 false;&quot; value=&quot;radio&quot; type=&quot;radio&quot; name=&quot;RadioGroup2&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;ball &amp;amp; stick&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;input id=&quot;zoom&quot; script_selected=&quot;
+        	nativescript:plugin:2:zoomto 1 {~lig1 and visible} 600%&quot; script_deselected=&quot;
+        	nativescript:plugin:2:zoomto 1 {visible} 100%&quot; type=&quot;checkbox&quot; name=&quot;zoom&quot;&gt;
+          
+        &lt;/td&gt;
+        &lt;td&gt;
+          &lt;span class=&quot;style1&quot;&gt;active site&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;center&quot;&gt;
+          &lt;input id=&quot;button&quot; script=&quot;script:plugin:2:snapshot&quot; value=&quot;take a snapshot&quot; type=&quot;submit&quot; name=&quot;button&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<bgcolor>-926584</bgcolor>
+</component></content>
+
+<content start="33" end="34">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="34" end="36">
+<Alignment>1</Alignment>
+<SpaceBelow>10.0</SpaceBelow>
+<content start="34" end="35">
+<icon><class>org.concord.modeler.text.LineIcon</class><width>750.0</width><height>26</height><arcwidth>5</arcwidth><archeight>5</archeight><cornerarc>10</cornerarc><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+      &lt;!--
+        .style1 { color: #990000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px }
+      --&gt;
+    &lt;/style&gt;
+    
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div align=&quot;center&quot;&gt;
+      &lt;span class=&quot;style1&quot;&gt;&lt;strong&gt;rotate molecule: &lt;/strong&gt;drag mouse&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;strong&gt;scale 
+      molecule:&lt;/strong&gt; shift-drag mouse&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&lt;strong&gt;center 
+      rotation:&lt;/strong&gt; click on atom&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><bgcolor>-926584</bgcolor></icon></content>
+
+<content start="35" end="36">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="36" end="41">
+<Alignment>1</Alignment>
+<SpaceBelow>8.0</SpaceBelow>
+<content start="36" end="37">
+<component><class>org.concord.modeler.ImageQuestion</class><width>371</width><height>300</height><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bioStyles.css&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      Take a snapshot, and place an image here that shows a REACTANT in the 
+      active site of an enzyme. Make sure the reactant is clearly visible. (&lt;a href=&quot;script:page:1:message enzymeHelp.html&quot;&gt;help?&lt;/a&gt;)
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="37" end="39">
+</content>
+
+<content start="39" end="40">
+<component><class>org.concord.modeler.ImageQuestion</class><width>371</width><height>300</height><title>&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bioStyles.css&quot; type=&quot;text/css&quot;&gt;
+    
+  &lt;/head&gt;
+  &lt;body class=&quot;question&quot;&gt;
+    &lt;p class=&quot;question&quot;&gt;
+      Take a snapshot, and place an image here that shows a PRODUCT in the 
+      active site of an enzyme. Make sure the product is clearly visible. (&lt;a href=&quot;script:page:1:message enzymeHelp.html&quot;&gt;help?&lt;/a&gt;)
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title><opaque>false</opaque>
+<border>Line</border>
+</component></content>
+
+<content start="40" end="41">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="41" end="43">
+<Alignment>1</Alignment>
+<content start="41" end="42">
+<component><class>org.concord.modeler.PageTextBox</class>
+<width>750.0</width>
+<height>32.0</height>
+<title>&lt;html&gt;
+  &lt;head&gt;
+    
+  &lt;/head&gt;
+  &lt;body marginwidth=&quot;0&quot; marginheight=&quot;0&quot; background=&quot;navBarBottomBackground.jpg&quot;&gt;
+    &lt;table cellspacing=&quot;0&quot; id=&quot;Table_01&quot; cellpadding=&quot;0&quot; width=&quot;100%&quot; border=&quot;0&quot;&gt;
+      &lt;tr&gt;
+        &lt;td colspan=&quot;2&quot;&gt;
+          &lt;img src=&quot;navBarBottomColorBar.gif&quot; width=&quot;14&quot; height=&quot;6&quot;&gt;
+          
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;img src=&quot;navBarBottomLeftMargin.jpg&quot; width=&quot;8&quot; height=&quot;26&quot;&gt;
+          &lt;a href=&quot;page2.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;prev.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;60&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;font&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img src=&quot;next.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;59&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td align=&quot;right&quot;&gt;
+          &lt;img src=&quot;page.jpg&quot; width=&quot;54&quot; height=&quot;26&quot;&gt;
+          &lt;a href=&quot;index.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;index.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;46&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;a href=&quot;page1.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;page1.jpg&quot; width=&quot;28&quot; border=&quot;0&quot; height=&quot;26&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;a href=&quot;page2.cml&quot;&gt;&lt;font&gt;&lt;img src=&quot;page2.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/font&gt;&lt;/a&gt;&lt;font&gt;&lt;a href=&quot;page3.cml&quot;&gt;&lt;img src=&quot;page3Selected.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page4.cml&quot;&gt;&lt;img src=&quot;page4.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page5.cml&quot;&gt;&lt;img src=&quot;page5.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page6.cml&quot;&gt;&lt;img src=&quot;page6.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page7.cml&quot;&gt;&lt;img src=&quot;page7.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page8.cml&quot;&gt;&lt;img src=&quot;page8.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;29&quot;&gt;
+          &lt;/a&gt;&lt;a href=&quot;page9.cml&quot;&gt;&lt;img src=&quot;page9.jpg&quot; height=&quot;26&quot; border=&quot;0&quot; width=&quot;28&quot;&gt;
+          &lt;/a&gt;&lt;/font&gt;&lt;img src=&quot;navBarBottomRightMargin.jpg&quot; width=&quot;7&quot; height=&quot;26&quot;&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</title>
+<opaque>false</opaque>
+</component></content>
+
+<content start="42" end="43">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="43" end="44">
+<Alignment>1</Alignment>
+<content start="43" end="44">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="44" end="45">
+<content start="44" end="45">
+<size>8</size></content>
+
+</paragraph>
+<paragraph start="45" end="46">
+</paragraph>
+</section>
+</document>

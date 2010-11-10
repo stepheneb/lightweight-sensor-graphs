@@ -1,0 +1,17 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <map name="m_fullCycleSlices_r5_c6">
+      <area shape="poly" href="script:textbox:6:load 05-krebs.html; script:textbox:11:selectcomponent 0 true; selectcomponent 3 true;
+
+nativescript:plugin:1:load 05-krebs-reactants.mol2;frank off; set echo top center; color echo white; echo reactants; set picking center; color label yellow; select atomno=166; label oxalo-|succinate; set labeloffset 1 -2 {selected}; select atomno=116; label CoA; select atomno=67; label NAD<sup>+</sup>; set labeloffset 14 0 {selected}; define ~violet molecule=1; define ~orange molecule=2; define ~green molecule=3;
+
+nativescript:plugin:2:load 05-krebs-products.mol2;frank off; set picking center; set echo top center; color echo white; echo products; color label yellow; select atomno=121; label succinyl-CoA; select atomno=75; label CO<sub>2</sub>; set labeloffset 0 2 {selected}; select atomno=74; label H<sup>+</sup>; set labeloffset 0 -2; set echo ~highEnergy {atomno=67}; script setNADHEcho.spt;  define ~green ({73:76 158:162 164:170}); define ~orange (molecule=4 and not ~green) or atomno=48; define ~violet molecule=1 and not ~green;" alt="" coords="80,0,70,14,62,38,78,62,95,66,119,48,144,55,188,55,201,51,198,31,188,12,184,3"></area>
+    </map>
+    <p style="margin-top: 0">
+      <img alt="" id="fullCycleSlices_r5_c6" border="0" height="80" width="212" name="fullCycleSlices_r5_c6" usemap="#m_fullCycleSlices_r5_c6" src="fullCycleSlices_r5_c6.png">
+    </p>
+  </body>
+</html>
