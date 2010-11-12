@@ -15,8 +15,7 @@
 
       var applet = document.getElementById("sensor-applet");
       var graph =  document.getElementById("graph");
-      applet_grapher = new sensor.AppletGrapher(applet, graph, 'temperature');
-      applet_grapher.InitSensorInterface("applet_grapher.JsListener()");
+      applet_grapher = new sensor.AppletGrapher(applet, graph, 'temperature', "applet_grapher.JsListener()");
 
     }
     </script>
@@ -26,24 +25,6 @@
       <h3 class="page-title namespace">Vernier GoIO Lightweight Temperature Grapher</h3>
       <div class="two-column-left clearfix">
         <div id="graph"></div>
-        <applet id="sensor-applet", codebase="/jnlp", code="org.concord.sensor.applet.OTSensorApplet" 
-          width="1" height="1" MAYSCRIPT="true"
-          archive="org/concord/sensor-native/sensor-native.jar,
-                   org/concord/otrunk/otrunk.jar,
-                   org/concord/framework/framework.jar,
-                   org/concord/frameworkview/frameworkview.jar,
-                   jug/jug/jug.jar,
-                   jdom/jdom/jdom.jar,
-                   org/concord/sensor/sensor.jar,
-                   org/concord/data/data.jar,
-                   org/concord/sensor/sensor-applets/sensor-applets.jar"
-          MAYSCRIPT="true">
-          <param name="resource" value="/temperature.otml"/>
-          <param name="name" value="sensor"/>
-          <!-- <param name="sensorStatePath" value="sensorState"/> -->
-          <param name="MAYSCRIPT" value="true"/>
-            Your browser is completely ignoring the applet tag!
-        </applet>
       </div>
       <div class="two-column-right clearfix">
         <p>A lightweight JavaScript grapher rendering into an HTML5 Canvas element. The data are collected from a <a href="http://www.vernier.com/go/golink.html">Vernier GoIO</a> temperature probe using an invisible Java applet.</p>
@@ -51,5 +32,23 @@
       </div>
       <div class="clearfix"></div>
     </div>
+    <applet id="sensor-applet", codebase="/jnlp", code="org.concord.sensor.applet.OTSensorApplet" 
+      width="1" height="1" MAYSCRIPT="true"
+      archive="org/concord/sensor-native/sensor-native.jar,
+               org/concord/otrunk/otrunk.jar,
+               org/concord/framework/framework.jar,
+               org/concord/frameworkview/frameworkview.jar,
+               jug/jug/jug.jar,
+               jdom/jdom/jdom.jar,
+               org/concord/sensor/sensor.jar,
+               org/concord/data/data.jar,
+               org/concord/sensor/sensor-applets/sensor-applets.jar"
+      MAYSCRIPT="true">
+      <param name="resource" value="/temperature.otml"/>
+      <param name="name" value="sensor"/>
+      <!-- <param name="sensorStatePath" value="sensorState"/> -->
+      <param name="MAYSCRIPT" value="true"/>
+        Your browser is completely ignoring the applet tag!
+    </applet>
   </body>
 </html>

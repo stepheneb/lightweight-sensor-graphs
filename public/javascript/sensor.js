@@ -3,14 +3,23 @@
 var root = this;
 var sensor = {};
 
-sensor.AppletGrapher = function(applet, graph, sensor_type) {
+sensor.AppletGrapher = function(applet, graph, sensor_type, listener_str) {
   this.applet = applet;
   this.graph = graph;
   this.sensor_type = sensor_type;
+  this.listener_str = listener_str;
+  this.applet_ready = false;
   this.Canvas();
   this.TimeSeries();
   this.Chart();
   this.AddButtons();
+  this.appletPoller = false;
+  this.StartAppletInitializationTimer();
+};
+
+sensor.AppletGrapher.prototype.StartAppletInitializationTimer = function() {
+  var that = this;
+  window.setTimeout (function()  { that.InitSensorInterface(); }, 250);
 };
 
 sensor.AppletGrapher.prototype.Canvas = function() {
@@ -58,30 +67,45 @@ sensor.AppletGrapher.prototype.AddButtons = function() {
   this.graph.appendChild(ul);
   
   this.startButton = document.createElement('a');
+  if (this.applet_ready) {
+    this.startButton.className = "active";
+  } else {
+    this.startButton.className = "inactive";
+  };
   this.AddButton(ul, this.startButton, 'Start');
   this.startButton.onclick = (function(ag) {
     return function () {
       with(ag) {
+        if (!applet_ready) {
+          InitSensorInterface();
+        };
         chart.streamTo(canvas, 500);
         applet.startCollecting();
+        startButton.className = "inactive"
+        stopButton.className = "active"
         return true;
       }
     };
   })(this);
   
   this.stopButton = document.createElement('a');
+  this.stopButton.className = "inactive";
   this.AddButton(ul, this.stopButton,  'Stop');
   this.stopButton.onclick = (function (ag) {
     return function () {
       with(ag) {
         applet.stopCollecting();
         chart.stop();
+        stopButton.className = "inactive"
+        startButton.className = "active"
+        clearButton.className = "active"
         return true;          
       }
     };
   })(this);
 
   this.clearButton = document.createElement('a');
+  this.clearButton.className = "inactive";
   this.AddButton(ul, this.clearButton, 'Clear');
   this.clearButton.onclick = (function (ag) {
     return function () {
@@ -89,6 +113,7 @@ sensor.AppletGrapher.prototype.AddButtons = function() {
         applet.stopCollecting();
         TimeSeries();
         Chart();
+        clearButton.className = "inactive"
         return true;
       }
     };
@@ -123,8 +148,21 @@ sensor.AppletGrapher.prototype.JsListener = function() {
   };
 };
 
-sensor.AppletGrapher.prototype.InitSensorInterface = function(jsListenerStr) {
-  this.applet.initSensorInterface(jsListenerStr);
+sensor.AppletGrapher.prototype.InitSensorInterface = function() {
+  this.applet_ready = this.applet.initSensorInterface(this.listener_str);
+  if(this.applet_ready) {
+    this.startButton.className = "active";
+    if(this.appletPoller) {
+      clearInterval(this.appletPoller);
+      this.appletPoller = false;
+    }
+  } else {
+    this.startButton.className = "inactive";
+    if(!this.appletPoller) {
+      var that = this;
+      this.appletPoller = window.setInterval(function() { that.InitSensorInterface(); }, 250);
+    }
+  }
 };
 
 // export namespace
