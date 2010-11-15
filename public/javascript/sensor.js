@@ -13,13 +13,50 @@ sensor.AppletGrapher = function(applet, graph, sensor_type, listener_str) {
   this.TimeSeries();
   this.Chart();
   this.AddButtons();
-  this.appletPoller = false;
+  this.appletInitializationTimer = false;
   this.StartAppletInitializationTimer();
+};
+
+sensor.AppletGrapher.prototype.InitSensorInterface = function() {
+  this.applet_ready = this.applet.initSensorInterface(this.listener_str);
+  if(this.applet_ready) {
+    this.startButton.className = "active";
+    if(this.appletInitializationTimer) {
+      clearInterval(this.appletPoller);
+      this.appletPoller = false;
+    }
+  } else {
+    this.startButton.className = "inactive";
+    if(!this.appletInitializationTimer) {
+      var that = this;
+      this.appletInitializationTimer = window.setInterval(function() { that.InitSensorInterface(); }, 250);
+    }
+  }
 };
 
 sensor.AppletGrapher.prototype.StartAppletInitializationTimer = function() {
   var that = this;
   window.setTimeout (function()  { that.InitSensorInterface(); }, 250);
+};
+
+sensor.AppletGrapher.prototype.JsListener = function() {
+  var timeseries = this.timeseries;
+  return {
+    // called whenever data is received in the sensor. data is an array of floats
+    dataReceived: function(type, count, data) {
+      if (type === 1000) {
+        timeseries.append(new Date().getTime(), data[0]);
+      };
+    },
+    // called whenever meta data about the data stream changes, data is an array of floats
+    dataStreamEvent: function(type, count, data) {
+      if (type === 1000) {
+        timeseries.append(new Date().getTime(), data[0]);
+      };
+    },
+    sensorsReady: function() {
+    }
+  };
 };
 
 sensor.AppletGrapher.prototype.Canvas = function() {
@@ -128,41 +165,6 @@ sensor.AppletGrapher.prototype.AddButton = function(list, button, name) {
   button.innerHTML = name;
   li.appendChild(button);
   return button;
-};
-
-sensor.AppletGrapher.prototype.JsListener = function() {
-  var timeseries = this.timeseries;
-  return {
-    dataReceived: function(type,count,data) {
-      if (type === 1000) {
-        timeseries.append(new Date().getTime(), data[0]);
-      };
-    },
-    dataStreamEvent: function(type,count,data) {
-      if (type === 1000) {
-        timeseries.append(new Date().getTime(), data[0]);
-      };
-    },
-    sensorsReady: function() {
-    }
-  };
-};
-
-sensor.AppletGrapher.prototype.InitSensorInterface = function() {
-  this.applet_ready = this.applet.initSensorInterface(this.listener_str);
-  if(this.applet_ready) {
-    this.startButton.className = "active";
-    if(this.appletPoller) {
-      clearInterval(this.appletPoller);
-      this.appletPoller = false;
-    }
-  } else {
-    this.startButton.className = "inactive";
-    if(!this.appletPoller) {
-      var that = this;
-      this.appletPoller = window.setInterval(function() { that.InitSensorInterface(); }, 250);
-    }
-  }
 };
 
 // export namespace
