@@ -17,7 +17,23 @@ unless JRUBY
   require 'thin'
 end
 
-CONFIG = YAML.load_file(File.join(CONFIG_PATH, 'config.yml'))
+begin
+  CONFIG = YAML.load_file(File.join(CONFIG_PATH, 'config.yml'))
+rescue Errno::ENOENT
+  msg = <<-HEREDOC
+
+
+*** missing config/config.yml
+
+    cp config/config_sample.yml config/config.yml
+
+    and edit if you need to change the public dir or the port the local applet server runs on ...
+  
+  HEREDOC
+  raise msg
+end
+
+
 
 SERVER_URL = "#{CONFIG[:host]}:#{CONFIG[:port]}"
 PUBLIC_DIR = File.join(APP_ROOT, CONFIG[:root])
