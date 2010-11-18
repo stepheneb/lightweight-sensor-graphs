@@ -17,8 +17,13 @@ sensor.AppletGrapher = function(applet, graph, sensor_type, listener_str) {
   this.StartAppletInitializationTimer();
 };
 
+sensor.AppletGrapher.prototype.StartAppletInitializationTimer = function() {
+  var that = this;
+  window.setTimeout (function()  { that.InitSensorInterface(); }, 250);
+};
+
 sensor.AppletGrapher.prototype.InitSensorInterface = function() {
-  this.applet_ready = this.applet.initSensorInterface(this.listener_str);
+  this.applet_ready = this.applet && this.applet.initSensorInterface && this.applet.initSensorInterface(this.listener_str);
   if(this.applet_ready) {
     this.startButton.className = "active";
     if(this.appletInitializationTimer) {
@@ -32,11 +37,6 @@ sensor.AppletGrapher.prototype.InitSensorInterface = function() {
       this.appletInitializationTimer = window.setInterval(function() { that.InitSensorInterface(); }, 250);
     }
   }
-};
-
-sensor.AppletGrapher.prototype.StartAppletInitializationTimer = function() {
-  var that = this;
-  window.setTimeout (function()  { that.InitSensorInterface(); }, 250);
 };
 
 sensor.AppletGrapher.prototype.JsListener = function() {
