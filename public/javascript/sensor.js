@@ -18,8 +18,8 @@ sensor.AppletGrapher = function(applet, graph, sensor_type, listener_str) {
 };
 
 sensor.AppletGrapher.prototype.StartAppletInitializationTimer = function() {
-  var that = this;
-  window.setTimeout (function()  { that.InitSensorInterface(); }, 250);
+  var self = this;
+  window.setTimeout (function()  { self.InitSensorInterface(); }, 250);
 };
 
 sensor.AppletGrapher.prototype.InitSensorInterface = function() {
