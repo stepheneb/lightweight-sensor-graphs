@@ -23,18 +23,31 @@ sensor.AppletGrapher.prototype.StartAppletInitializationTimer = function() {
 };
 
 sensor.AppletGrapher.prototype.InitSensorInterface = function() {
-  this.applet_ready = this.applet && this.applet.initSensorInterface && this.applet.initSensorInterface(this.listener_str);
-  if(this.applet_ready) {
-    this.startButton.className = "active";
-    if(this.appletInitializationTimer) {
-      clearInterval(this.appletPoller);
-      this.appletPoller = false;
+  var that = this;
+  
+  // Try to call initSensorInterface, but note
+  //  (1) appletInstance may not have initialized yet
+  //  (2) 'probing' for initialization via the js idiom:
+  //        appletInstance.initSensorInterface && appletInstance.initSensorInterface();
+  //      actually throws an error in IE even AFTER appletInstance.initSensorInterface is ready to call, because
+  //      IE thinks that it's an error to access a java method as a property instead of calling it.
+  
+  try {
+    that.applet_ready = that.applet &&  that.applet.initSensorInterface(that.listener_str);
+  } catch (e) {
+    // Do nothing--we'll try again in the next timer interval.
+  }
+  
+  if(that.applet_ready) {
+    that.startButton.className = "active";
+    if(that.appletInitializationTimer) {
+      clearInterval(that.appletPoller);
+      that.appletPoller = false;
     }
   } else {
-    this.startButton.className = "inactive";
-    if(!this.appletInitializationTimer) {
-      var that = this;
-      this.appletInitializationTimer = window.setInterval(function() { that.InitSensorInterface(); }, 250);
+    that.startButton.className = "inactive";
+    if(!that.appletInitializationTimer) {
+      that.appletInitializationTimer = window.setInterval(function() { that.InitSensorInterface(); }, 250);
     }
   }
 };
