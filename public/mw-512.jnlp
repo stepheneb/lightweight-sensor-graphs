@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+">
+  <information>
+    <title>Molecular Workbench</title>
+    <vendor>Concord Consortium, Inc.</vendor>
+    <homepage href="index.html"/>
+    <description>A Simulation Tool for Your Science Class</description>
+    <icon href="mwlogo.gif"/>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.5+"/>
+    <jar href="/jnlp/org/concord/modeler/mw.jar"/>
+    <property name="apple.awt.brushMetalLook" value="true"/>
+    <property name="apple.laf.useScreenMenuBar" value="true"/>
+    <property name="mw.locale" value="en_US"/>
+    <property name="mw.window.top" value="44"/>
+    <property name="mw.window.left" value="37"/>
+    <property name="mw.window.width" value="1391"/>
+    <property name="mw.window.height" value="960"/>
+    <property name="mw.maxHeapSize" value="512m"/>
+  </resources>
+ <security>
+    <all-permissions/>
+  </security>
+  <application-desc main-class="org.concord.modeler.ModelerLauncher">
+    <argument>remote</argument>
+    <argument>http://mw2.concord.org/public/index.cml</argument>
+  </application-desc>
+</jnlp>

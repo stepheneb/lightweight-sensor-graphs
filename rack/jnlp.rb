@@ -4,11 +4,51 @@ module Rack
     PACK_GZ = '.pack.gz'
     JAR_PACK_GZ = 'jar.pack.gz'
     NO_JAR_PACK_GZ = 'jar.no.pack.gz'
-    
+    BYTESIZE = "".respond_to?(:bytesize)
 
     def initialize app
       @app = app
       @jnlp_dir = PUBLIC_DIR
+    end
+
+    def jnlp_codebase(env)
+      scheme = env['rack.url_scheme']
+      if http_host = env['HTTP_HOST']
+        "#{scheme}://#{http_host}/jnlp"
+      else
+        "#{scheme}://#{env['SERVER_NAME']}:#{SERVER_PORT}/jnlp"
+      end
+    end
+
+    def add_jnlp_codebase(body, env, assembled_body=[], length=0)
+      body.each do |line|
+        line = line.to_s # call down the stack
+        if line[/^<jnlp.*?>/] && !line[/codebase/]
+          line.gsub!(/^(<jnlp.*?)>(.*)/) { |m| "#{$1} codebase='#{jnlp_codebase(env)}'>#{$2}" }
+        end
+        assembled_body << line
+        if BYTESIZE
+          length += line.bytesize
+        else
+          length += line.length
+        end
+      end
+      [assembled_body, length]
+    end
+
+
+    def jnlp_request(path)
+      if path =~ /^(\/.*\/)(.*?)\.(jar|jar\.pack\.gz|jar\.no\.pack\.gz)$/
+      	dir, name, suffix = $1, $2, $3
+        jars = Dir["#{@jnlp_dir}#{dir}#{name}__*.jar"]
+        if jars.empty?
+          [nil, suffix]
+        else
+          [jars.sort.last[/#{@jnlp_dir}(.*)/, 1], suffix]
+        end
+      else
+        [nil, nil]
+      end
     end
 
     def jar_request(path)
@@ -28,7 +68,7 @@ module Rack
     def call env
       path = env["PATH_INFO"]
       version_id = env["QUERY_STRING"][/version-id=(.*)/, 1]
-      pack200_gzip = versioned_jar_path = false
+      pack200_gzip = versioned_jar_path = jnlp_path = false
       snapshot_path, suffix = jar_request(path)
       if snapshot_path
         pack200_gzip = true if env["HTTP_USER_AGENT"] =~ /java/i        # if jar request and the user agent includes 'java' always try and return pack200-gzip
@@ -53,11 +93,19 @@ module Rack
           end
           env["PATH_INFO"] = snapshot_path
         end
+      else
+        jnlp_path = jnlp_request(path)
       end
       status, headers, body = @app.call env
-      headers['Content-Type'] = 'application/java-archive' if snapshot_path
-      headers['x-java-jnlp-version-id'] = version_id       if versioned_jar_path
-      headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
+      if snapshot_path
+        headers['Content-Type'] = 'application/java-archive'
+        headers['x-java-jnlp-version-id'] = version_id       if versioned_jar_path
+        headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
+      elsif path =~ /\.jnlp$/
+        headers['Content-Type'] = 'application/x-java-jnlp-file'
+        body, length = add_jnlp_codebase(body, env)
+        headers['Content-Length'] = length.to_s
+      end
       [status, headers, body]
     end
 
