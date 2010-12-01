@@ -55,6 +55,7 @@ module Rack
       version_id = env["QUERY_STRING"][/version-id=(.*)/, 1]
       pack200_gzip = versioned_jar_path = jnlp_path = false
       jnlp_path = path[/\.jnlp$/]
+      jnlp_path = true
       snapshot_path, suffix = jar_request(path)
       if snapshot_path
         pack200_gzip = true if env["HTTP_USER_AGENT"] =~ /java/i        # if jar request and the user agent includes 'java' always try and return pack200-gzip
