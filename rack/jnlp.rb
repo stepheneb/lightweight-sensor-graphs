@@ -20,11 +20,11 @@ module Rack
       end
     end
 
-    def add_jnlp_codebase(body, env, assembled_body=[], length=0)
+    def add_jnlp_codebase(body, codebase, assembled_body=["testing\n"], length=0)
       body.each do |line|
         line = line.to_s # call down the stack
         if line[/^<jnlp.*?>/] && !line[/codebase/]
-          line.gsub!(/^(<jnlp.*?)>(.*)/) { |m| "#{$1} codebase='#{jnlp_codebase(env)}'>#{$2}" }
+          line.gsub!(/^(<jnlp.*?)>(.*)/) { |m| "#{$1} codebase='#{codebase}'>#{$2}" }
         end
         assembled_body << line
         if BYTESIZE
@@ -86,7 +86,8 @@ module Rack
         headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
       elsif path[/\.jnlp$/]
         headers['Content-Type'] = 'application/x-java-jnlp-file'
-        body, length = add_jnlp_codebase(body, env)
+        codebase = jnlp_codebase(env)
+        body, length = add_jnlp_codebase(body, codebase)
         headers['Content-Length'] = length.to_s
       end
       [status, headers, body]
