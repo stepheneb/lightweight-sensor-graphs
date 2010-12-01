@@ -20,7 +20,7 @@ module Rack
       end
     end
 
-    def add_jnlp_codebase(body, codebase, assembled_body=["testing\n"], length=0)
+    def add_jnlp_codebase(body, codebase, assembled_body=[], length=0)
       body.each do |line|
         line = line.to_s # call down the stack
         if line[/^<jnlp.*?>/] && !line[/codebase/]
@@ -55,7 +55,6 @@ module Rack
       version_id = env["QUERY_STRING"][/version-id=(.*)/, 1]
       pack200_gzip = versioned_jar_path = jnlp_path = false
       jnlp_path = path[/\.jnlp$/]
-      jnlp_path = true
       snapshot_path, suffix = jar_request(path)
       if snapshot_path
         pack200_gzip = true if env["HTTP_USER_AGENT"] =~ /java/i        # if jar request and the user agent includes 'java' always try and return pack200-gzip
@@ -82,19 +81,18 @@ module Rack
         end
       end
       status, headers, body = @app.call env
-      # if snapshot_path
-      #   headers['Content-Type'] = 'application/java-archive'
-      #   headers['x-java-jnlp-version-id'] = version_id       if versioned_jar_path
-      #   headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
-      # elsif jnlp_path
+      if snapshot_path
+        headers['Content-Type'] = 'application/java-archive'
+        headers['x-java-jnlp-version-id'] = version_id       if versioned_jar_path
+        headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
+      elsif jnlp_path
         headers['Content-Type'] = 'application/x-java-jnlp-file'
         headers['Cache-Control'] = 'no-cache'
         codebase = jnlp_codebase(env)
         body, length = add_jnlp_codebase(body, codebase)
         headers['Content-Length'] = length.to_s
-      # end
+      end
       [status, headers, body]
     end
-
   end
 end
