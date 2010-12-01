@@ -54,6 +54,7 @@ module Rack
       path = env["PATH_INFO"]
       version_id = env["QUERY_STRING"][/version-id=(.*)/, 1]
       pack200_gzip = versioned_jar_path = jnlp_path = false
+      jnlp_path = path[/\.jnlp$/]
       snapshot_path, suffix = jar_request(path)
       if snapshot_path
         pack200_gzip = true if env["HTTP_USER_AGENT"] =~ /java/i        # if jar request and the user agent includes 'java' always try and return pack200-gzip
@@ -84,7 +85,7 @@ module Rack
         headers['Content-Type'] = 'application/java-archive'
         headers['x-java-jnlp-version-id'] = version_id       if versioned_jar_path
         headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
-      elsif path[/\.jnlp$/]
+      elsif jnlp_path
         headers['Content-Type'] = 'application/x-java-jnlp-file'
         codebase = jnlp_codebase(env)
         body, length = add_jnlp_codebase(body, codebase)
