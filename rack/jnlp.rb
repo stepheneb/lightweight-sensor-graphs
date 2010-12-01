@@ -36,21 +36,6 @@ module Rack
       [assembled_body, length]
     end
 
-
-    def jnlp_request(path)
-      if path =~ /^(\/.*\/)(.*?)\.(jar|jar\.pack\.gz|jar\.no\.pack\.gz)$/
-      	dir, name, suffix = $1, $2, $3
-        jars = Dir["#{@jnlp_dir}#{dir}#{name}__*.jar"]
-        if jars.empty?
-          [nil, suffix]
-        else
-          [jars.sort.last[/#{@jnlp_dir}(.*)/, 1], suffix]
-        end
-      else
-        [nil, nil]
-      end
-    end
-
     def jar_request(path)
       if path =~ /^(\/.*\/)(.*?)\.(jar|jar\.pack\.gz|jar\.no\.pack\.gz)$/
       	dir, name, suffix = $1, $2, $3
@@ -93,15 +78,13 @@ module Rack
           end
           env["PATH_INFO"] = snapshot_path
         end
-      else
-        jnlp_path = jnlp_request(path)
       end
       status, headers, body = @app.call env
       if snapshot_path
         headers['Content-Type'] = 'application/java-archive'
         headers['x-java-jnlp-version-id'] = version_id       if versioned_jar_path
         headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
-      elsif path =~ /\.jnlp$/
+      elsif path[/\.jnlp$/]
         headers['Content-Type'] = 'application/x-java-jnlp-file'
         body, length = add_jnlp_codebase(body, env)
         headers['Content-Length'] = length.to_s
