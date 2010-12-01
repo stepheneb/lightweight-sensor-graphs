@@ -1,5 +1,6 @@
 tmp/**/*
 log/*
+!log/readme
 config/config.yml
 config/deploy.yml
 jnlp.war

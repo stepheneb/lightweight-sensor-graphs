@@ -2,9 +2,13 @@
 
 require 'rubygems'
 require 'yaml'
+require 'logger'
 
 APP_ROOT = File.expand_path('../..',  __FILE__)
 CONFIG_PATH = File.join(APP_ROOT, 'config')
+
+LOGGER_PATH = File.join(APP_ROOT, 'log', 'app.log')
+logger = Logger.new(LOGGER_PATH)
 
 gem 'rack', '>= 1.1.0'
 require 'rack'
