@@ -88,6 +88,7 @@ module Rack
         headers['content-encoding'] = 'pack200-gzip'         if pack200_gzip
       elsif jnlp_path
         headers['Content-Type'] = 'application/x-java-jnlp-file'
+        headers['Cache-Control'] = 'no-cache'
         codebase = jnlp_codebase(env)
         body, length = add_jnlp_codebase(body, codebase)
         headers['Content-Length'] = length.to_s
