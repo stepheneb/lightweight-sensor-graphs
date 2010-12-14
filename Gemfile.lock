@@ -3,8 +3,8 @@ GEM
   specs:
     daemons (1.1.0)
     eventmachine (0.12.10)
-    jruby-jars (1.5.3)
-    jruby-rack (1.0.3)
+    jruby-jars (1.5.6)
+    jruby-rack (1.0.4)
     net-ssh (2.0.23)
     rack (1.2.1)
     rake (0.8.7)
