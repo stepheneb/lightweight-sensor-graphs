@@ -23,8 +23,15 @@
 
     <p>
       This page loads a simple applet which tests the following Java code 
-      which tries to get access to the browsers window object -- however in 
-      this test this code isn't run until JavaScript in the browser specifically 
+      which tries to get access to the browsers window object:
+    </p>
+    
+    <pre>
+    JSObject win = JSObject.getWindow(this);
+    System.out.println("WINDOW IS: " + win)
+    </pre>
+    <p>  
+      however in this test this code isn't run until JavaScript in the browser specifically 
       calls the setupJSObject method in the applet after it is initialized.
     </p>
     <p>
