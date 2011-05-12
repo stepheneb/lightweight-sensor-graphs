@@ -5,7 +5,7 @@ Prerequisites
 ------------
 
 * git
-* ruby 1.8.7 or 1.9.2 or JRuby 1.5.3+
+* ruby 1.8.7, 1.9.2 or JRuby 1.5.3+
 * the RubyGem: bundler
 
 If you are using Mac OS X or Linux I recommend using rvm to install ruby 1.9.2: http://rvm.beginrescueend.com/.
@@ -20,7 +20,10 @@ Install
     bundle install
     cp config/config.sample.yml config/config.yml
 
-Create an executable jnlp.war
+Start
+
+
+If you want to deploy as a Java web servlet into a server like Tomcat create an executable jnlp.war
 ------------
 
 You need to use JRuby:
@@ -65,20 +68,24 @@ Demo
 
 1. Plugin a Vernier GoLink with an attached temperature, light probe, or motion probe.
 2. Start local server.
+    cd /path/to/lightweight-sensor-graphs
     ruby start_local_server.rb
 3. Open: http://localhost:4321/
-4. Select either: goio-temperature-graph.html or goio-light-graph.html 
+4. Select either: goio-temperature-graph.html, goio-light-graph.html or goio-motion-graph.html 
 4. Click the *start* button.
 
 Deploying to a remote server
 ------------
-If have a remote server with Apache, install the Ruby gem passenger, and setup an environment for hosting a rack application you can use the script:
+If have a remote server with Apache, install the Ruby gem passenger and follow the installation instructions:
+
+    $ gem install passenger
+    $ passenger-install-apache2-module
+    
+If you want to be able to develop on your local machine, push changes to github and then deploy to the remote server take a look at the comments in this script:
 
     bin/update_server.rb
 
-to push the master branch of http://github.com/stepheneb/lightweight-sensor-graphs to the server.
-
-First copy the file bin/deploy_sample.yml to bin/deploy.yml and enter the host name and path on the remote server as well as the ssh username for the user under which the deploy will be executed.
+To push the master branch of http://github.com/stepheneb/lightweight-sensor-graphs to the server first copy the file bin/deploy_sample.yml to bin/deploy.yml and enter the host name and path on the remote server as well as the ssh username for the user under which the deploy will be executed.
 
 File: bin/deploy_sample.yml
 
@@ -173,3 +180,53 @@ In addition if you are downloading a jnlp with many jars this script will run mu
     rvm install jruby
     rvm use jruby
     ruby update_jnlps.rb
+
+
+Running at http://jnlp.local under Apache2 on your local Mac OS X system
+--------------
+
+Add the following entry in /etc/hosts:
+
+    127.0.0.1       jnlp.local
+
+I recommend using Ruby 1.9.2 installed with rvm:
+
+    $ rvm install 1.9.2
+    $ rvm use 1.9.2
+    $ gem install bundler
+    $ gem install passenger
+    $ passenger-install-apache2-module
+    $ cd /path/to/lightweight-sensor-graphs.git
+    $ bundle install
+  
+Follow the instructions displayed on the screen. On my system I needed to add the following files to: /etc/apache2/httpd.conf
+
+    LoadModule passenger_module /Users/stephen/.rvm/gems/ruby-1.9.2-p180/gems/passenger-3.0.7/ext/apache2/mod_passenger.so
+    PassengerRoot /Users/stephen/.rvm/gems/ruby-1.9.2-p180/gems/passenger-3.0.7
+    PassengerRuby /Users/stephen/.rvm/wrappers/ruby-1.9.2-p180/ruby
+
+Add the following new configuration to: /etc/apache2/extra/httpd-vhosts.conf -- edit the paths appropriately.
+
+    <VirtualHost jnlp.local:80>
+        ServerName jnlp
+        DocumentRoot /path/to/lightweight-sensor-graphs.git/public
+        <Directory //path/to/lightweight-sensor-graphs.git/public>
+            Allow from all
+            Options -MultiViews
+        </Directory>
+    </VirtualHost>
+
+After making changes test the new apache configuration:
+
+    $ apachectl configtest
+
+After the configuration passes these simple tests restart apache:
+                                                                                                                                                          
+    $ sudo apachectl restart
+
+And open http://jnlp.local
+
+If there are error tail the apache error log to get clues:
+                                                                                                                                                          
+    $ tail -n 200 -f /var/log/apache2/error_log
+    
