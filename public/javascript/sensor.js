@@ -124,7 +124,7 @@ sensor.AppletGrapher.prototype.Canvas = function() {
   this.canvas.height = 300;
   this.graph.appendChild(this.canvas);
   try {
-    this.canvasContext = canvas.getContext("2d");
+    this.canvasContext = this.canvas.getContext("2d");
   }
   catch(e) {
     G_vmlCanvasManager.initElement(this.canvas);
