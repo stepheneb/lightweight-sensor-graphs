@@ -20,29 +20,34 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-/**
- * Smoothie Charts - http://smoothiecharts.org/
- * (c) 2010, Joe Walnes
- *
- * v1.0: Main charting library, by Joe Walnes
- * v1.1: Auto scaling of axis, by Neil Dunn
- * v1.2: fps (frames per second) option, by Mathias Petterson
- * v1.3: Fix for divide by zero, by Paul Nikitochkin
- */
+//
+// Smoothie Charts - http://smoothiecharts.org/
+// (c) 2010, Joe Walnes
+//
+// - v1.0: Main charting library, by Joe Walnes
+// - v1.1: Auto scaling of axis, by Neil Dunn
+// - v1.2: fps (frames per second) option, by Mathias Petterson
+// - v1.3: Fix for divide by zero, by Paul Nikitochkin
+//
+// Modifications for use with sensor.js (c) 2010 The Concord Consortium.
+// Created by Stephen Bannasch. Modified smoothie.js may be freely 
+// distributed under the LGPL license.
 
+// TimeSeries
+// ----------------
+// Example:
+//
+//     TimeSeries({ min:0, max:5 });
+//
 function TimeSeries(options) {
   options = options || {};
   options.min = options.min || 0;
   options.max = options.max || 40
   this.options = options
   this.data = [];
-  /**
-   * The maximum value ever seen in this time series.
-   */
+  // The maximum value ever seen in this time series.
   this.max = this.options.max;
-  /**
-   * The minimum value ever seen in this time series.
-   */
+  // The minimum value ever seen in this time series.
   this.min = this.options.min;
 }
 
@@ -56,6 +61,18 @@ TimeSeries.prototype.append = function(timestamp, value) {
   }
 };
 
+// SmoothieChart
+// ----------------
+// Example:
+//
+//     var chart = new SmoothieChart({
+//       grid: { strokeStyle:'rgb(100, 100, 100)', 
+//               fillStyle:'rgb(10, 10, 10)',
+//               lineWidth: 1, millisPerLine: 1000, 
+//               verticalSections: 8 },
+//       labels: { fillStyle:'rgb(255, 255, 255)' }
+//       });
+
 function SmoothieChart(options) {
   // Defaults
   options = options || {};
@@ -68,17 +85,21 @@ function SmoothieChart(options) {
   this.timeout = null;
 }
 
+// ### chart.addTimeSeries(*timeSeries*, *options*)
 SmoothieChart.prototype.addTimeSeries = function(timeSeries, options) {
   this.seriesSet.push({timeSeries: timeSeries, options: options || {}});
 };
-// 
-// SmoothieChart.prototype.display = function(canvas) {
-//   var self = this;
-//   (function render() {
-//     self.render(canvas, new Date().getTime());
-//   })()
-// };
 
+// commented out:
+
+//     SmoothieChart.prototype.display = function(canvas) {
+//       var self = this;
+//       (function render() {
+//         self.render(canvas, new Date().getTime());
+//       })()
+//     };
+
+// ### chart.streamTo(*canvas*, *delay*)
 SmoothieChart.prototype.streamTo = function(canvas, delay) {
   var self = this;
   (function render() {
@@ -87,10 +108,12 @@ SmoothieChart.prototype.streamTo = function(canvas, delay) {
   })()
 };
 
+// ### chart.stop()
 SmoothieChart.prototype.stop = function() {
   clearTimeout(this.timeout);
 };
 
+// ### chart.render(*canvas*, *time*)
 SmoothieChart.prototype.render = function(canvas, time) {
   var canvasContext = canvas.getContext("2d");
   var options = this.options;
@@ -161,15 +184,17 @@ SmoothieChart.prototype.render = function(canvas, time) {
   var valueGridIncrement2 = valueGridIncrement/2;
   
 
-  // Horizontal (value) dividers.
-  // for (var v = 1; v < options.grid.verticalSections; v++) {
-  //   var gy = Math.round(v * dimensions.height / options.grid.verticalSections);
-  //   canvasContext.beginPath();
-  //   canvasContext.moveTo(0, gy);
-  //   canvasContext.lineTo(dimensions.width, gy);
-  //   canvasContext.stroke();
-  //   canvasContext.closePath();
-  // }
+  // commented out:
+
+  //     Horizontal (value) dividers.
+  //     for (var v = 1; v < options.grid.verticalSections; v++) {
+  //       var gy = Math.round(v * dimensions.height / options.grid.verticalSections);
+  //       canvasContext.beginPath();
+  //       canvasContext.moveTo(0, gy);
+  //       canvasContext.lineTo(dimensions.width, gy);
+  //       canvasContext.stroke();
+  //       canvasContext.closePath();
+  //     }
 
 
   // Horizontal (value) dividers.
@@ -231,27 +256,30 @@ SmoothieChart.prototype.render = function(canvas, time) {
         firstX = x;
         canvasContext.moveTo(x, y);
       }
-      // Great explanation of Bezier curves: http://en.wikipedia.org/wiki/B�zier_curve#Quadratic_curves
+      // Wikipedia has a great explanation of [Bezier curves](http://en.wikipedia.org/wiki/Bezier_curve#Quadratic_curves)
       //
       // Assuming A was the last point in the line plotted and B is the new point,
       // we draw a curve with control points P and Q as below.
       //
-      // A---P
-      //     |
-      //     |
-      //     |
-      //     Q---B
+      //     A---P
+      //         |
+      //         |
+      //         |
+      //         Q---B
       //
       // Importantly, A and P are at the same y coordinate, as are B and Q. This is
       // so adjacent curves appear to flow as one.
       //
       else {
-        canvasContext.bezierCurveTo( // startPoint (A) is implicit from last iteration of loop
-          Math.round((lastX + x) / 2), lastY, // controlPoint1 (P)
-          Math.round((lastX + x)) / 2, y, // controlPoint2 (Q)
-          x, y); // endPoint (B)
+        // startPoint (A) is implicit from last iteration of loop
+        canvasContext.bezierCurveTo( 
+          // controlPoint1 (P)
+          Math.round((lastX + x) / 2), lastY, 
+          // controlPoint2 (Q)
+          Math.round((lastX + x)) / 2, y, 
+          // endPoint (B)
+          x, y); 
       }
-
       lastX = x, lastY = y;
     }
     if (dataSet.length > 0 && seriesOptions.fillStyle) {
