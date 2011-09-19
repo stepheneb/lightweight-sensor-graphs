@@ -126,7 +126,7 @@ sensor.AppletGrapher.prototype.Canvas = function() {
   if(this.canvas.getContext == undefined) {
     G_vmlCanvasManager.initElement(this.canvas);
   }
-  this.canvasContext = canvas.getContext("2d");
+  this.canvasContext = this.canvas.getContext("2d");
 };
 
 // Setup a default timeseries based on the sensor_type
