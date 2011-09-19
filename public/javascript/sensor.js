@@ -114,11 +114,22 @@ sensor.AppletGrapher.prototype.JsListener = function() {
 };
 
 // Create a 2D canvas element to render the graph into
+// Assume we are on IE < 9 if the 2D context creation fails
+// and call the G_vmlCanvasManager.initElement to initialize
+// the excanvas.js library for the canvas element.
+// See: http://code.google.com/p/explorercanvas/wiki/Instructions
 sensor.AppletGrapher.prototype.Canvas = function() {
   this.canvas = document.createElement('canvas');
   this.canvas.width = 540;
   this.canvas.height = 300;
   this.graph.appendChild(this.canvas);
+  try {
+    this.canvasContext = canvas.getContext("2d");
+  }
+  catch(e) {
+    G_vmlCanvasManager.initElement(this.canvas);
+    this.canvasContext = canvas.getContext("2d");
+  }
 };
 
 // Setup a default timeseries based on the sensor_type
